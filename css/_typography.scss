@@ -1,0 +1,103 @@
+// main: alux.scss
+/* Typography */
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.gigantic   { font-size: 110px; line-height: 1.09; letter-spacing: -2px; }
+.huge, h1   { letter-spacing: -1px; font-size: 48px; line-height: 1.05; }
+.large, h2  { font-size: 32px; line-height: 1.0; }
+.bigger, h3 { font-size: 26px; line-height: 1.0; }
+.big, h4    { font-size: 22px; line-height: 1.0; }
+.normal, h5 { font-size: 18px; line-height: 1.0; }
+.small, h6, small { font-size: 14px; line-height: 1.0; }
+
+/* Title color */
+.gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Link color */
+a, .link-color {
+  color: #26c6da;
+}
+a:focus, a:hover {
+  color: #2edaf0;
+  text-decoration: none;
+}
+
+/* Button */
+.button {
+  font-size: 14px;
+  color: #fff;
+  background: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.button:hover {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+/* Paragraph */
+p { margin-bottom: 20px; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.img-res { width: 100%; height: auto; margin-bottom: 20px; }
+.margin-top{margin-top:40px}
+.margin-bottom{margin-bottom:40px}
+
+/* Blockquote */
+blockquote {
+  font-weight: 200;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0 30px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  border-left: 5px solid #eee;
+}
+
+/* List */
+ul { list-style: circle inside; margin-bottom: 40px; }
+ol { list-style: decimal inside; margin-bottom: 40px; }
+ol, ul { padding-left: 0; margin-top: 0; }
+ul ul, ul ol, ol ol, ol ul { margin: 20px 0 20px 40px; }
+li { margin-bottom: 10px; }
+
+/* Table */
+table { margin-bottom: 40px; }
+th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e1e1e1; }
+
+/* Table */
+table { margin-bottom: 40px; }
+th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e1e1e1; }
+
+/* hr */
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+hr.spacer { border-top: 1px solid transparent; }
+
+/* Animation */
+.animate {
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4;
+          transition: all 0.4s;
+}

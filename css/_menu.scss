@@ -1,0 +1,199 @@
+// main: alux.scss
+/* Header */
+.nav-header{float:left;margin:0;}
+.logo{float:left;padding:15px 0 0 20px;font-weight: bold; font-size: 25px}
+
+/* Menu */
+.no-pad-menu { padding: 0 0px; margin-bottom: 0; background: transparent!important}
+
+.nav-wrap { display: inline-block; width: 100%;  background: #2b2b2b; float:left; }
+.nav-wrap a { text-decoration: none; color: #fff; display: block; }
+.nav-wrap ul { list-style: none; position: relative; text-align: left; margin: 0; }
+.nav-wrap li { float: left; margin: 0; position: relative; }
+
+
+/* clear'n floats */
+.nav-wrap ul:after { clear: both; }
+.nav-wrap ul:before,
+.nav-wrap ul:after { content: ' '; display: table; }
+.nav-wrap nav { position: relative; text-align: center; float: right; }
+
+/* prime */
+ul.primary, ul.dropdown-menu {
+  -webkit-transition: max-height 0.3s;
+     -moz-transition: max-height 0.3s;
+          transition: max-height 0.3s;
+}
+ul.primary li a { display: block; padding: 22px 30px; }
+ul.primary li a:hover { color: #000; }
+
+/* subs */
+ul.dropdown-menu { position: absolute; z-index: 200; min-width: 200px; display: none; }
+ul.dropdown-menu li { float: none; margin: 0; }
+
+/* arrow animation menu */
+
+.arrow {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  top: 27px;
+  right: 18px;
+  position: absolute;
+  background-color: white;
+  -webkit-mask: url(../arrow.svg) no-repeat 50% 50%;
+          mask: url(../arrow.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.select .arrow {
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+          transform: rotate(90deg);
+}
+
+ul.dropdown-menu li a {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  color: #000;
+  padding: 15px 30px;
+}
+
+ul.dropdown-menu li a:hover { color: #000; background: #eeeeee; }
+
+/* sub display*/
+ul.primary li:hover ul { display: block; background: #fff; }
+
+/* keeps the tab background white */
+ul.primary li:hover a { background: #fff; color: #666; }
+ul.primary li:hover > a { color: #000; }
+
+/* Desktop */
+@media (min-width: 768px) {
+
+	.arrow {
+		width: 11px;
+		height: 11px;
+		top: 28px;
+		right: 11px;
+	}
+
+}
+
+/* Smartphone */
+@media (max-width: 767px) {
+
+  /* Header  */
+  .nav-header,
+  .nav-wrap nav{ width: 100%;}
+
+  /* Menu */
+  .nav-wrap {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .nav-wrap li {
+    float: none;
+  }
+  .nav-wrap .primary {
+    /* Initially we don't want any height, and we want the contents to be hidden */
+    max-height: 0;
+    overflow: hidden;
+  }
+  .nav-wrap .dropdown-menu {
+    /* Initially we don't want any height, and we want the contents to be hidden */
+    max-height: 0;
+    overflow: hidden;
+  }
+
+.tog {
+    background: transparent;
+    width: 69px;
+    height: 69px;
+    position: relative;
+    float:right;
+  }
+  .tog span {
+    display: block;
+    width: 36px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    background: #fff;
+  }
+  .tog span:first-child {
+    -webkit-transform: translateY(-11px);
+            transform: translateY(-11px);
+  }
+  .tog  span.span-middle {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+  .tog.x span:first-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .tog.x span.span-middle {
+    opacity: 0;
+  }
+  .tog.x span:last-child, .tog.x span.span-middle {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .nav-wrap .primary.open {
+    max-height: 500px;
+    overflow: scroll;
+  }
+  .nav-wrap .dropdown-menu.open {
+    max-height: 500px;
+    overflow: scroll;
+  }
+
+  ul.primary li a {padding: 20px;}
+
+  .nav-wrap ul.primary li:hover a {
+    background: none;
+    color: #8b8b8b;
+  }
+  .nav-wrap ul.primary li a.select {
+    background: #222;
+    color: #fff;
+  }
+
+  .nav-wrap ul.primary li:hover ul {
+    display: block;
+    background: #111;
+    color: #fff;
+  }
+
+  .nav-wrap ul.dropdown-menu {
+    display: block;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .nav-wrap ul.dropdown-menu li a {
+    background: #111;
+    border: none;
+    color: #8b8b8b;
+  }
+
+  .nav-wrap ul.dropdown-menu li a:hover {
+    color: #ccc;
+  }
+
+  .arrow {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  .no-pad-menu { padding: 0;}
+
+}
