@@ -35,7 +35,7 @@ input[type='password']:focus, textarea:focus, select:focus {
   outline: 0;
 }
 
-label, legend { display: block; margin-bottom: 10px; font-weight: bold; }
+label, legend { display: block; margin: 12px 0 10px 0; font-weight: bold; }
 fieldset { padding: 0; border-width: 0; }
 input[type='checkbox'], input[type='radio'] { display: inline; }
 label > .label-body {

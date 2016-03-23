@@ -1,9 +1,6 @@
 // main: alux.scss
 /* Grid (Mobile First) */
 
-
-$gutter : 20px; /* Gutter of the grid */
-
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -103,6 +100,20 @@ $gutter : 20px; /* Gutter of the grid */
 }
 
 @media (max-width: 767px) {
+
+  .grid {
+    padding: $gutter-mobile ( $gutter-mobile / 2 ) 0 ( $gutter-mobile / 2  );
+  }
+
+
+  .grid.empty{ padding: 0  $gutter-mobile;}
+
+
+  /* Gutter 20px */
+  [class*='col-'] {
+
+    padding: 0 ( $gutter-mobile / 2 );
+  }
 
   .small-100 { width: 100%; }
   .small-50 { width: 50%; }
