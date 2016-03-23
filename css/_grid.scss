@@ -1,6 +1,9 @@
 // main: alux.scss
 /* Grid (Mobile First) */
 
+
+$gutter : 20px; /* Gutter of the grid */
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -10,16 +13,14 @@
 .module {/*  background: #ccc;padding:10px*/ }
 
 .grid {
-  /* background: #eee; */
-  margin: 0 auto 0px auto;
-  max-width: 1200px;
-  /* Gutter */
-  padding: 20px 10px 20px 10px;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: $gutter ( $gutter / 2 ) 0 ( $gutter / 2 );
 }
 
 .grid.full { max-width: 100%; }
-.grid.empty{ padding: 0 20px; background: none!important;}
-.no-pad { padding: 0;  }
+.grid.empty{ padding: 0 $gutter; background: none!important;}
+.no-pad,
 .no-pad [class*='col-']{padding:0;}
 
 .grid:after {
@@ -31,7 +32,7 @@
 /* Gutter 20px */
 [class*='col-'] {
   float: left;
-  padding: 0 10px 0 10px;
+  padding: 0 ( $gutter / 2 );
 }
 
 /* Content Columns */
@@ -102,8 +103,6 @@
 }
 
 @media (max-width: 767px) {
-
-  [class*='col-'] { width: 100%; margin:0; } /* linearize everything  and ovveride push class */
 
   .small-100 { width: 100%; }
   .small-50 { width: 50%; }
