@@ -17,9 +17,8 @@
   padding: 20px 10px 20px 10px;
 }
 
-.grid-full { max-width: 100%; }
-.grid-empty{ padding: 20px; }
-.grid-tran{ background: none !important; padding:0 20px!important; }
+.grid.full { max-width: 100%; }
+.grid.empty{ padding: 0 20px; background: none!important;}
 .no-pad { padding: 0;  }
 .no-pad [class*='col-']{padding:0;}
 
