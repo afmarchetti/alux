@@ -27,6 +27,8 @@ overflow:auto;
 
 	@media (max-width: 767px) {
 
-	#features span,
-	#mobile span{display: none}
+		#show-classes,
+		#features span,
+		.classes-hide,
+		#mobile span{display: none; }
 	}

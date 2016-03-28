@@ -12,11 +12,11 @@
 .grid {
   margin: 0 auto;
   max-width: 1250px;
-  padding: $gutter ( $gutter / 2 ) 0 ( $gutter / 2 );
+  padding: $gutter ( $gutter / 2 ) $gutter ( $gutter / 2 );
 }
 
 .grid.full { max-width: 100%; }
-.grid.empty{ padding: 0 $gutter; background: none!important;}
+.grid.no-col{padding: $gutter; background: none;}
 .no-pad,
 .no-pad [class*='col-']{padding:0;}
 
@@ -79,48 +79,51 @@
 .push-1-5 { margin-left: 20%; }
 .push-2-5 { margin-left: 40%; }
 .push-3-5 { margin-left: 60%; }
-// .push-4-5 { margin-left: 80%; }
+.push-4-5 { margin-left: 80%; }
 
 .push-1-8 { margin-left: 12.5%; }
 .push-3-8 { margin-left: 37.5%; }
-// .push-5-8 { margin-left: 62.5%; }
-// .push-6-8 { margin-left: 75%; }
-// .push-7-8 { margin-left: 87.5%; }
-
+.push-5-8 { margin-left: 62.5%; }
+.push-6-8 { margin-left: 75%; }
+.push-7-8 { margin-left: 87.5%; }
 
 @media (max-width: 991px) {
 
-  [class*='medium-'] { margin:0; }  /* override push class */
+  [class*='tab-'] { margin:0; }  /* override push class */
 
-  .medium-100 { width: 100%; }
-  .medium-66 { width: 66.66%; }
-  .medium-50 { width: 50%;}
-  .medium-33 { width: 33.33%; }
-  .medium-25 { width: 25%; }
+  .tab-100 { width: 100%; }
+  .tab-66 { width: 66.66%; }
+  .tab-50 { width: 50%; }
+  .tab-33 { width: 33.33%; }
+  .tab-25 { width: 25%; }
+
+  [class*='tab-'].push-50{margin-left: 50%;}
+
 }
+
 
 @media (max-width: 767px) {
 
-  .grid {
-    padding: $gutter-mobile ( $gutter-mobile / 2 ) 0 ( $gutter-mobile / 2  );
-  }
-
-
-  .grid.empty{ padding: 0  $gutter-mobile;}
-
+  .grid { padding: $gutter-mobile ( $gutter-mobile / 2 )  $gutter-mobile ( $gutter-mobile / 2  ); }
+  .grid.no-col{ padding: $gutter-mobile;}
 
   /* Gutter 20px */
-  [class*='col-'] {
+  [class*='col-'] { padding: 0 ( $gutter-mobile / 2 ); }
 
-    padding: 0 ( $gutter-mobile / 2 );
-  }
+  .sma-100,
+  [class*='col-'] { width: 100%; margin: 0}
+  .sma-50 { width: 50%; }
+  .sma-66 { width: 66.66%; }
+  .sma-33 { width: 33.33%; }
 
-  .small-100 { width: 100%; }
-  .small-50 { width: 50%; }
-  .small-66 { width: 66.66%; }
-  .small-33 { width: 33.33%; }
+
+
+
+
 
 }
+
+
 
 //
 //
