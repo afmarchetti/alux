@@ -6,5 +6,5 @@ ALUX is a Superlight framework (less than 10K for create amazing responsive appl
 
 The framework is buildt with HTML/CSS and pure Javascript.
 
-#Grid, Animated Navigation, Typography, Forms, Buttons & more.
-> Easy, Light, Customizable 
+Grid, Animated Navigation, Typography, Forms, Buttons & more.
+> Easy, Light, Customizable
