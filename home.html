@@ -4,69 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALUX - Framework</title>
-  <link rel="stylesheet" href="css/alux.min.css">
-	<style>
-			.hero-image{background: #eee; padding: 100px 0; margin-bottom: 40px}
-      p{margin-bottom: 40px;}
-	</style>
+  <link rel="stylesheet" href="css/alux.min.css" type="text/css">
+  <style type="text/css">
+	.hero-image{background: #eee; padding: 100px 0; margin-bottom: 40px}
+  p{margin-bottom: 40px;}
+  </style>
 </head>
+
 <body>
+  <div class="nav-wrap">
+    <div class="grid no-pad-menu">
+      <div class="nav-header">
+        <a href="#" class="logo">ALUX</a>
+        <div class="tog" data-target="menu-sub-2"></div>
+      </div>
+      <nav>
+        <ul id="menu-sub-2" class="primary">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">Products</a>
+            <div class="arrow animate"></div>
+            <ul class="dropdown-menu">
+              <li><a href="">Shoes</a></li>
+              <li><a href="">Jacket</a></li>
+              <li><a href="">Hat</a></li>
+              <li><a href="">Coat</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">Services</a>
+            <div class="arrow animate"></div>
+            <ul class="dropdown-menu">
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Customize</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-	<div class="nav-wrap">
-	  <div class="grid no-pad-menu">
-	    <div class="nav-header">
-	      <a href="#" class="logo">ALUX</a>
-	      <div class="tog" data-target="menu-sub-2">
-	        <span class="animate"></span>
-	        <span class="span-middle animate"></span>
-	        <span class="animate"></span>
-	      </div>
-	    </div>
-	    <nav>
-	      <ul id="menu-sub-2" class="primary">
-	        <li class="dropdown">
-	          <a href="#" data-toggle="dropdown">Products <div class="arrow animate"></div></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="">Shoes</a></li>
-	            <li><a href="">Jacket</a></li>
-	            <li><a href="">Hat</a></li>
-	            <li><a href="">Coat</a></li>
-	          </ul>
-	        </li>
-	        <li class="dropdown">
-	          <a href="#" data-toggle="dropdown">Services <div class="arrow animate"></div></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="">Delivery</a></li>
-	            <li><a href="">Support</a></li>
-	            <li><a href="">Customize</a></li>
-	          </ul>
-	        </li>
-	        <li><a href="#">About</a></li>
-	        <li><a href="#">Contact</a></li>
-	      </ul>
-	    </nav>
-	  </div>
-	</div>
-	<div class="clearfix"></div>
+  <div class="clearfix"></div>
 
+  <div class="hero-image">
+    <section class="grid" id="cover">
+      <h1>Home Page Cover Message</h1>
+      <h2>Subtitle of the cover full width</h2>
+      <p>Lorem ipsum text</p><a class="button" href="">Call to action</a>
+    </section>
+  </div>
 
-<div class="hero-image">
-	<section class="grid" id="cover">
-
-	    <h1>Home Page Cover Message</h1>
-			<h2>Subtitle of the cover full width</h2>
-			<p>Lorem ipsum text</p>
-			<a class="button" href="">Call to action</a>
-
-	</section>
-</div>
-
-	<section class="grid" id="features">
-
-	</section>
-
-
-
-<script src="js/alux.min.js"></script>
+  <section class="grid" id="features"></section><script src="js/alux.min.js" type="text/javascript">
+</script>
 </body>
 </html>
