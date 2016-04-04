@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALUX - Framework</title>
-  <link rel="stylesheet" href="css/alux.min.css">
+  <link rel="stylesheet" href="alux.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -224,7 +224,7 @@
 
 <div class="grid no-col" id="push">
   <h2>05. Push Columns</h2>
-  <p>You can push a column until 3 columns in every base grid. The push system works on Tablet and Desktop.</p>
+  <p>You can push a column in every base grid. The push system works on Tablet and Desktop.</p>
 </div>
 <div class="grid">
   <div class="col-3-4 push-1-4">
@@ -240,9 +240,26 @@
 <hr class="spacer">
 
 
+<div class="grid no-col" id="pull">
+  <h2>06. Push & Pull Columns</h2>
+  <p>You can push & pull columns in every base grid. The pull system works on Tablet and Desktop. </p>
+</div>
+<div class="grid">
+  <div class="col-3-4 push-1-4">
+    <div class="module"> Content <span class="classes-hide"> .col-3-4 push-1-4</span></div>
+  </div>
+  <div class="col-1-4 pull-3-4">
+    <div class="module">Sidebar <span class="classes-hide"> .col-1-4 pull-3-4</span></div>
+  </div>
+
+</div>
+
+<hr class="spacer">
+
+
 <div class="grid no-col" id="mobile-grid">
-  <h2>06. Mobile Options (try resize the Screen)</h2>
-  <p>The colums on <strong>Smartphone</strong> are 100% of the width.  The colums on <strong>Tablet</strong> are the same of the desktop. </br> You can <strong>change the width of a columns</strong> in Smartphone & Tablet view with the classes <strong>.sma-%</strong> and <strong>.tab-%</strong> (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
+  <h2>07. Mobile Options (try resize the Screen)</h2>
+  <p>The colums on <strong>Smartphone</strong> are 100% of the width.  The colums on <strong>Tablet</strong> are the same of the desktop. </br> You can <strong>overwrite the default width of a columns</strong> in Smartphone & Tablet view with the classes <strong>.sma-%</strong> and <strong>.tab-%</strong> (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
 </div>
 <div class="grid" id="mobile">
   <div class="col-1-4 tab-100">
@@ -263,7 +280,7 @@
 <hr class="spacer">
 
 <div class="grid no-col" id="mobile-grid">
-  <h2>07. Push Mobile (try resize the Screen)</h2>
+  <h2>08. Push Mobile (try resize the Screen)</h2>
   <p>You can <strong>push</strong> a column on mobile with class <strong>.tab-push-%</strong> on <strong>Tablet</strong> and <strong>.sma-push-%</strong> on <strong>Smartphone</strong>. (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
 </div>
 <div class="grid" id="mobile">
@@ -285,7 +302,7 @@
 <hr class="spacer">
 
 <div class="grid no-col">
-  <h2>08. Grid No Col</h2>
+  <h2>09. Grid No Col</h2>
   <p>You can set a grid with no col to contain you content.</p>
 </div>
 
@@ -297,7 +314,7 @@
 
 
 <div class="grid no-col" id="grid">
-  <h2>09. Menu in Grid</h2>
+  <h2>10. Menu in Grid</h2>
   <p>The menu have same width of the grid</p>
 </div>
 <div class="grid no-pad-menu">
@@ -342,7 +359,7 @@
 
 
 <div class="grid no-col" id="full-grid">
-  <h2>10. Full Width Menu in Grid</h2>
+  <h2>11. Full Width Menu in Grid</h2>
   <p> The Menu have same width of the grid but the container is full width.</p>
 </div>
 <div class="nav-wrap">
@@ -387,7 +404,7 @@
 
 
 <div class="grid no-col" id="full-grid">
-  <h2>11. Typography</h2>
+  <h2>12. Typography</h2>
   <p>The typography system is simple. You have seven classes to change the dimension of the titles.</p>
 
 </div>
@@ -489,7 +506,7 @@
 
 
 <div class="grid no-col">
-  <h2>12. Form</h2>
+  <h2>13. Form</h2>
   <p>All elements in the form are full width.</p>
 
   <!-- The above form looks like this -->
@@ -518,7 +535,7 @@
 
 
 <div class="grid no-col">
-  <h2>13. Button</h2>
+  <h2>14. Button</h2>
   <p>The button have one size.</p>
 
   <a href="#" class="button"> Button</a>
@@ -529,7 +546,7 @@
 
 
 <div class="grid no-col">
-    <h2>14. Animations</h2>
+    <h2>15. Animations</h2>
     <p>With the class animate you can animate all the css property. For example background-color in the buttons.</p>
 
     <a href="#" class="button animate"> Button</a>
@@ -540,7 +557,7 @@
 
 
 <div class="grid no-col">
-    <h2>15. Responsive Images</h2>
+    <h2>16. Responsive Images</h2>
     <p>To make images responsive use the class: img-res.</p>
 
     <img class="img-res" src="image.jpg" alt="New York City">
@@ -551,7 +568,7 @@
 
 
 <div class="grid no-col">
-  <h2>16. Lines & Spacer</h2>
+  <h2>17. Lines & Spacer</h2>
   <p>To spacer the content you can use hr tag or hr tag with class spacer for trasparent hr.</p>
   <hr>
   <hr class="spacer">
@@ -562,7 +579,7 @@
 
 
 <div class="grid no-col">
-    <h2>17. Margin</h2>
+    <h2>18. Margin</h2>
     <p>You can use margin-bottom or margin-top classes to add margin to a element.</p>
 
   <div class="margin-top">Element with margin top.</div>
@@ -576,7 +593,7 @@
 
 
 <div class="grid no-col">
-  <h2>18. Text Align</h2>
+  <h2>19. Text Align</h2>
   <p>You can use text-left, text-center or text-right class to align text.</p>
 
   <p class="text-left">Element with text left.</p>

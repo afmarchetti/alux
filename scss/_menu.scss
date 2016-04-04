@@ -41,8 +41,8 @@ ul.dropdown-menu li { float: none; margin: 0; }
   right: 18px;
   position: absolute;
   background-color: white;
-  -webkit-mask: url(../arrow.svg) no-repeat 50% 50%;
-          mask: url(../arrow.svg) no-repeat 50% 50%;
+  -webkit-mask: url(arrow.svg) no-repeat 50% 50%;
+          mask: url(arrow.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
           mask-size: cover;
   -webkit-transform: rotate(90deg);
