@@ -238,6 +238,14 @@
     <div class="module"> 1/2 <span class="classes-hide"> .col-1-2 </span></div>
   </div>
 </div>
+<pre><code>&lt;div class=&quot;grid no-pad full&quot;&gt;
+  &lt;div class=&quot;col-1-2&quot;&gt;
+    1/2
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-2&quot;&gt;
+     1/2
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
 <hr class="spacer">
@@ -258,6 +266,12 @@
   </div>
 </div>
 
+<pre><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;col-3-4 push-1-4&quot;&gt;
+    3/4
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
 <hr class="spacer">
 
 
@@ -272,8 +286,16 @@
   <div class="col-1-4 pull-3-4">
     <div class="module">Sidebar <span class="classes-hide"> .col-1-4 pull-3-4</span></div>
   </div>
-
 </div>
+<pre><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;col-3-4 push-1-4&quot;&gt;
+    Content
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 pull-3-4&quot;&gt;
+    Sidebar
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
 
 <hr class="spacer">
 
@@ -296,13 +318,27 @@
     <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50 sma-50</span></div>
   </div>
 </div>
+<pre><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;col-1-4 tab-100&quot;&gt;
+    1/4
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 tab-100&quot;&gt;
+    1/4
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 tab-50 sma-50&quot;&gt;
+    1/4
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 tab-50 sma-50&quot;&gt;
+    1/4
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
 <hr class="spacer">
 
 <div class="grid no-col" id="mobile-grid">
   <h2>08. Push Mobile (try resize the Screen)</h2>
-  <p>You can overwrite the normal <strong>push</strong> on tablet with the class <strong>.tab-push-%</strong>, on <strong>Smartphone</strong> with <strong>.sma-push-%</strong> . (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
+  <p>You can overwrite the normal <strong>push</strong> on <strong>Tablet</strong> with the class <strong>.tab-push-%</strong>, on <strong>Smartphone</strong> with the class <strong>.sma-push-%</strong> . (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
 </div>
 <div class="grid" id="mobile">
   <div class="col-1-4 tab-100">
@@ -311,13 +347,27 @@
   <div class="col-1-4 tab-50 tab-push-50">
     <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50 tab-push-50</span></div>
   </div>
-  <div class="col-1-4 tab-50 sma-33 sma-push-66">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50 sma-33 sma-push-66</span></div>
+  <div class="col-1-4 tab-100 sma-33 sma-push-66">
+    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-100 sma-33 sma-push-66</span></div>
   </div>
   <div class="col-1-4 tab-50">
     <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50</span></div>
   </div>
 </div>
+<pre><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;col-1-4 tab-100&quot;&gt;
+    1/4
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 tab-50 tab-push-50&quot;&gt;
+    1/4
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 tab-100 sma-33 sma-push-66&quot;&gt;
+    1/4
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-4 tab-50&quot;&gt;
+    1/4
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
 <hr class="spacer">
@@ -330,6 +380,9 @@
 <div class="grid no-col" style="background: #eee">
   No Colums only the container <span class="classes-hide"> .grid .no-col</span>
 </div>
+<pre><code>&lt;div class=&quot;grid no-col&quot;&gt;
+  No Colums only the container
+&lt;/div&gt;</code></pre>
 
 <hr class="spacer">
 
@@ -373,6 +426,41 @@
     </nav>
   </div>
 </div>
+<pre><code>&lt;div class=&quot;grid no-pad-menu&quot;&gt;
+  &lt;div class=&quot;nav-wrap&quot;&gt;
+    &lt;div class=&quot;nav-header&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;ALUX&lt;/a&gt;
+      &lt;div class=&quot;tog&quot; data-target=&quot;menu-sub&quot;&gt;
+        &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;span-middle animate&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+      &lt;ul id=&quot;menu-sub&quot; class=&quot;primary&quot;&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Shoes&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Jacket&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Hat&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Coat&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Services &lt;div class=&quot;arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Delivery&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Customize&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <div class="clearfix"></div>
 
 
@@ -420,6 +508,21 @@
 </div>
 <div class="clearfix"></div>
 
+<pre><code>&lt;div class=&quot;nav-wrap&quot;&gt;
+  &lt;div class=&quot;grid no-pad-menu&quot;&gt;
+    &lt;div class=&quot;nav-header&quot;&gt;
+     ...
+    &lt;/div&gt;
+    &lt;nav&gt;
+      &lt;ul id=&quot;menu-sub-2&quot; class=&quot;primary&quot;&gt;
+       ....
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
 
 <hr class="spacer">
 
@@ -441,6 +544,17 @@
   <h4>Header four</h4>
   <h5>Header five</h5>
   <h6>Header six</h6>
+
+  <pre><code>
+  .gigantic   { font-size: 110px; line-height: 1.09; letter-spacing: -2px; }
+  .huge, h1   { letter-spacing: -1px; font-size: 48px; line-height: 1.05; }
+  .large, h2  { font-size: 32px; line-height: 1.0; }
+  .bigger, h3 { font-size: 26px; line-height: 1.0; }
+  .big, h4    { font-size: 22px; line-height: 1.0; }
+  .normal, h5 { font-size: 18px; line-height: 1.0; }
+  .small, h6, small { font-size: 14px; line-height: 1.0; }
+  
+</code></pre>
 
   <hr class="spacer"/>
 
@@ -560,6 +674,9 @@
   <p>The button have one size.</p>
 
   <a href="#" class="button"> Button</a>
+  <pre><code>
+  &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt; Button&lt;/a&gt;
+  </code></pre>
 </div>
 
 
@@ -568,9 +685,12 @@
 
 <div class="grid no-col">
     <h2>15. Animations</h2>
-    <p>With the class animate you can animate all the css property. For example background-color in the buttons.</p>
+    <p>With the class <strong>.animate</strong> you can animate all the css property. For example background-color in the buttons.</p>
 
     <a href="#" class="button animate"> Button</a>
+    <pre><code>
+  &lt;a href=&quot;#&quot; class=&quot;button animate&quot;&gt; Button&lt;/a&gt;
+    </code></pre>
 </div>
 
 
@@ -580,8 +700,11 @@
 <div class="grid no-col">
     <h2>16. Responsive Images</h2>
     <p>To make images responsive use the class: img-res.</p>
-
     <img class="img-res" src="image.jpg" alt="New York City">
+    <pre><code>
+  &lt;img class=&quot;img-res&quot; src=&quot;image.jpg&quot; alt=&quot;New York City&quot;&gt;
+    </code></pre>
+
 </div>
 
 
@@ -593,6 +716,9 @@
   <p>To spacer the content you can use hr tag or hr tag with class spacer for trasparent hr.</p>
   <hr>
   <hr class="spacer">
+  <pre><code>
+  &lt;hr class=&quot;spacer&quot;&gt;
+  </code></pre>
 </div>
 
 
@@ -606,6 +732,11 @@
   <div class="margin-top">Element with margin top.</div>
   <div class="margin-bottom">Element with margin bottom.</div>
   <div class="margin-top">Element with margin top.</div>
+  <pre><code>
+  &lt;div class=&quot;margin-top&quot;&gt;Element with margin top.&lt;/div&gt;
+  &lt;div class=&quot;margin-bottom&quot;&gt;Element with margin bottom.&lt;/div&gt;
+  &lt;div class=&quot;margin-top&quot;&gt;Element with margin top.&lt;/div&gt;
+  </code></pre>
 
 </div>
 
@@ -620,6 +751,11 @@
   <p class="text-left">Element with text left.</p>
   <p class="text-center">Element with text center.</p>
   <p class="text-right">Element with text right.</p>
+  <pre><code>
+  &lt;p class=&quot;text-left&quot;&gt;Element with text left.&lt;/p&gt;
+  &lt;p class=&quot;text-center&quot;&gt;Element with text center.&lt;/p&gt;
+  &lt;p class=&quot;text-right&quot;&gt;Element with text right.&lt;/p&gt;
+  </code></pre>
 </div>
 
 
