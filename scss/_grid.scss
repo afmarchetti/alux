@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-.module {/*  background: #ccc;padding:10px*/ }
+.cover{background: #eee;padding: 70px 0; margin-bottom: 20px;}
 
 .grid {
   margin: 0 auto;
@@ -116,7 +116,7 @@
 @media (max-width: 991px) {
 
   [class*='tab-'] { left:0; right:0;}  /* override push class if use tab */
-
+  [class*='col-'] { margin-bottom: 20px; }
   .tab-100 { width: 100%; }
   .tab-75 { width: 75%; }
   .tab-66 { width: 66.66%; }
@@ -139,7 +139,7 @@
   .grid.no-col{ padding: $gutter-mobile;}
 
   /* Gutter 20px */
-  [class*='col-'] { padding: 0 ( $gutter-mobile / 2 ); }
+  [class*='col-'] { padding: 0 ( $gutter-mobile / 2 );}
 
   .sma-100,
   [class*='col-'] { width: 100%; left: 0; right: 0;}

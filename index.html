@@ -87,7 +87,7 @@
   <h1>ALUX framework <small>1.0</small> </h1><h2>The Semantic Framework for Awesome Light User Experience</h1>
   <p>ALUX is a Superlight framework <strong>(less than 10K)</strong> for create amazing responsive application.<br/>
   The framework is buildt with HTML/CSS and <strong>pure</strong> Javascript. Grid, Animated Navigation, Typography, Forms, Buttons & more.</p>
-  <p><strong> Easy, Light, Customizable </strong></p>
+  <p><strong> Easy, Light, Customizable</strong>. Example: <a href="home-semantic-onepage.html">One Page Structure</a></p>
   <a href="https://github.com/afmarchetti/alux" class="button animate">DOWNLOAD</a>  <a href="https://github.com/afmarchetti/alux" class="button animate">GIT HUB</a>
 </div>
 
@@ -165,6 +165,15 @@
   </div>
 </div>
 
+<pre><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;col-1-2&quot;&gt;
+        1/2
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-2&quot;&gt;
+       1/2
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
 
 
 <hr class="spacer">
@@ -183,6 +192,10 @@
     </aside>
 </div>
 
+<pre><code>&lt;div class=&quot;grid&quot;&gt;<br/>    &lt;article class=&quot;col-2-3&quot;&gt;<br/>        2/3 article <br/>    &lt;/article&gt;<br/>    &lt;aside class=&quot;col-1-3&quot;&gt;<br/>       1/3 sidebar <br/>    &lt;/aside&gt;<br/>&lt;/div&gt;</code></pre>
+
+
+
 
 <hr class="spacer">
 
@@ -199,6 +212,14 @@
     <div class="module">1/2 <span class="classes-hide"> .col-1-2 </span></div>
   </div>
 </div>
+<pre><code>&lt;div class=&quot;grid full&quot;&gt;
+  &lt;div class=&quot;col-1-2&quot;&gt;
+     1/2
+  &lt;/div&gt;
+  &lt;div class=&quot;col-1-2&quot;&gt;
+    1/2
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
 <hr class="spacer">
@@ -281,7 +302,7 @@
 
 <div class="grid no-col" id="mobile-grid">
   <h2>08. Push Mobile (try resize the Screen)</h2>
-  <p>You can <strong>push</strong> a column on mobile with class <strong>.tab-push-%</strong> on <strong>Tablet</strong> and <strong>.sma-push-%</strong> on <strong>Smartphone</strong>. (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
+  <p>You can overwrite the normal <strong>push</strong> on tablet with the class <strong>.tab-push-%</strong>, on <strong>Smartphone</strong> with <strong>.sma-push-%</strong> . (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
 </div>
 <div class="grid" id="mobile">
   <div class="col-1-4 tab-100">
