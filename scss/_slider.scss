@@ -1,0 +1,51 @@
+// main: alux.scss
+/**
+ * wallop.css
+ *
+ * @fileoverview Default styles for wallop – recommended
+ *
+ * @author Pedro Duarte
+ * @author http://pedroduarte.me/wallop
+ */
+
+ .Wallop { position: relative; overflow: hidden}
+ .Wallop-item { visibility: hidden; position: absolute; top: 0; left: 0; width: 100%;}
+ .Wallop-item--current { visibility: visible; position: relative; }
+
+ .Wallop-caption{
+   z-index: 100;
+   position: absolute;
+   bottom:40px;
+   width: 70%;
+   margin: 0 15%;
+   color:#fff;
+   text-align: center;
+   text-shadow: 0px 0px 5px #000;
+ }
+
+.Wallop-caption h1,
+.Wallop-caption h2{color:#fff;}
+
+/* Slider Arrow */
+.Wallop-arrow {
+  width:30px;
+  position: absolute;
+  z-index: 10;
+  top:50%;
+  left:20px;
+  .arrow{
+    top:-30px;
+    left:0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor:pointer;
+    box-shadow: 10px 10px 5px #888888;
+    text-indent: -9999px;
+    -webkit-transform: rotate(180deg);
+           transform: rotate(180deg);
+  }
+}
+
+.Wallop-arrow.Wallop-buttonNext{ right:20px;left:auto; }
+.Wallop-arrow.Wallop-buttonNext .arrow{ -webkit-transform: rotate(0deg); transform: rotate(0deg);}
