@@ -54,9 +54,10 @@ p { margin-bottom: 20px; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
-.img-res { width: 100%; height: auto; margin-bottom: 20px; }
+.img-res { width: 100%; height: auto; margin-bottom: 20px;vertical-align: middle;}
 .margin-top{margin-top:40px}
 .margin-bottom{margin-bottom:40px}
+.no-margin{margin:0;padding:0;}
 
 /* Blockquote */
 blockquote {
