@@ -9,11 +9,11 @@ body {
 
 .gigantic   { font-size: 110px; line-height: 1.09; letter-spacing: -2px; }
 .huge, h1   { letter-spacing: -1px; font-size: 48px; line-height: 1.05; }
-.large, h2  { font-size: 32px; line-height: 1.0; }
-.bigger, h3 { font-size: 26px; line-height: 1.0; }
-.big, h4    { font-size: 22px; line-height: 1.0; }
-.normal, h5 { font-size: 18px; line-height: 1.0; }
-.small, h6, small { font-size: 14px; line-height: 1.0; }
+.large, h2  { font-size: 32px; line-height: 1.14; }
+.bigger, h3 { font-size: 26px; line-height: 1.38; }
+.big, h4    { font-size: 22px; line-height: 1.38; }
+.normal, h5 { font-size: 18px; line-height: 1.38; }
+.small, h6, small { font-size: 14px; line-height: 1.2; }
 
 /* Title color */
 .gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6 {
@@ -39,13 +39,14 @@ a:focus, a:hover {
   font-weight: bold;
   border: none;
   border-radius: 4px;
-  padding: 8px 25px;
+  padding: 12px 25px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
+  text-shadow: none;
 }
 .button:hover {
-  background: #2b2b2b;
+  background: #26c6da;
   color: #fff;
 }
 
