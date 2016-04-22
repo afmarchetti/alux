@@ -44,8 +44,8 @@ Once you have downloaded Alux, the first thing you need to do is include the CSS
 For all the Details & the Docs please visit:[http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 ## Credits
-For the Slider Alux use Wallop Library by Pedro Duarte: (http://pedroduarte.me/wallop)
-The Grid System is an evolution of a Chris Coyer Article: (http://css-tricks.com/dont-overthink-it-grids/)
+- For the Slider Alux use Wallop Library by Pedro Duarte: (http://pedroduarte.me/wallop)
+- The Grid System is an evolution of a Chris Coyer Article: (http://css-tricks.com/dont-overthink-it-grids/)
 
 ## Licensing
 MIT © 2016 [Andrea Marchetti](http://www.marchettidesign.net/)
