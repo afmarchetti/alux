@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALUX &middot; The Semantic Fast and Light responsive front-end Framework.</title>
+  <title>ALUX &middot; The Fast Semantic Framework for Awesome Light User Experience.</title>
   <link rel="stylesheet" href="alux.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -85,10 +85,12 @@
 
 <div class="grid trasparent">
   <div class="col-1-2">
-    <h1>ALUX framework <small>1.0</small> </h1><h2>The Fast Semantic Framework for Awesome Light User Experience</h1>
-    <p>ALUX is a Light Framework <strong>(20K)</strong> for create amazing Responsive Web App.<br/>
-    The <strong>Framework</strong> is buildt with HTML/CSS and <strong>pure</strong> Javascript. <br/> No dependencies, no jQuery but: <br/> Grids, Sliders, Menus with Animations, Typography, Forms, Buttons & more.</p>
-    <p><strong> Easy, Light, Fast, Customizable</strong>.<br/> Examples: <a href="home-semantic-onepage.html" target="_blank">One Page Landing</a> - <a href="home-semantic-slider.html" target="_blank">Home with Slider</a></p>
+    <h1>ALUX framework <small>1.0</small></h1>
+    <h2>The Fast Semantic Framework for Awesome Light User Experience</h1>
+    <p>ALUX is a Lightweight Framework <strong>(20K)</strong> for Creating Super-Fast and Beautifully Responsive Web Apps.<br/>
+    <strong>The Framework is built with HTML/CSS and pure Javascript</strong>.  <br/>Dependencies Free, no jQuery but with a wide range of features:
+    <br/> Grids, Sliders, Menus, Animations, Typography, Forms, Buttons & more.</p>
+    <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a href="home-semantic-onepage.html" target="_blank">One Page Landing</a> - <a href="home-semantic-slider.html" target="_blank">Home with Slider</a></p>
     <a href="https://github.com/afmarchetti/alux" class="button animate">DOWNLOAD</a>  <a href="https://github.com/afmarchetti/alux" class="button animate">GIT HUB</a>
   </div>
   <div class="col-1-2">
@@ -97,13 +99,21 @@
   </div>
 </div>
 
-
-
+<div class="grid no-col">
+  <h2>Usage</h2>
+  <p>Once you have downloaded <strong>Alux</strong>, the first thing you need to do is include the <strong>CSS </strong>and the <strong>JavaScript</strong>.</p>
+  <strong>CSS</strong>
+  <pre><code>&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/alux.min.css&quot;&gt;
+&lt;/head&gt;</code></pre>
+  <strong>Javascript</strong>
+  <pre><code>&lt;script src=&quot;path/to/alux.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+</div>
 
 
 <div class="grid no-col">
   <h2>01. Multiple Grids</h2>
-  <p>The grid sistem use fractions to separate the width of grid in columns. For example 1/2 of the width is .col-1-2. You can set <strong>2/3/4/5/8 Columns</strong> Grid. </p>
+  <p>The grid system use fractions to define column widths within the grid. For example: 1/2 of the width is .col-1-2. You can set <strong>2/3/4/5/8 Columns</strong> Grid. </p>
 </div>
 
 <div class="grid">
@@ -208,7 +218,7 @@
 
 <div class="grid no-col" id="full">
   <h2>03. Full Width Grid</h2>
-  <p>The grid occupy the entire page width.</p>
+  <p>For a grid using the full width of the screen, use: </p>
 </div>
 <div class="grid full">
   <div class="col-1-2">
@@ -233,7 +243,7 @@
 
 <div class="grid no-col">
   <h2>04. No paddding Full Width Grid</h2>
-  <p>The grid doesn't have padding and is full width.</p>
+  <p>For a full width grid with no padding, use:</p>
 </div>
 
 <div class="grid no-pad full">
@@ -259,7 +269,7 @@
 
 <div class="grid no-col" id="push">
   <h2>05. Push Columns</h2>
-  <p>You can push a column in every base grid. The push system works on Tablet and Desktop.</p>
+  <p>ALUX allows you to <strong>push</strong> columns in every base grid. The push system works on both Tablet and Desktop.</p>
 </div>
 <div class="grid">
   <div class="col-3-4 push-1-4">
@@ -283,7 +293,7 @@
 
 <div class="grid no-col" id="pull">
   <h2>06. Push & Pull Columns</h2>
-  <p>You can push & pull columns in every base grid. The pull system works on Tablet and Desktop. </p>
+  <p>You can push <strong>& pull</strong> columns in every base grid. The pull system works on both Tablet and Desktop. </p>
 </div>
 <div class="grid">
   <div class="col-3-4 push-1-4">
@@ -308,7 +318,7 @@
 
 <div class="grid no-col" id="mobile-grid">
   <h2>07. Mobile Options (try resize the Screen)</h2>
-  <p>The colums on <strong>Smartphone</strong> are 100% of the width.  The colums on <strong>Tablet</strong> are the same of the desktop. </br> You can <strong>overwrite the default width of a columns</strong> in Smartphone & Tablet view with the classes <strong>.sma-%</strong> and <strong>.tab-%</strong> (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
+  <p>The columns on Smartphone are 100% of the width. The columns on Tablet are the same of the desktop.  </br> You can <strong>overwrite the default width of a columns</strong> on the Smartphone & Tablet view by using the following classes: <strong>.sma-%</strong> and <strong>.tab-%</strong> (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
 </div>
 <div class="grid" id="mobile">
   <div class="col-1-4 tab-100">
@@ -343,7 +353,7 @@
 <hr class="spacer">
 
 <div class="grid no-col" id="mobile-grid">
-  <h2>08. Push Mobile (try resize the Screen)</h2>
+  <h2>08. Push Mobile (try resizing the Screen)</h2>
   <p>You can overwrite the normal <strong>push</strong> on <strong>Tablet</strong> with the class <strong>.tab-push-%</strong>, on <strong>Smartphone</strong> with the class <strong>.sma-push-%</strong> . (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
 </div>
 <div class="grid" id="mobile">
@@ -380,7 +390,7 @@
 
 <div class="grid no-col">
   <h2>09. Grid No Col</h2>
-  <p>You can set a grid with no col to contain you content.</p>
+  <p>You can set a grid with no columns to contain any content you like:</p>
 </div>
 
 <div class="grid no-col" style="background: #eee">
@@ -395,7 +405,7 @@
 
 <div class="grid no-col" id="grid">
   <h2>10. Menu in Grid</h2>
-  <p>The menu have same width of the grid</p>
+  <p>The menus inherit their width from the grid</p>
 </div>
 <div class="grid no-pad-menu">
   <div class="nav-wrap">
@@ -475,7 +485,7 @@
 
 <div class="grid no-col" id="full-grid">
   <h2>11. Full Width Menu in Grid</h2>
-  <p> The Menu have same width of the grid but the container is full width.</p>
+  <p> For a full width menu, ensure that the grid is full width (see point <strong>.03</strong>)</p>
 </div>
 <div class="nav-wrap">
   <div class="grid no-pad-menu">
@@ -532,7 +542,7 @@
 <div class="grid no-col" id="full-grid">
 
   <h2>12. Slider</h2>
-  <p>The Slider is based on the super light <a href="https://github.com/peduarte/wallop" target="_blank">Wallop Library</a>. You can add varius slide effect and options see the <a href="https://github.com/peduarte/wallop#adding-animations">Wallop Docs</a>.</p>
+  <p>The Slider is based on the super lightweight  <a href="https://github.com/peduarte/wallop" target="_blank">Wallop Library</a>. Which allows you to add various slide effects and options.  For more information, see the <a href="https://github.com/peduarte/wallop#adding-animations">Wallop Docs</a>.</p>
 
   <hr class="spacer">
 
@@ -593,7 +603,7 @@
 
 <div class="grid no-col" id="full-grid">
   <h2>12. Typography</h2>
-  <p>The typography system is simple. You have seven classes to change the dimension of the titles.</p>
+  <p>The typography system is simple. You can use seven classes to change the format of your text.</p>
 
 </div>
 
@@ -735,7 +745,7 @@
 
 <div class="grid no-col">
   <h2>14. Button</h2>
-  <p>The button have one size.</p>
+  <p>The button have one size. To make a button use the class <strong>.button</strong></p>
 
   <a href="#" class="button"> Button</a>
   <pre><code>
@@ -749,8 +759,7 @@
 
 <div class="grid no-col">
     <h2>15. Animations</h2>
-    <p>With the class <strong>.animate</strong> you can animate all the css property. For example background-color in the buttons.</p>
-
+    <p>With the class <strong>.animate</strong> you can animate all css properties. For example background-color in the buttons.</p>
     <a href="#" class="button animate"> Button</a>
     <pre><code>
   &lt;a href=&quot;#&quot; class=&quot;button animate&quot;&gt; Button&lt;/a&gt;
@@ -763,7 +772,7 @@
 
 <div class="grid no-col">
     <h2>16. Responsive Images</h2>
-    <p>To make images responsive use the class: img-res.</p>
+    <p>To make images fully responsive use the class: <strong>.img-res</strong></p>
     <img class="img-res" src="image.jpg" alt="New York City">
     <pre><code>
   &lt;img class=&quot;img-res&quot; src=&quot;image.jpg&quot; alt=&quot;New York City&quot;&gt;
@@ -777,7 +786,7 @@
 
 <div class="grid no-col">
   <h2>17. Lines & Spacer</h2>
-  <p>To spacer the content you can use hr tag or hr tag with class spacer for trasparent hr.</p>
+  <p>To spacer the content you can use <stong>hr</strong> tag or hr tag with class <strong>.spacer</strong> for transparent hr.</p>
   <hr>
   <hr class="spacer">
   <pre><code>
@@ -791,7 +800,7 @@
 
 <div class="grid no-col">
     <h2>18. Margin</h2>
-    <p>You can use margin-bottom or margin-top classes to add margin to a element.</p>
+    <p>To easily add margin to an element you can use the <strong>.margin-bottom</strong> or <strong>.margin-top</strong> classes.</p>
 
   <div class="margin-top">Element with margin top.</div>
   <div class="margin-bottom">Element with margin bottom.</div>
@@ -810,7 +819,7 @@
 
 <div class="grid no-col">
   <h2>19. Text Align</h2>
-  <p>You can use text-left, text-center or text-right class to align text.</p>
+  <p>You can use <strong>.text-left</strong>, <strong>.text-center</strong> or <strong>.text-right</strong> class to align text easily.</p>
 
   <p class="text-left">Element with text left.</p>
   <p class="text-center">Element with text center.</p>
