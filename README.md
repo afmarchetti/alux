@@ -1,13 +1,9 @@
 #ALUX framework
 
-The Semantic Framework to Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
+The Semantic Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
-<<<<<<< HEAD
-###A Light Framework (20K) for create amazing Responsive Web App.
-=======
-A Light Framework (20K) to create amazing Responsive Web Apps.
->>>>>>> gh-pages
 
+###A Light Framework (20K) for creating amazing Responsive Web Apps.
 Presentation, Examples & Docs: [http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 The Framework is build with HTML/CSS and pure Vanilla Javascript.
