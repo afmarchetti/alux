@@ -2,7 +2,7 @@
 
 The Fast Semantic Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
-A Light Framework (20K) for create amazing Responsive Web App.
+###A Light Framework (20K) for create amazing Responsive Web App.
 
 Presentation, Examples & Docs: [http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
