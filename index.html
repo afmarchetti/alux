@@ -35,40 +35,38 @@
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Menu <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Menu in Grid</a></li>
-            <li><a href="">Full Width Menu in Grid</a></li>
+            <li><a href="#menu-grid">Menu in Grid</a></li>
+            <li><a href="#full-menu">Full Width Menu in Grid</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Typo<div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Headings</a></li>
-            <li><a href="">Blockquote</a></li>
-            <li><a href="">Tables</a></li>
-            <li><a href="">Lists</a></li>
-            <li><a href="">Links</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#blockquote">Blockquote</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#links">Links</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Components <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Form</a></li>
-            <li><a href="">Buttons</a></li>
-            <li><a href="">Animation</a></li>
-            <li><a href="">Images Responsive</a></li>
-            <li><a href="">Lines & spacer</a></li>
-            <li><a href="">Margin</a></li>
-            <li><a href="">Text Align</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#animations">Animation</a></li>
+            <li><a href="#responsive-images">Images Responsive</a></li>
+            <li><a href="#lines">Lines & spacer</a></li>
+            <li><a href="#margin">Margin</a></li>
+            <li><a href="#text-align">Text Align</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Layouts <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Examples <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Blog</a></li>
-            <li><a href="">Landing</a></li>
-            <li><a href="home-semantic-mobile.html">Home Page</a></li>
-            <li><a href="">Magazine</a></li>
-            <li><a href="">Full Width</a></li>
+            <li><a href="home-semantic-onepage.html" target="_blank">One Page Landing</a></li>
+            <li><a href="home-semantic-slider.html" target="_blank">Slider Home Page </a></li>
           </ul>
         </li>
         <li><a href="#"> Git Hub </a></li>
@@ -404,7 +402,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="grid">
+<div class="grid no-col" id="menu-grid">
   <h2>10. Menu in Grid</h2>
   <p>The menus inherit their width from the grid</p>
 </div>
@@ -484,7 +482,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="full-grid">
+<div class="grid no-col" id="full-menu">
   <h2>11. Full Width Menu in Grid</h2>
   <p> For a full width menu, ensure that the grid is full width (see point <strong>.03</strong>)</p>
 </div>
@@ -540,7 +538,7 @@
 
 <hr class="spacer">
 
-<div class="grid no-col" id="full-grid">
+<div class="grid no-col" id="slider">
 
   <h2>12. Slider</h2>
   <p>The Slider is based on the super lightweight  <a href="https://github.com/peduarte/wallop" target="_blank">Wallop Library</a>. Which allows you to add various slide effects and options.  For more information, see the <a href="https://github.com/peduarte/wallop#adding-animations">Wallop Docs</a>.</p>
@@ -602,14 +600,14 @@
 
 <hr class="spacer">
 
-<div class="grid no-col" id="full-grid">
+<div class="grid no-col">
   <h2>12. Typography</h2>
   <p>The typography system is simple. You can use seven classes to change the format of your text.</p>
 
 </div>
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="headings">
 
   <p class="gigantic"><strong>Gigantic</strong></p>
 
@@ -631,7 +629,7 @@
 
 </code></pre>
 
-  <hr class="spacer"/>
+  <hr class="spacer" id="blockquote"/>
 
   <h3>Blockquotes</h3>
   <p>Single line blockquote:</p>
@@ -642,7 +640,7 @@
     <cite>Steve Jobs &#8211; Apple Worldwide Developers&#8217; Conference, 1997</cite></p>
   </blockquote>
 
-  <hr class="spacer"/>
+  <hr class="spacer" id="tables"/>
 
   <h3>Tables</h3>
   <table>
@@ -675,7 +673,7 @@
     </tbody>
   </table>
 
-  <hr class="spacer">
+  <hr class="spacer" id="lists">
 
   <h3>Unordered Lists Nested</h3>
   <ul>
@@ -704,7 +702,7 @@
   <h3>Paragraph</h3>
   <p> Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam.</p>
 
-  <hr class="spacer">
+  <hr class="spacer" id="links">
 
   <h3>Link</h3>
   <p> This is an example of a <a title="Apple" href="http://apple.com">link</a>.</p>
@@ -715,7 +713,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="form">
   <h2>13. Form</h2>
   <p>All elements in the form are full width.</p>
 
@@ -744,8 +742,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-  <h2>14. Button</h2>
+<div class="grid no-col" id="buttons">
+  <h2>14. Buttons</h2>
   <p>The button have one size. To make a button use the class <strong>.button</strong></p>
 
   <a href="#" class="button"> Button</a>
@@ -758,7 +756,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="animations">
     <h2>15. Animations</h2>
     <p>With the class <strong>.animate</strong> you can animate all css properties. For example background-color in the buttons.</p>
     <a href="#" class="button animate"> Button</a>
@@ -771,7 +769,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="responsive-images">
     <h2>16. Responsive Images</h2>
     <p>To make images fully responsive use the class: <strong>.img-res</strong></p>
     <img class="img-res" src="image.jpg" alt="New York City">
@@ -785,7 +783,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="lines">
   <h2>17. Lines & Spacer</h2>
   <p>To spacer the content you can use <stong>hr</strong> tag or hr tag with class <strong>.spacer</strong> for transparent hr.</p>
   <hr>
@@ -799,7 +797,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="margin">
     <h2>18. Margin</h2>
     <p>To easily add margin to an element you can use the <strong>.margin-bottom</strong> or <strong>.margin-top</strong> classes.</p>
 
@@ -818,7 +816,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="text-align">
   <h2>19. Text Align</h2>
   <p>You can use <strong>.text-left</strong>, <strong>.text-center</strong> or <strong>.text-right</strong> class to align text easily.</p>
 
