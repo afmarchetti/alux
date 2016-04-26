@@ -23,11 +23,10 @@ body {
 
 /* Link color */
 a, .link-color {
-  color: #26c6da;
+  color: $light-blue;
 }
 a:focus, a:hover {
-  color: #2edaf0;
-  text-decoration: none;
+  color: darken($light-blue , 10%);
 }
 
 /* Button */
