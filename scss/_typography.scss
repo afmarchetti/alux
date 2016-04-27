@@ -102,3 +102,9 @@ hr.spacer { border-top: 1px solid transparent; }
      -moz-transition: all 0.4;
           transition: all 0.4s;
 }
+
+@media (max-width: 767px) {
+
+  .gigantic   { font-size: 74px;}
+
+}
