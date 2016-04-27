@@ -185,13 +185,13 @@ ul.primary li:hover > a { color: #000; }
     border-bottom: none;
   }
 
-  .nav-wrap ul.dropdown-menu li a {
+  .nav-wrap ul.primary ul.dropdown-menu li a {
     background: #111;
     border: none;
     color: #8b8b8b;
   }
 
-  .nav-wrap ul.dropdown-menu li a:hover {
+  .nav-wrap ul.primary ul.dropdown-menu li a:hover {
     color: #ccc;
   }
 
