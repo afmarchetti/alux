@@ -24,53 +24,52 @@
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Grid <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Multiple Grids</a></li>
-            <li><a href="">Semantic Structure</a></li>
-            <li><a href="">Full Width</a></li>
-            <li><a href="">Mobile Options</a></li>
-            <li><a href="">Push</a></li>
+            <li><a href="#multiple-grids">Multiple Grids</a></li>
+            <li><a href="#semantic-structure">Semantic Structure</a></li>
+            <li><a href="#full">Full Width</a></li>
+            <li><a href="#push">Push</a></li>
+            <li><a href="#pull">Push & Pull</a></li>
+            <li><a href="#mobile-grid">Mobile Options</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Menu <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Menu in Grid</a></li>
-            <li><a href="">Full Width Menu in Grid</a></li>
+            <li><a href="#menu-grid">Menu in Grid</a></li>
+            <li><a href="#full-menu">Full Width Menu in Grid</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Typo<div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Headings</a></li>
-            <li><a href="">Blockquote</a></li>
-            <li><a href="">Tables</a></li>
-            <li><a href="">Lists</a></li>
-            <li><a href="">Links</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#blockquote">Blockquote</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#links">Links</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="" data-toggle="dropdown">Components <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Form</a></li>
-            <li><a href="">Buttons</a></li>
-            <li><a href="">Animation</a></li>
-            <li><a href="">Images Responsive</a></li>
-            <li><a href="">Lines & spacer</a></li>
-            <li><a href="">Margin</a></li>
-            <li><a href="">Text Align</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#animations">Animation</a></li>
+            <li><a href="#responsive-images">Images Responsive</a></li>
+            <li><a href="#lines">Lines & spacer</a></li>
+            <li><a href="#margin">Margin</a></li>
+            <li><a href="#text-align">Text Align</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Layouts <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Examples <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
-            <li><a href="">Blog</a></li>
-            <li><a href="">Landing</a></li>
-            <li><a href="home-semantic-mobile.html">Home Page</a></li>
-            <li><a href="">Magazine</a></li>
-            <li><a href="">Full Width</a></li>
+            <li><a href="home-semantic-onepage.html" target="_blank">One Page Landing</a></li>
+            <li><a href="home-semantic-slider.html" target="_blank">Home with Slider</a></li>
           </ul>
         </li>
-        <li><a href="#"> Git Hub </a></li>
+      
       </ul>
     </nav>
   </div>
@@ -108,10 +107,12 @@
 &lt;/head&gt;</code></pre>
   <strong>Javascript</strong>
   <pre><code>&lt;script src=&quot;path/to/alux.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+  <strong>Icon Svg</strong>
+  <p>Afther this add  <a href="arrow.svg">arrow.svg</a> in the project folder. (used in menu & slider)</p>
 </div>
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="multiple-grids">
   <h2>01. Multiple Grids</h2>
   <p>The grid system use fractions to define column widths within the grid. For example: 1/2 of the width is .col-1-2. You can set <strong>2/3/4/5/8 Columns</strong> Grid. </p>
 </div>
@@ -195,7 +196,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="semantic-structure">
   <h2>02. Semantic Structure</h2>
   <p>Add classes to HTML5 Tag for light and semantic markup.</p>
 </div>
@@ -241,7 +242,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
+<div class="grid no-col" id="full-no-pad">
   <h2>04. No paddding Full Width Grid</h2>
   <p>For a full width grid with no padding, use:</p>
 </div>
@@ -403,7 +404,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="grid">
+<div class="grid no-col" id="menu-grid">
   <h2>10. Menu in Grid</h2>
   <p>The menus inherit their width from the grid</p>
 </div>
@@ -483,7 +484,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="full-grid">
+<div class="grid no-col" id="full-menu">
   <h2>11. Full Width Menu in Grid</h2>
   <p> For a full width menu, ensure that the grid is full width (see point <strong>.03</strong>)</p>
 </div>
@@ -539,9 +540,121 @@
 
 <hr class="spacer">
 
-<div class="grid no-col" id="full-grid">
+<div class="grid no-col">
+  <h2>12. Typography</h2>
+  <p>The typography system is simple. You can use seven classes to change the format of your text.</p>
 
-  <h2>12. Slider</h2>
+</div>
+
+
+<div class="grid no-col" id="headings">
+
+  <p class="gigantic"><strong>Gigantic</strong></p>
+
+  <h1>Header one</h1>
+  <h2>Header two</h2>
+  <h3>Header three</h3>
+  <h4>Header four</h4>
+  <h5>Header five</h5>
+  <h6>Header six</h6>
+
+  <pre><code>
+  .gigantic   { font-size: 110px; line-height: 1.09; letter-spacing: -2px; }
+  .huge, h1   { letter-spacing: -1px; font-size: 48px; line-height: 1.05; }
+  .large, h2  { font-size: 32px; line-height: 1.14; }
+  .bigger, h3 { font-size: 26px; line-height: 1.38; }
+  .big, h4    { font-size: 22px; line-height: 1.38; }
+  .normal, h5 { font-size: 18px; line-height: 1.38; }
+  .small, h6, small { font-size: 14px; line-height: 1.2; }
+
+</code></pre>
+
+  <hr class="spacer" id="blockquote"/>
+
+  <h3>Blockquotes</h3>
+  <p>Single line blockquote:</p>
+  <blockquote>Stay hungry. Stay foolish.</blockquote>
+  <p>Multi line blockquote with a cite reference:</p>
+  <blockquote>
+    <p>People think focus means saying yes to the thing you&#8217;ve got to focus on. But that&#8217;s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I&#8217;m actually as proud of the things we haven&#8217;t done as the things I have done. Innovation is saying no to 1,000 things.
+    <cite>Steve Jobs &#8211; Apple Worldwide Developers&#8217; Conference, 1997</cite></p>
+  </blockquote>
+
+  <hr class="spacer" id="tables"/>
+
+  <h3>Tables</h3>
+  <table>
+    <tbody>
+      <tr>
+        <th>Employee</th>
+        <th class="views">Salary</th>
+        <th></th>
+      </tr>
+      <tr class="odd">
+        <td><a href="#">Mario Rossi</a></td>
+        <td>$1M</td>
+        <td>Nulla facilisi. ligula lacus.</td>
+      </tr>
+      <tr class="even">
+        <td><a href="#">Matteo Verdi</a></td>
+        <td>$1000K</td>
+        <td>Lorem nulla lacinia scelerisque  lacus lacus.</td>
+      </tr>
+      <tr class="odd">
+        <td><a href="#">Simone Bianchi</a></td>
+        <td>$10M</td>
+        <td>Ipsum dot sia facilisi. ligula lacinia scelerisque tempor, lacus lacus.</td>
+      </tr>
+      <tr class="even">
+        <td><a href="#">Francesco Brambilla</a></td>
+        <td>$10000B</td>
+        <td>Facilisi. ligula lacinia  lacus lacus.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="spacer" id="lists">
+
+  <h3>Unordered Lists Nested</h3>
+  <ul>
+    <li>List item one
+      <ul>
+        <li>List item one
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+          </ul>
+        </li>
+        <li>List item two</li>
+        <li>List item three</li>
+        <li>List item four</li>
+      </ul>
+    </li>
+    <li>List item two</li>
+    <li>List item three</li>
+    <li>List item four</li>
+  </ul>
+
+  <hr class="spacer">
+
+  <h3>Paragraph</h3>
+  <p> Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam.</p>
+
+  <hr class="spacer" id="links">
+
+  <h3>Link</h3>
+  <p> This is an example of a <a title="Apple" href="http://apple.com">link</a>.</p>
+
+</div>
+
+
+<hr class="spacer">
+
+<div class="grid no-col" id="slider">
+
+  <h2>13. Slider</h2>
   <p>The Slider is based on the super lightweight  <a href="https://github.com/peduarte/wallop" target="_blank">Wallop Library</a>. Which allows you to add various slide effects and options.  For more information, see the <a href="https://github.com/peduarte/wallop#adding-animations">Wallop Docs</a>.</p>
 
   <hr class="spacer">
@@ -598,124 +711,11 @@
 
 </div>
 
-
-<hr class="spacer">
-
-<div class="grid no-col" id="full-grid">
-  <h2>12. Typography</h2>
-  <p>The typography system is simple. You can use seven classes to change the format of your text.</p>
-
-</div>
-
-
-<div class="grid no-col">
-
-  <p class="gigantic"><strong>Gigantic</strong></p>
-
-  <h1>Header one</h1>
-  <h2>Header two</h2>
-  <h3>Header three</h3>
-  <h4>Header four</h4>
-  <h5>Header five</h5>
-  <h6>Header six</h6>
-
-  <pre><code>
-  .gigantic   { font-size: 110px; line-height: 1.09; letter-spacing: -2px; }
-  .huge, h1   { letter-spacing: -1px; font-size: 48px; line-height: 1.05; }
-  .large, h2  { font-size: 32px; line-height: 1.14; }
-  .bigger, h3 { font-size: 26px; line-height: 1.38; }
-  .big, h4    { font-size: 22px; line-height: 1.38; }
-  .normal, h5 { font-size: 18px; line-height: 1.38; }
-  .small, h6, small { font-size: 14px; line-height: 1.2; }
-
-</code></pre>
-
-  <hr class="spacer"/>
-
-  <h3>Blockquotes</h3>
-  <p>Single line blockquote:</p>
-  <blockquote>Stay hungry. Stay foolish.</blockquote>
-  <p>Multi line blockquote with a cite reference:</p>
-  <blockquote>
-    <p>People think focus means saying yes to the thing you&#8217;ve got to focus on. But that&#8217;s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I&#8217;m actually as proud of the things we haven&#8217;t done as the things I have done. Innovation is saying no to 1,000 things.
-    <cite>Steve Jobs &#8211; Apple Worldwide Developers&#8217; Conference, 1997</cite></p>
-  </blockquote>
-
-  <hr class="spacer"/>
-
-  <h3>Tables</h3>
-  <table>
-    <tbody>
-      <tr>
-        <th>Employee</th>
-        <th class="views">Salary</th>
-        <th></th>
-      </tr>
-      <tr class="odd">
-        <td><a href="#">Mario Rossi</a></td>
-        <td>$1M</td>
-        <td>Nulla facilisi. ligula lacus.</td>
-      </tr>
-      <tr class="even">
-        <td><a href="#">Matteo Verdi</a></td>
-        <td>$1000K</td>
-        <td>Lorem nulla lacinia scelerisque  lacus lacus.</td>
-      </tr>
-      <tr class="odd">
-        <td><a href="#">Simone Bianchi</a></td>
-        <td>$10M</td>
-        <td>Ipsum dot sia facilisi. ligula lacinia scelerisque tempor, lacus lacus.</td>
-      </tr>
-      <tr class="even">
-        <td><a href="#">Francesco Brambilla</a></td>
-        <td>$10000B</td>
-        <td>Facilisi. ligula lacinia  lacus lacus.</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr class="spacer">
-
-  <h3>Unordered Lists Nested</h3>
-  <ul>
-    <li>List item one
-      <ul>
-        <li>List item one
-          <ul>
-            <li>List item one</li>
-            <li>List item two</li>
-            <li>List item three</li>
-            <li>List item four</li>
-          </ul>
-        </li>
-        <li>List item two</li>
-        <li>List item three</li>
-        <li>List item four</li>
-      </ul>
-    </li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-  </ul>
-
-  <hr class="spacer">
-
-  <h3>Paragraph</h3>
-  <p> Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam.</p>
-
-  <hr class="spacer">
-
-  <h3>Link</h3>
-  <p> This is an example of a <a title="Apple" href="http://apple.com">link</a>.</p>
-
-</div>
-
-
 <hr class="spacer">
 
 
-<div class="grid no-col">
-  <h2>13. Form</h2>
+<div class="grid no-col" id="form">
+  <h2>14. Form</h2>
   <p>All elements in the form are full width.</p>
 
   <!-- The above form looks like this -->
@@ -743,8 +743,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-  <h2>14. Button</h2>
+<div class="grid no-col" id="buttons">
+  <h2>15. Buttons</h2>
   <p>The button have one size. To make a button use the class <strong>.button</strong></p>
 
   <a href="#" class="button"> Button</a>
@@ -757,8 +757,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-    <h2>15. Animations</h2>
+<div class="grid no-col" id="animations">
+    <h2>16. Animations</h2>
     <p>With the class <strong>.animate</strong> you can animate all css properties. For example background-color in the buttons.</p>
     <a href="#" class="button animate"> Button</a>
     <pre><code>
@@ -770,8 +770,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-    <h2>16. Responsive Images</h2>
+<div class="grid no-col" id="responsive-images">
+    <h2>17. Responsive Images</h2>
     <p>To make images fully responsive use the class: <strong>.img-res</strong></p>
     <img class="img-res" src="image.jpg" alt="New York City">
     <pre><code>
@@ -784,8 +784,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-  <h2>17. Lines & Spacer</h2>
+<div class="grid no-col" id="lines">
+  <h2>18. Lines & Spacer</h2>
   <p>To spacer the content you can use <stong>hr</strong> tag or hr tag with class <strong>.spacer</strong> for transparent hr.</p>
   <hr>
   <hr class="spacer">
@@ -798,8 +798,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-    <h2>18. Margin</h2>
+<div class="grid no-col" id="margin">
+    <h2>19. Margin</h2>
     <p>To easily add margin to an element you can use the <strong>.margin-bottom</strong> or <strong>.margin-top</strong> classes.</p>
 
   <div class="margin-top">Element with margin top.</div>
@@ -817,8 +817,8 @@
 <hr class="spacer">
 
 
-<div class="grid no-col">
-  <h2>19. Text Align</h2>
+<div class="grid no-col" id="text-align">
+  <h2>20. Text Align</h2>
   <p>You can use <strong>.text-left</strong>, <strong>.text-center</strong> or <strong>.text-right</strong> class to align text easily.</p>
 
   <p class="text-left">Element with text left.</p>
@@ -836,8 +836,7 @@
 <hr class="spacer">
 
 
-<script src="js/alux.min.js"></script>
-<script src="js/Wallop.js"></script>
+<script src="js/alux.js"></script>
 <script>
 var basicSliderEl = document.querySelector('.basic-slider');
 var basicSlider = new Wallop(basicSliderEl, {

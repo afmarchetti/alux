@@ -51,7 +51,7 @@ dropdownArray.forEach(function(el){
         	e.preventDefault();
         }
       });
-})
+});
 
 /**
 * Wallop.js

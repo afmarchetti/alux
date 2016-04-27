@@ -23,11 +23,10 @@ body {
 
 /* Link color */
 a, .link-color {
-  color: #26c6da;
+  color: $light-blue;
 }
 a:focus, a:hover {
-  color: #2edaf0;
-  text-decoration: none;
+  color: darken($light-blue , 10%);
 }
 
 /* Button */
@@ -102,4 +101,10 @@ hr.spacer { border-top: 1px solid transparent; }
   -webkit-transition: all 0.4s;
      -moz-transition: all 0.4;
           transition: all 0.4s;
+}
+
+@media (max-width: 767px) {
+
+  .gigantic   { font-size: 74px;}
+
 }
