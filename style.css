@@ -4,7 +4,11 @@
 
 .classes-hide{opacity:0;}
 .classes-visible{opacity:0.5;}
+<<<<<<< HEAD
 #show-classes{background: red; padding: 10px; font-size: 14px; color:#fff; position: fixed;top:100px; right:0;cursor:pointer; z-index: 9}
+=======
+#show-classes{background: red; padding: 10px; font-size: 14px; color:#fff; position: fixed;top:100px; right:0;cursor:pointer; z-index: 99}
+>>>>>>> master
 pre {
 	overflow: auto;
 	max-width: 1250px;

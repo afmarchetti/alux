@@ -24,11 +24,14 @@ ul.primary, ul.dropdown-menu {
      -moz-transition: max-height 0.3s;
           transition: max-height 0.3s;
 }
-ul.primary li a { display: block; padding: 22px 30px; }
+ul.primary li a { display: block; padding: 22px 30px;}
 ul.primary li a:hover { color: #000; }
 
 /* subs */
-ul.dropdown-menu { position: absolute; z-index: 200; min-width: 200px; display: none; }
+ul.dropdown-menu {
+  position: absolute; z-index: 200; min-width: 200px; display: none;
+  box-shadow: 0 7px 12px rgba(0,0,0,.175);
+}
 ul.dropdown-menu li { float: none; margin: 0; }
 
 /* arrow animation menu */
@@ -53,18 +56,18 @@ ul.dropdown-menu li { float: none; margin: 0; }
           transform: rotate(90deg);
 }
 
-ul.dropdown-menu li a {
+/* dropdown link color */
+ul.primary ul.dropdown-menu li a {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  color: #000;
-  padding: 15px 30px;
+  color: #666;
+  padding: 13px 20px;
 }
+ul.primary ul.dropdown-menu li a:hover { color: #000; background: #eeeeee; }
 
-ul.dropdown-menu li a:hover { color: #000; background: #eeeeee; }
-
-/* sub display*/
-ul.primary li:hover ul { display: block; background: #fff; }
+/* dropdown display */
+ul.primary li:hover ul { display: block; }
 
 /* keeps the tab background white */
 ul.primary li:hover a { background: #fff; color: #666; }
@@ -111,6 +114,7 @@ ul.primary li:hover > a { color: #000; }
     overflow: hidden;
   }
 
+/* Hanburger with animations */
 .tog {
     background: transparent;
     width: 69px;
@@ -148,13 +152,12 @@ ul.primary li:hover > a { color: #000; }
             transform: rotate(-45deg);
   }
 
-  .nav-wrap .primary.open {
-    max-height: 500px;
-    overflow: scroll;
-  }
+  /* menu mobile height */
+  .nav-wrap .primary.open,
   .nav-wrap .dropdown-menu.open {
     max-height: 500px;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   ul.primary li a {padding: 20px;}
@@ -179,6 +182,7 @@ ul.primary li:hover > a { color: #000; }
     position: static;
     box-shadow: none;
     width: 100%;
+    border-bottom: none;
   }
 
   .nav-wrap ul.dropdown-menu li a {
