@@ -38,7 +38,7 @@ Once you have downloaded Alux, the first thing you need to do is include the CSS
 ```html
 <script src="path/to/alux.min.js"></script>
 ```
-###SVG
+###Svg
 add [arrow.svg](http://afmarchetti.github.io/alux/arrow.svg) in the project folder. (used in menu & slider)
 
 
