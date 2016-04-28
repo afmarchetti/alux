@@ -23,10 +23,10 @@ body {
 
 /* Link color */
 a, .link-color {
-  color: $light-blue;
+  color: $call-color;
 }
 a:focus, a:hover {
-  color: darken($light-blue , 10%);
+  color: darken($call-color , 10%);
 }
 
 /* Button */
@@ -45,12 +45,14 @@ a:focus, a:hover {
   text-shadow: none;
 }
 .button:hover {
-  background: #26c6da;
+  background: darken($call-color , 10%);
   color: #fff;
 }
 
 /* Paragraph */
 p { margin-bottom: 20px; }
+
+/* Useful Clsses*/
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
@@ -58,6 +60,13 @@ p { margin-bottom: 20px; }
 .margin-top{margin-top:40px}
 .margin-bottom{margin-bottom:40px}
 .no-margin{margin:0;padding:0;}
+
+  /* Animation */
+  .animate {
+    -webkit-transition: all 0.4s;
+       -moz-transition: all 0.4;
+            transition: all 0.4s;
+  }
 
 /* Blockquote */
 blockquote {
@@ -96,12 +105,6 @@ hr {
 }
 hr.spacer { border-top: 1px solid transparent; }
 
-/* Animation */
-.animate {
-  -webkit-transition: all 0.4s;
-     -moz-transition: all 0.4;
-          transition: all 0.4s;
-}
 
 @media (max-width: 767px) {
 
