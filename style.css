@@ -2,7 +2,8 @@
 .trasparent{background: none;}
 .module { background: #ccc;padding:10px }
 
-.normal{font-weight: normal}
+.normal{font-weight: normal; font-size: 16px;}
+.giga{display: block;margin-bottom: 10px;font-size: 48px;}
 
 .classes-hide{opacity:0;}
 .classes-visible{opacity:0.5;}
