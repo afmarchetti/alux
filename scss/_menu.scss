@@ -6,8 +6,8 @@
 /* Menu */
 .no-pad-menu { padding: 0; margin-bottom: 0; background: transparent!important}
 
-.nav-wrap { display: inline-block; width: 100%;  background: #2b2b2b; float:left; }
-.nav-wrap a { text-decoration: none; color: #fff; display: block; }
+.nav-wrap { display: inline-block; width: 100%;  background: $menu-color; float:left; }
+.nav-wrap a { text-decoration: none; color: $menu-text-color; display: block; }
 .nav-wrap ul { list-style: none; position: relative; text-align: left; margin: 0; }
 .nav-wrap li { float: left; margin: 0; position: relative; }
 
@@ -18,14 +18,14 @@
 .nav-wrap ul:after { content: ' '; display: table; }
 .nav-wrap nav { position: relative; text-align: center; float: right; }
 
-/* prime */
+/* Animate Dropdown Mobile  */
 ul.primary, ul.dropdown-menu {
   -webkit-transition: max-height 0.3s;
      -moz-transition: max-height 0.3s;
           transition: max-height 0.3s;
 }
 ul.primary li a { display: block; padding: 22px 30px;}
-ul.primary li a:hover { color: #000; }
+ul.primary li a:hover { color: $menu-text-color-hover; }
 
 /* subs */
 ul.dropdown-menu {
@@ -61,16 +61,16 @@ ul.primary ul.dropdown-menu li a {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #eee;
-  color: #666;
+  color: $dropdown-text-color;
   padding: 13px 20px;
 }
-ul.primary ul.dropdown-menu li a:hover { color: #000; background: #eeeeee; }
+ul.primary ul.dropdown-menu li a:hover { color: $dropdown-text-color-hover; background: $dropdown-bg-color-hover; }
 
 /* dropdown display */
 ul.primary li:hover ul { display: block; }
 
 /* keeps the tab background white */
-ul.primary li:hover a { background: #fff; color: #666; }
+ul.primary li:hover a { background: $dropdown-bg-color; color: #666; }
 ul.primary li:hover > a { color: #000; }
 
 /* Desktop */
@@ -164,17 +164,17 @@ ul.primary li:hover > a { color: #000; }
 
   .nav-wrap ul.primary li:hover a {
     background: none;
-    color: #8b8b8b;
+    color: $menu-mobile-text-color-hover;
   }
   .nav-wrap ul.primary li a.select {
-    background: #222;
-    color: #fff;
+    background: darken($menu-color, 5%);
+    color: $menu-mobile-text-color-select;
   }
 
   .nav-wrap ul.primary li:hover ul {
     display: block;
-    background: #111;
-    color: #fff;
+    background: darken($menu-color, 10%);
+    color: $menu-mobile-text-color-select;
   }
 
   .nav-wrap ul.dropdown-menu {
