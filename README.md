@@ -1,6 +1,6 @@
 #ALUX framework
 
-The Fast Semantic Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
+The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
 
 ###ALUX is a Lightweight Framework (20K) for Creating Super-Fast and Beautifully Responsive Web Apps.
@@ -13,8 +13,8 @@ Easy, Light, Fast, Flexible.
 
 
 ## Examples
-- [One Page Landing](http://afmarchetti.github.io/alux/home-semantic-onepage.html) – This is Alux most basic implementation
-- [Home with Slider](http://afmarchetti.github.io/alux/home-semantic-slider.html) – Using the Slider Based on [Wallop](https://github.com/peduarte/wallop) library
+- [One Page Landing](http://afmarchetti.github.io/alux/home-onepage.html) – This is Alux most basic implementation
+- [Home with Slider](http://afmarchetti.github.io/alux/home-slider.html) – Using the Slider Based on [Wallop](https://github.com/peduarte/wallop) library
 
 ## Benefits
 - Mobile first
@@ -25,7 +25,7 @@ Easy, Light, Fast, Flexible.
 - Dependency free
 
 ## Usage
-Once you have downloaded Alux, the first thing you need to do is include the CSS and the JavaScript.
+Once you have downloaded ALUX, the first thing you need to do is include the CSS and the JavaScript.
 
 ### CSS
 ```html
@@ -46,7 +46,7 @@ add [arrow.svg](http://afmarchetti.github.io/alux/arrow.svg) in the project fold
 For all the Details & the Docs please visit:[http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 ## Credits
-- For the Slider Alux use Wallop Library by Pedro Duarte: (http://pedroduarte.me/wallop)
+- For the Slider ALUX use Wallop Library by Pedro Duarte: (http://pedroduarte.me/wallop)
 - The Grid System is an evolution of a Chris Coyer Article: (http://css-tricks.com/dont-overthink-it-grids/)
 
 ## Licensing
