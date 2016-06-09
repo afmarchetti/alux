@@ -34,13 +34,13 @@
   top:50%;
   left:20px;
   .arrow{
-    top:-30px;
+    top:-10px;
     left:0;
     width: 30px;
     height: 30px;
     display: inline-block;
     cursor:pointer;
-    box-shadow: 10px 10px 5px #888888;
+    background-size: 40px 40px;
     text-indent: -9999px;
     -webkit-transform: rotate(180deg);
            transform: rotate(180deg);
