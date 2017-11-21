@@ -101,7 +101,7 @@
 <div class="grid">
   <div class="col-50">
     <h1 class="large"> ALUX &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
-    <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (20K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
+    <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
     <p><strong>The Framework</strong> is built with <strong>HTML/CSS</strong> and pure <strong>Javascript</strong>.  <br/>Dependencies Free, no jQuery but with a wide range of features:
     <br/> Grids, Sliders, Menus, Animations, Typography, Forms, Buttons & more.</p>
     <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a href="home-onepage.html" target="_blank">One Page Landing</a> - <a href="home-slider.html" target="_blank">Home with Slider</a></p>
@@ -132,14 +132,17 @@
 <div class="grid " id="multiple-grids">
   <div class="col">
     <h2>01. Multiple Grids</h2>
-    <p>The grid system use % to define column widths. For example: <strong>50% of the screen width is .col-50</strong>. <br/> <br/> You can use:
-      <br/><strong>50% <span class="light">(2 <small>columns grid</small>)</span> &nbsp;
-        <br/> 33%, 66%  <span class="light">(3 <small>columns grid</small>)</span>  &nbsp;
-          <br/>25%, 50%, 75% <span class="light">(4 <small>columns grid</small>)</span>  &nbsp;
-            <br/>20%, 40%, 60%, 80% <span class="light">(5 <small>columns grid</small>) </span> &nbsp;
-              <br/> 16% <span class="light">(6 <small>columns grid</small>)</span>  &nbsp;
-                <br/> 12% <span class="light">(8 <small>columns grid</small>)</span>  &nbsp;
-                  <br/> 10%, 20% [..] <span class="light">(10 <small>columns grid</small>)</span> </strong></p>
+    <p>The grid system use <strong>classes</strong>  and <strong>%</strong> to define column widths. <strong> Example: for a columns 50%</strong> of the <strong> screen</strong>  width use <strong>.col-50</strong>. </p>
+
+  <p class="line-tab"><span>You can use these columns width: </span><span class="light">CSS classes: </span></p>
+    <p class="line-tab"><span>100% <small> - 1 column grid (auto width)</small> </span><span class="light"> .col </span></p>
+      <p class="line-tab"><span>50% <small> - 2 columns grid</small> </span><span class="light"> .col-50</span></p>
+        <p class="line-tab"><span> 33%, 66%  <small> - 3 columns grid</small></span><span class="light"> .col-33, .col-66</span></p>
+          <p class="line-tab"><span>25%, 50%, 75% <small> - 4 columns grid</small> </span><span class="light"> .col-25, .col-50, .col-75</span></p>
+            <p class="line-tab"><span>20%, 40%, 60%, 80% <small> - 5 columns grid</small> </span><span class="light"> .col-20, .col-40, .col-60, .col-80  </span></p>
+              <p class="line-tab"><span> 16% <small> - 6 columns grid</small></span><span class="light"> .col-16</span></p>
+                <p class="line-tab"><span> 12% <small> - 8 columns grid</small></span><span class="light"> .col-12</span></p>
+                  <p class="line-tab"><span> 10%, 20%, 30% [...] 90% <small> - 10 columns grid</small> </span><span class="light"> .col-10, .col-20, .col-30 [..] .col-90 </span></p>
   </div>
 </div>
 
@@ -824,58 +827,72 @@
 <div class="grid no-col" id="slider">
 
   <h2>14. Slider</h2>
-  <p>The Slider is based on the super lightweight  <a href="https://github.com/peduarte/wallop" target="_blank">Wallop Library</a>. Which allows you to add various slide effects and options.  For more information, see the <a href="https://github.com/peduarte/wallop#adding-animations">Wallop Docs</a>.</p>
+  <p>The Slider is based on the super lightweight  <a href="https://github.com/pawelgrzybek/siema" target="_blank">Siema</a>. Which allows you drag slides (mobile touch supported!). For more information, see the <a href="https://pawelgrzybek.com/siema/#options">Siema Options</a>. </br/>
+  Check all Siema <strong>customization</strong> on <a href="https://codepen.io/collection/Adpkkd/" target="_blank">CodePen</a>.</p>
 
   <hr class="spacer">
 
-  <div class="Wallop basic-slider Wallop--slide margin-bottom">
-    <div class="Wallop-item">
-      <img src="img/image-1.jpg" class="img-res no-margin">
-      <div class="Wallop-caption">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
+  <div class="container-siema">
+    <div class="siema">
+      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+        <div class="siema__filter"></div>
+        <div class="siema__caption">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+        <div class="siema__filter"></div>
+        <div class="siema__caption">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+        <div class="siema__filter"></div>
+        <div class="siema__caption">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
       </div>
     </div>
-    <div class="Wallop-item">
-      <img src="img/image-2.jpg" class="img-res no-margin">
-      <div class="Wallop-caption">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-    <div class="Wallop-item">
-      <img src="img/image-3.jpg" class="img-res no-margin">
-      <div class="Wallop-caption">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-    <div class="Wallop-arrow Wallop-buttonPrevious"><div class="arrow">Previous</div></div>
-    <div class="Wallop-arrow Wallop-buttonNext"><div class="arrow">Next</div></div>
+    <div class="container-siema__prev"><div class="arrow">prev</div></div>
+    <div class="container-siema__next"><div class="arrow">next</div></div>
   </div>
+
+
+
   <strong>Html</strong>
-  <pre><code> &lt;div class=&quot;Wallop basic-slider Wallop--slide&quot;&gt;
-  &lt;div class=&quot;Wallop-item&quot;&gt;
-    &lt;img src=&quot;img/image-1.jpg&quot; class=&quot;img-res&quot;&gt;
-    &lt;div class=&quot;Wallop-caption&quot;&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+  <pre><code> &lt;div class=&quot;container-siema&quot;&gt;
+    &lt;div class=&quot;siema&quot;&gt;
+      &lt;div class=&quot;siema__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
+        &lt;div class=&quot;siema__filter&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;siema__caption&quot;&gt;
+          &lt;h3&gt;Title&lt;/h3&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;siema__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
+        &lt;div class=&quot;siema__filter&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;siema__caption&quot;&gt;
+          &lt;h3&gt;Title&lt;/h3&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;siema__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
+        &lt;div class=&quot;siema__filter&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;siema__caption&quot;&gt;
+          &lt;h3&gt;Title&lt;/h3&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;Wallop-item&quot;&gt;
-    &lt;img src=&quot;img/image-2.jpg&quot; class=&quot;img-res&quot;&gt;
-    &lt;div class=&quot;Wallop-caption&quot;&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;Wallop-arrow Wallop-buttonPrevious&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;Previous&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;Wallop-arrow Wallop-buttonNext&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;Next&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+    &lt;div class=&quot;container-siema__prev&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;prev&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;container-siema__next&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;next&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
 <strong>Javascript</strong>
   <pre><code>&lt;script&gt;
-    var basicSliderEl = document.querySelector('.basic-slider');
-    var basicSlider = new Wallop(basicSliderEl, {
-      autoplay: 5500
-    });
+    new Siema();
 &lt;/script&gt;</code></pre>
 
 </div>
@@ -968,7 +985,8 @@
 
 
 <div class="grid no-col" id="margin">
-    <h2>20. Margin</h2>
+    <h2>20. Spacing</h2>
+    <p><strong>Margin</strong></p>
     <p>To easily add margin to an element you can use the <strong>.mb-1 => margin-bottom: 5px </strong> or <strong>.mt-2 => margin-top: 10px</strong> classes.</p>
 
   <div class="mb-2">Element with margin bottom.</div>
@@ -983,6 +1001,31 @@
   &lt;div class=&quot;mr-0&quot;&gt;Element with margin right.&lt;/div&gt;
 
   </code></pre>
+  <p><strong>Padding</strong></p>
+  <p>With the same margin login you can set padding.</p>
+  <div class="pb-2">Element with padding bottom.</div>
+  <div class="pl-3">Element with padding left.</div>
+
+  <pre><code>
+
+  &lt;div class=&quot;pb-2&quot;&gt;Element with padding bottom.&lt;/div&gt;
+  &lt;div class=&quot;pl-3&quot;&gt;Element with padding left.&lt;/div&gt;
+
+  </code></pre>
+
+  <p><strong>Vertical and Horizontal Spacing</strong></p>
+  <p>You can add horizontal/vertical padding/margin with one class <strong>.my-2 => margin-top: 10px; margin-bottom:10px; </strong></p>
+
+  <div class="px-2"> Element with padding left and right.</div>
+  <div class="my-3">Element with margin-top and bottom.</div>
+
+  <pre><code>
+
+  &lt;div class=&quot;px-2&quot;&gt; Element with padding left and right.&lt;/div&gt;
+  &lt;div class=&quot;my-3&quot;&gt;Element with margin-top and bottom.&lt;/div&gt;
+
+  </code></pre>
+
 
 </div>
 
@@ -1009,12 +1052,41 @@
 <hr class="spacer">
 
 
-<script src="js/alux.js"></script>
+<script src="js/alux.min.js"></script>
+
 <script>
-var basicSliderEl = document.querySelector('.basic-slider');
-var basicSlider = new Wallop(basicSliderEl, {
-  autoplay: 5500
+
+var next = document.querySelector(".container-siema__next");
+var prev = document.querySelector(".container-siema__prev");
+var slideCount = document.querySelector(".siema").children.length - 1;
+
+function printSlideIndex() {
+  if (this.currentSlide.toString() === "0") {
+    prev.classList.add('arrow--disable')
+  } else {
+    prev.classList.remove('arrow--disable');
+  }
+  if (this.currentSlide.toString() === slideCount.toString()) {
+    next.classList.add('arrow--disable')
+  } else {
+    next.classList.remove('arrow--disable');
+  }
+}
+
+var mySiema = new Siema({
+  onInit: printSlideIndex,
+  onChange: printSlideIndex
+  // loop: true,
 });
+
+prev.addEventListener("click", function () {
+  return mySiema.prev();
+});
+
+next.addEventListener("click", function () {
+  return mySiema.next();
+});
+
 </script>
 
 <script>

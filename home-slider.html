@@ -5,20 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALUX - Framework</title>
   <link rel="stylesheet" href="alux.min.css">
-	<style>
 
-      /* height of the slider */
-      .Wallop{height: 500px;}
-
-      /* height of the item and the caption */
-      .Wallop-item,
-      .Wallop-caption{bottom:0;height:100%;}
-
-      /* center the content of the caption */
-      .Wallop-caption{display:table;}
-      .caption-content{display:table-cell;vertical-align:middle;}
-
-	</style>
 </head>
 <body>
 
@@ -59,36 +46,33 @@
 	</div>
 	<div class="clearfix"></div>
 
-  <section id="intro" class="Wallop basic-slider Wallop--slide">
-    <div class="Wallop-item" style="background: url('img/image-1.jpg') no-repeat center center; background-size:cover">
-      <div class="Wallop-caption text-left">
-        <div class="caption-content">
-          <h1>Home Page Cover Message</h1>
-          <h2>Subtitle of the cover full width</h2>
-          <p>Lorem ipsum text</p>
-          <a class="button animate" href="">Call to action</a>
+  <div class="container-siema">
+    <div class="siema">
+      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+        <div class="siema__filter"></div>
+        <div class="siema__caption">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+        <div class="siema__filter"></div>
+        <div class="siema__caption">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+        <div class="siema__filter"></div>
+        <div class="siema__caption">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
       </div>
     </div>
-    <div class="Wallop-item" style="background: url('img/image-2.jpg') no-repeat center center; background-size:cover">
-      <div class="Wallop-caption">
-        <div class="caption-content">
-          <h2>Lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-    </div>
-    <div class="Wallop-item" style="background: url('img/image-3.jpg') no-repeat center center; background-size:cover">
-      <div class="Wallop-caption">
-        <div class="caption-content">
-          <h2>Lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-    </div>
-    <div class="Wallop-arrow Wallop-buttonPrevious"><div class="arrow">Prev</div></div>
-    <div class="Wallop-arrow Wallop-buttonNext"><div class="arrow">Next</div></div>
-  </section>
+    <div class="container-siema__prev"><div class="arrow">prev</div></div>
+    <div class="container-siema__next"><div class="arrow">next</div></div>
+  </div>
 
   <section class="grid" id="features">
     <div class="col-25 tab-50">
@@ -218,14 +202,40 @@
     </div>
   </section>
 
-
-
 <script src="js/alux.min.js"></script>
+
 <script>
-  var basicSliderEl = document.querySelector('.basic-slider');
-  var basicSlider = new Wallop(basicSliderEl, {
-    autoplay: 5500
-  });
+var next = document.querySelector(".container-siema__next");
+var prev = document.querySelector(".container-siema__prev");
+var slideCount = document.querySelector(".siema").children.length - 1;
+
+function printSlideIndex() {
+  if (this.currentSlide.toString() === "0") {
+    prev.classList.add('arrow--disable')
+  } else {
+    prev.classList.remove('arrow--disable');
+  }
+  if (this.currentSlide.toString() === slideCount.toString()) {
+    next.classList.add('arrow--disable')
+  } else {
+    next.classList.remove('arrow--disable');
+  }
+}
+
+var mySiema = new Siema({
+  onInit: printSlideIndex,
+  onChange: printSlideIndex
+  // loop: true,
+});
+
+prev.addEventListener("click", function () {
+  return mySiema.prev();
+});
+
+next.addEventListener("click", function () {
+  return mySiema.next();
+});
 </script>
+
 </body>
 </html>
