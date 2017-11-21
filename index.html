@@ -98,8 +98,8 @@
 
 <div id="show-classes"> Show Grid <br/> Classes </div>
 
-<div class="grid trasparent">
-  <div class="col-1-2">
+<div class="grid">
+  <div class="col-50">
     <h1 class="large"> ALUX &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
     <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (20K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
     <p><strong>The Framework</strong> is built with <strong>HTML/CSS</strong> and pure <strong>Javascript</strong>.  <br/>Dependencies Free, no jQuery but with a wide range of features:
@@ -107,124 +107,227 @@
     <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a href="home-onepage.html" target="_blank">One Page Landing</a> - <a href="home-slider.html" target="_blank">Home with Slider</a></p>
     <a href="https://github.com/afmarchetti/alux/archive/master.zip" class="button animate"  onclick="_gaq.push(['_trackEvent', 'alux-download', 'alux-zip', 'downloadalux']);">DOWNLOAD</a> <a href="https://github.com/afmarchetti/alux/" class="button animate" target="_blank">Git Hub</a>
   </div>
-  <div class="col-1-2">
+  <div class="col-50">
     <a href="home-slider.html" target="_blank"><img src="img/test-google-slider.png" class="img-res margin-top"/></a>
     <p class="text-center"><i> <a href="home-slider.html" target="_blank">See This Example</a></i></p>
   </div>
 </div>
 
-<div class="grid no-col">
-  <h2>Usage</h2>
-  <p>Once you have downloaded <strong>ALUX</strong>, the first thing you need to do is include the <strong>CSS </strong>and the <strong>JavaScript</strong>.</p>
-  <strong>CSS</strong>
-  <pre><code>&lt;head&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/alux.min.css&quot;&gt;
-&lt;/head&gt;</code></pre>
-  <strong>Javascript</strong>
-  <pre><code>&lt;script src=&quot;path/to/alux.min.js&quot;&gt;&lt;/script&gt;</code></pre>
-  <strong>Icon Svg</strong>
-  <p>After this add  <a href="arrow.svg">arrow.svg</a> in the project folder. (used in menu & slider)</p>
-</div>
-
-
-<div class="grid no-col" id="multiple-grids">
-  <h2>01. Multiple Grids</h2>
-  <p>The grid system use fractions to define column widths within the grid. For example: 1/2 of the width is .col-1-2. You can set <strong>2/3/4/5/8 Columns</strong> Grid. </p>
-</div>
-
 <div class="grid">
-  <div class="col-1-2">
+  <div class="col">
+    <h2>Usage</h2>
+    <p>Once you have downloaded <strong>ALUX</strong>, the first thing you need to do is include the <strong>CSS </strong>and the <strong>JavaScript</strong>.</p>
+    <strong>CSS</strong>
+    <pre><code>&lt;head&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/alux.min.css&quot;&gt;
+  &lt;/head&gt;</code></pre>
+    <strong>Javascript</strong>
+    <pre><code>&lt;script src=&quot;path/to/alux.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+    <strong>Icon Svg</strong>
+    <p>After this add  <a href="arrow.svg">arrow.svg</a> in the project folder. (used in menu & slider)</p>
+  </div>
+</div>
+
+
+<div class="grid " id="multiple-grids">
+  <div class="col">
+    <h2>01. Multiple Grids</h2>
+    <p>The grid system use % to define column widths. For example: <strong>50% of the screen width is .col-50</strong>. <br/> <br/> You can use:
+      <br/><strong>50% <span class="light">(2 <small>columns grid</small>)</span> &nbsp;
+        <br/> 33%, 66%  <span class="light">(3 <small>columns grid</small>)</span>  &nbsp;
+          <br/>25%, 50%, 75% <span class="light">(4 <small>columns grid</small>)</span>  &nbsp;
+            <br/>20%, 40%, 60%, 80% <span class="light">(5 <small>columns grid</small>) </span> &nbsp;
+              <br/> 16% <span class="light">(6 <small>columns grid</small>)</span>  &nbsp;
+                <br/> 12% <span class="light">(8 <small>columns grid</small>)</span>  &nbsp;
+                  <br/> 10%, 20% [..] <span class="light">(10 <small>columns grid</small>)</span> </strong></p>
+  </div>
+</div>
+
+<div class="grid bg-primary">
+  <div class="col-50">
      <div class="module">
-        1/2 <span class="classes-hide"> .col-1-2 </span>
+        50% <span class="classes-hide"> .col-50 </span>
      </div>
   </div>
-  <div class="col-1-2">
+  <div class="col-50">
     <div class="module">
-       1/2  <span class="classes-hide"> .col-1-2 </span>
+       50%  <span class="classes-hide"> .col-50 </span>
     </div>
   </div>
 </div>
 
-<div class="grid">
-  <div class="col-1-3">
+<div class="grid bg-primary pt-0">
+  <div class="col-33">
     <div class="module">
-      1/3 <span class="classes-hide"> .col-1-3 </span>
+      33% <span class="classes-hide"> .col-33 </span>
     </div>
   </div>
-  <div class="col-2-3">
+  <div class="col-66">
     <div class="module">
-      2/3 <span class="classes-hide"> .col-2-3 </span>
-    </div>
-  </div>
-</div>
-
-<div class="grid">
-  <div class="col-1-4">
-    <div class="module">
-      1/4 <span class="classes-hide"> .col-1-4 </span>
-    </div>
-  </div>
-  <div class="col-3-4">
-    <div class="module">
-      3/4 <span class="classes-hide"> .col-3-4 </span>
+      66% <span class="classes-hide"> .col-66 </span>
     </div>
   </div>
 </div>
 
-<div class="grid">
-  <div class="col-1-5">
+<div class="grid bg-primary pt-0">
+  <div class="col-25">
     <div class="module">
-      1/5 <span class="classes-hide"> .col-1-5 </span>
+      25% <span class="classes-hide"> .col-25 </span>
     </div>
   </div>
-  <div class="col-4-5">
+  <div class="col-75">
     <div class="module">
-      4/5 <span class="classes-hide"> .col-4-5 </span>
+      75% <span class="classes-hide"> .col-75 </span>
     </div>
   </div>
 </div>
 
-<div class="grid">
-  <div class="col-1-8">
+<div class="grid bg-primary pt-0">
+  <div class="col-20">
     <div class="module">
-      1/8 <span class="classes-hide"> .col-1-8 </span>
+      20% <span class="classes-hide"> .col-20 </span>
     </div>
   </div>
-  <div class="col-7-8">
+  <div class="col-80">
     <div class="module">
-      7/8 <span class="classes-hide"> .col-7-8 </span>
+      80% <span class="classes-hide"> .col-80 </span>
+    </div>
+  </div>
+</div>
+
+<div class="grid bg-primary pt-0">
+  <div class="col-16">
+    <div class="module">
+      16% <span class="classes-hide"> .col-16 </span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="module">
+      auto <span class="classes-hide"> .col </span>
+    </div>
+  </div>
+</div>
+
+<div class="grid bg-primary pt-0">
+  <div class="col-12">
+    <div class="module">
+      12% <span class="classes-hide"> .col-12 </span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="module">
+      auto <span class="classes-hide"> .col </span>
+    </div>
+  </div>
+</div>
+
+<div class="grid bg-primary pt-0">
+  <div class="col-10">
+    <div class="module">
+      10% <span class="classes-hide"> <small>.col-10</small> </span>
+    </div>
+  </div>
+  <div class="col-90">
+    <div class="module">
+      90% <span class="classes-hide"> .col-90 </span>
     </div>
   </div>
 </div>
 
 <pre><code>&lt;div class=&quot;grid&quot;&gt;
-  &lt;div class=&quot;col-1-2&quot;&gt;
-        1/2
+  &lt;div class=&quot;col-50&quot;&gt;
+        50%
   &lt;/div&gt;
-  &lt;div class=&quot;col-1-2&quot;&gt;
-       1/2
+  &lt;div class=&quot;col-50&quot;&gt;
+       50%
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+<hr class="spacer">
+
+<div class="grid" id="html5-structure">
+  <div class="col">
+    <h2>02. Auto Width Columns (thanks flexbox!)</h2>
+    <p>You can combine every colums width <strong>.col-%</strong> with a fluid flexbox <strong>"auto"</strong> witdth colum <strong>.col</strong></p>
+  </div>
+</div>
+
+<div class="grid bg-primary">
+    <div class="col-16">
+      <div class="module">
+      16% <span class="classes-hide">.col-16</span>
+      </div>
+    </div>
+     <div class="col">
+       <div class="module">
+      auto <span class="classes-hide">.col </span>
+       </div>
+    </div>
+  </div>
+
+  <div class="grid bg-primary pt-0">
+    <div class="col-25">
+      <div class="module">
+      25% <span class="classes-hide">.col-25</span>
+        </div>
+    </div>
+     <div class="col">
+       <div class="module">
+        auto <span class="classes-hide">.col</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="module">
+        auto <span class="classes-hide">.col</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid bg-primary pt-0">
+    <div class="col">
+       <div class="module"> auto <span class="classes-hide"> .col </span></div>
+    </div>
+    <div class="col">
+       <div class="module"> auto <span class="classes-hide"> .col </span> </div>
+    </div>
+    <div class="col">
+       <div class="module"> auto <span class="classes-hide"> .col </span></div>
+    </div>
+    <div class="col">
+       <div class="module"> auto <span class="classes-hide"> .col </span> </div>
+    </div>
+  </div>
+
+
+  <pre><code>&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;col-16&quot;&gt;
+       16%
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      auto
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
 
 
 <hr class="spacer">
 
 
-<div class="grid no-col" id="html5-structure">
-  <h2>02. HTML5 Structure</h2>
-  <p>Add classes to HTML5 Tag for light and (almost) semantic markup.</p>
+<div class="grid" id="html5-structure">
+  <div class="col">
+    <h2>03. HTML5 Structure</h2>
+    <p>Add classes to HTML5 Tag for light and (almost) semantic markup.</p>
+  </div>
 </div>
-<div class="grid">
-    <article class="col-2-3">
-        2/3 article <span class="classes-hide"> .col-2-3 </span>
+<div class="grid bg-primary">
+    <article class="col-70">
+        60% article <span class="classes-hide"> .col-70 </span>
     </article>
-    <aside class="col-1-3">
-       1/3 sidebar <span class="classes-hide"> .col-1-3 </span>
+    <aside class="col-30">
+       30% sidebar <span class="classes-hide"> .col-30 </span>
     </aside>
 </div>
 
-<pre><code>&lt;div class=&quot;grid&quot;&gt;<br/>    &lt;article class=&quot;col-2-3&quot;&gt;<br/>        2/3 article <br/>    &lt;/article&gt;<br/>    &lt;aside class=&quot;col-1-3&quot;&gt;<br/>       1/3 sidebar <br/>    &lt;/aside&gt;<br/>&lt;/div&gt;</code></pre>
+<pre><code>&lt;div class=&quot;grid&quot;&gt;<br/>    &lt;article class=&quot;col-70&quot;&gt;<br/>        70% article <br/>    &lt;/article&gt;<br/>    &lt;aside class=&quot;col-30&quot;&gt;<br/>       30% sidebar <br/>    &lt;/aside&gt;<br/>&lt;/div&gt;</code></pre>
 
 
 
@@ -232,24 +335,26 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="full">
-  <h2>03. Full Width Grid</h2>
-  <p>For a grid using the full width of the screen, use: </p>
-</div>
-<div class="grid full">
-  <div class="col-1-2">
-    <div class="module"> 1/2 <span class="classes-hide"> .col-1-2 </span></div>
-  </div>
-  <div class="col-1-2">
-    <div class="module">1/2 <span class="classes-hide"> .col-1-2 </span></div>
+<div class="grid" id="full">
+  <div class="col">
+    <h2>04. Full Width Grid</h2>
+    <p>For a grid using the full width of the screen, use <strong>.grid--full</strong></p>
   </div>
 </div>
-<pre><code>&lt;div class=&quot;grid full&quot;&gt;
-  &lt;div class=&quot;col-1-2&quot;&gt;
-     1/2
+<div class="grid grid--full bg-primary">
+  <div class="col-50">
+    <div class="module"> 50% <span class="classes-hide"> .col-50 </span></div>
+  </div>
+  <div class="col-50">
+    <div class="module">50% <span class="classes-hide"> .col-50 </span></div>
+  </div>
+</div>
+<pre><code>&lt;div class=&quot;grid grid--full&quot;&gt;
+  &lt;div class=&quot;col-50&quot;&gt;
+     50%
   &lt;/div&gt;
-  &lt;div class=&quot;col-1-2&quot;&gt;
-    1/2
+  &lt;div class=&quot;col-50&quot;&gt;
+    50%
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
@@ -257,25 +362,27 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="full-no-pad">
-  <h2>04. No paddding Full Width Grid</h2>
-  <p>For a full width grid with no padding, use:</p>
+<div class="grid" id="full-no-pad">
+  <div class="col">
+    <h2>05. No paddding Full Width Grid</h2>
+    <p>For a full width grid with no padding, use:</p>
+  </div>
 </div>
 
-<div class="grid no-pad full">
-  <div class="col-1-2">
-    <div class="module"> 1/2 <span class="classes-hide"> .col-1-2 </span> </div>
+<div class="grid no-pad grid--full">
+  <div class="col-50">
+    <div class="module"> 50% <span class="classes-hide"> .col-50 </span> </div>
   </div>
-  <div class="col-1-2">
-    <div class="module"> 1/2 <span class="classes-hide"> .col-1-2 </span></div>
+  <div class="col-50">
+    <div class="module"> 50%  <span class="classes-hide"> .col-50 </span></div>
   </div>
 </div>
-<pre><code>&lt;div class=&quot;grid no-pad full&quot;&gt;
-  &lt;div class=&quot;col-1-2&quot;&gt;
-    1/2
+<pre><code>&lt;div class=&quot;grid no-pad grid--full&quot;&gt;
+  &lt;div class=&quot;col-50&quot;&gt;
+    50%
   &lt;/div&gt;
-  &lt;div class=&quot;col-1-2&quot;&gt;
-     1/2
+  &lt;div class=&quot;col-50&quot;&gt;
+     50%
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
@@ -283,134 +390,181 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="push">
-  <h2>05. Push Columns</h2>
-  <p>ALUX allows you to <strong>push</strong> columns in every base grid. The push system works on both Tablet and Desktop.</p>
-</div>
-<div class="grid">
-  <div class="col-3-4 push-1-4">
-    <div class="module">3/4 <span class="classes-hide"> .col-3-4 push-1-4</span></div>
-  </div>
-</div>
-<div class="grid">
-  <div class="col-5-8 push-3-8">
-    <div class="module">5/8 <span class="classes-hide"> .col-5-8 push-3-8</span></div>
+<div class="grid" id="push">
+  <div class="col">
+    <h2>06. Columns Alignment</h2>
+    <p>ALUX allows you to <strong>align</strong> columns in every base grid with the classes <strong>.grid--center, .grid--right</strong>. <br/>The push system works on both Tablet and Desktop.</p>
   </div>
 </div>
 
+<div class="grid bg-primary">
+  <div class="col-40">
+    <div class="module">40% <span class="classes-hide"> .col-40</span></div>
+  </div>
+</div>
+<div class="grid grid--center bg-primary pt-0">
+  <div class="col-40">
+    <div class="module">40% <span class="classes-hide"> .grid--center </span></div>
+  </div>
+</div>
+<div class="grid grid--right bg-primary pt-0">
+  <div class="col-40">
+    <div class="module">40% <span class="classes-hide"> .grid--right </span></div>
+  </div>
+</div>
+
+<pre><code>&lt;div class=&quot;grid grid--center&quot;&gt;
+  &lt;div class=&quot;col-40&quot;&gt;
+    40%
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+<hr class="spacer">
+
+
+<div class="grid no-col" id="mobile-grid">
+  <div class="col">
+    <h2>07. Mobile Options (try resize the Screen)</h2>
+    <p>The columns on Smartphone are 100% of the width. The columns on Tablet are the same of the desktop.  </br> You can <strong>overwrite the default width of a columns</strong> on the Smartphone & Tablet view by using the following classes: <strong>.sma-%</strong> and <strong>.tab-%</strong>  (% => 10, 20, 30 [..], 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
+  </div>
+</div>
+<div class="grid bg-primary" id="mobile">
+  <div class="col-25 tab-100">
+    <div class="module">25% <span class="classes-hide"> .col-25 tab-100</span></div>
+  </div>
+  <div class="col-25 tab-100">
+    <div class="module">25% <span class="classes-hide"> .col-25 tab-100</span></div>
+  </div>
+  <div class="col-25 tab-50 sma-50">
+    <div class="module">25% <span class="classes-hide"> .col-25 tab-50 sma-50</span></div>
+  </div>
+  <div class="col-25 tab-50 sma-50">
+    <div class="module">25% <span class="classes-hide"> .col-25 tab-50 sma-50</span></div>
+  </div>
+</div>
 <pre><code>&lt;div class=&quot;grid&quot;&gt;
-  &lt;div class=&quot;col-3-4 push-1-4&quot;&gt;
-    3/4
+  &lt;div class=&quot;col-25 tab-100&quot;&gt;
+    25%
+  &lt;/div&gt;
+  &lt;div class=&quot;col-25 tab-100&quot;&gt;
+    25%
+  &lt;/div&gt;
+  &lt;div class=&quot;col-25 tab-50 sma-50&quot;&gt;
+    25%
+  &lt;/div&gt;
+  &lt;div class=&quot;col-25 tab-50 sma-50&quot;&gt;
+    25%
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+
+
 
 <hr class="spacer">
 
 
 <div class="grid no-col" id="pull">
-  <h2>06. Push & Pull Columns</h2>
-  <p>You can push <strong>& pull</strong> columns in every base grid. The pull system works on both Tablet and Desktop. </p>
-</div>
-<div class="grid">
-  <div class="col-3-4 push-1-4">
-    <div class="module"> Content <span class="classes-hide"> .col-3-4 push-1-4</span></div>
+  <div class="col">
+    <h2>08. Push & Pull Columns</h2>
+    <p>You can <strong>push & pull</strong> columns with <strong>.push-%</strong> (% => 10, 20, 30[..], 25, 33, 50, 66, 100). The pull system works on both Tablet and Desktop. </p>
+
   </div>
-  <div class="col-1-4 pull-3-4">
-    <div class="module">Sidebar <span class="classes-hide"> .col-1-4 pull-3-4</span></div>
+</div>
+<div class="grid bg-primary">
+  <div class="col-70 push-30">
+    <div class="module"> Content <span class="classes-hide"> .col-70 pull-30</span></div>
+  </div>
+  <div class="col-30 pull-70">
+    <div class="module"> Sidebar <span class="classes-hide"> .col-30 push-70</span></div>
   </div>
 </div>
 <pre><code>&lt;div class=&quot;grid&quot;&gt;
-  &lt;div class=&quot;col-3-4 push-1-4&quot;&gt;
+  &lt;div class=&quot;col-70 push-30&quot;&gt;
     Content
   &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 pull-3-4&quot;&gt;
+  &lt;div class=&quot;col-30 pull-70&quot;&gt;
     Sidebar
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 
+
+
+
+  <hr class="spacer">
+
+  <div class="grid" id="html5-structure">
+    <div class="col">
+      <h2>09. Auto Width Mobile (thanks flexbox!)</h2>
+      <p>You can combine the "auto" width of flex-box with the mobile columns.</p>
+    </div>
+  </div>
+
+  <div class="grid bg-primary">
+      <div class="col tab-100">
+        <div class="module">
+        auto <span class="classes-hide">.col tab-100</span>
+        </div>
+      </div>
+       <div class="col sma-50">
+         <div class="module">
+        auto <span class="classes-hide">.col sma-50</span>
+         </div>
+      </div>
+      <div class="col sma-50">
+        <div class="module">
+        auto <span class="classes-hide">.col sma-50</span>
+        </div>
+      </div>
+       <div class="col">
+         <div class="module">
+        auto <span class="classes-hide">.col </span>
+         </div>
+      </div>
+      <div class="col">
+        <div class="module">
+       auto <span class="classes-hide">.col </span>
+        </div>
+     </div>
+    </div>
+
+
+    <pre><code>&lt;div class=&quot;grid&quot;&gt;
+      &lt;div class=&quot;col tab-100&quot;&gt;
+        auto
+      &lt;/div&gt;
+      &lt;div class=&quot;col sma-50&quot;&gt;
+        auto
+      &lt;/div&gt;
+      &lt;div class=&quot;col sma-50&quot;&gt;
+        auto
+      &lt;/div&gt;
+      &lt;div class=&quot;col &quot;&gt;
+        auto
+      &lt;/div&gt;
+      &lt;div class=&quot;col &quot;&gt;
+        auto
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+
+
+
 <hr class="spacer">
 
-
-<div class="grid no-col" id="mobile-grid">
-  <h2>07. Mobile Options (try resize the Screen)</h2>
-  <p>The columns on Smartphone are 100% of the width. The columns on Tablet are the same of the desktop.  </br> You can <strong>overwrite the default width of a columns</strong> on the Smartphone & Tablet view by using the following classes: <strong>.sma-%</strong> and <strong>.tab-%</strong> (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
-</div>
-<div class="grid" id="mobile">
-  <div class="col-1-4 tab-100">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-100</span></div>
-  </div>
-  <div class="col-1-4 tab-100">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-100</span></div>
-  </div>
-  <div class="col-1-4 tab-50 sma-50">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50 sma-50</span></div>
-  </div>
-  <div class="col-1-4 tab-50 sma-50">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50 sma-50</span></div>
-  </div>
-</div>
-<pre><code>&lt;div class=&quot;grid&quot;&gt;
-  &lt;div class=&quot;col-1-4 tab-100&quot;&gt;
-    1/4
-  &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 tab-100&quot;&gt;
-    1/4
-  &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 tab-50 sma-50&quot;&gt;
-    1/4
-  &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 tab-50 sma-50&quot;&gt;
-    1/4
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-
-<hr class="spacer">
-
-<div class="grid no-col" id="mobile-grid">
-  <h2>08. Push Mobile (try resizing the Screen)</h2>
-  <p>You can overwrite the normal <strong>push</strong> on <strong>Tablet</strong> with the class <strong>.tab-push-%</strong>, on <strong>Smartphone</strong> with the class <strong>.sma-push-%</strong> . (% => 25, 33, 50, 66, 100). <br/><small>For example: tab-push-33 sma-push-50</small></p>
-</div>
-<div class="grid" id="mobile">
-  <div class="col-1-4 tab-100">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-100</span></div>
-  </div>
-  <div class="col-1-4 tab-50 tab-push-50">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50 tab-push-50</span></div>
-  </div>
-  <div class="col-1-4 tab-100 sma-33 sma-push-66">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-100 sma-33 sma-push-66</span></div>
-  </div>
-  <div class="col-1-4 tab-50">
-    <div class="module">1/4 <span class="classes-hide"> .col-1-4 tab-50</span></div>
-  </div>
-</div>
-<pre><code>&lt;div class=&quot;grid&quot;&gt;
-  &lt;div class=&quot;col-1-4 tab-100&quot;&gt;
-    1/4
-  &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 tab-50 tab-push-50&quot;&gt;
-    1/4
-  &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 tab-100 sma-33 sma-push-66&quot;&gt;
-    1/4
-  &lt;/div&gt;
-  &lt;div class=&quot;col-1-4 tab-50&quot;&gt;
-    1/4
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
 
 
 <hr class="spacer">
 
 <div class="grid no-col">
-  <h2>09. Grid No Col</h2>
-  <p>You can set a grid with no columns to contain any content you like:</p>
+    <h2>10. Grid No Col</h2>
+    <p>You can set a grid with no columns to contain any content you like:</p>
 </div>
 
 <div class="grid no-col" style="background: #eee">
-  No Colums only the container <span class="classes-hide"> .grid .no-col</span>
+
+       No Colums only the container <span class="classes-hide"> .col</span>
+
 </div>
 <pre><code>&lt;div class=&quot;grid no-col&quot;&gt;
   No Colums only the container
@@ -420,7 +574,7 @@
 
 
 <div class="grid no-col" id="menu-grid">
-  <h2>10. Menu in Grid</h2>
+  <h2>11. Menu in Grid</h2>
   <p>The menus inherit their width from the grid</p>
 </div>
 <div class="grid no-pad-menu">
@@ -500,7 +654,7 @@
 
 
 <div class="grid no-col" id="full-menu">
-  <h2>11. Full Width Menu in Grid</h2>
+  <h2>12. Full Width Menu in Grid</h2>
   <p> For a full width menu, ensure that the grid is full width (see point <strong>.03</strong>)</p>
 </div>
 <div class="nav-wrap">
@@ -556,7 +710,7 @@
 <hr class="spacer">
 
 <div class="grid no-col">
-  <h2>12. Typography</h2>
+  <h2>13. Typography</h2>
   <p>The typography system is simple. You can use seven classes to change the format of your text.</p>
 
 </div>
@@ -669,7 +823,7 @@
 
 <div class="grid no-col" id="slider">
 
-  <h2>13. Slider</h2>
+  <h2>14. Slider</h2>
   <p>The Slider is based on the super lightweight  <a href="https://github.com/peduarte/wallop" target="_blank">Wallop Library</a>. Which allows you to add various slide effects and options.  For more information, see the <a href="https://github.com/peduarte/wallop#adding-animations">Wallop Docs</a>.</p>
 
   <hr class="spacer">
@@ -730,7 +884,7 @@
 
 
 <div class="grid no-col" id="form">
-  <h2>14. Form</h2>
+  <h2>15. Form</h2>
   <p>All elements in the form are full width.</p>
 
   <!-- The above form looks like this -->
@@ -759,7 +913,7 @@
 
 
 <div class="grid no-col" id="buttons">
-  <h2>15. Buttons</h2>
+  <h2>16. Buttons</h2>
   <p>The button have one size. To make a button use the class <strong>.button</strong></p>
 
   <a href="#" class="button"> Button</a>
@@ -773,7 +927,7 @@
 
 
 <div class="grid no-col" id="animations">
-    <h2>16. Animations</h2>
+    <h2>17. Animations</h2>
     <p>With the class <strong>.animate</strong> you can animate all css properties. For example background-color in the buttons.</p>
     <a href="#" class="button animate"> Button</a>
     <pre><code>
@@ -786,7 +940,7 @@
 
 
 <div class="grid no-col" id="responsive-images">
-    <h2>17. Responsive Images</h2>
+    <h2>18. Responsive Images</h2>
     <p>To make images fully responsive use the class: <strong>.img-res</strong></p>
     <img class="img-res" src="image.jpg" alt="New York City">
     <pre><code>
@@ -800,7 +954,7 @@
 
 
 <div class="grid no-col" id="lines">
-  <h2>18. Lines & Spacer</h2>
+  <h2>19. Lines & Spacer</h2>
   <p>To spacer the content you can use <stong>hr</strong> tag or hr tag with class <strong>.spacer</strong> for transparent hr.</p>
   <hr>
   <hr class="spacer">
@@ -814,16 +968,20 @@
 
 
 <div class="grid no-col" id="margin">
-    <h2>19. Margin</h2>
-    <p>To easily add margin to an element you can use the <strong>.margin-bottom</strong> or <strong>.margin-top</strong> classes.</p>
+    <h2>20. Margin</h2>
+    <p>To easily add margin to an element you can use the <strong>.mb-1 => margin-bottom: 5px </strong> or <strong>.mt-2 => margin-top: 10px</strong> classes.</p>
 
-  <div class="margin-top">Element with margin top.</div>
-  <div class="margin-bottom">Element with margin bottom.</div>
-  <div class="margin-top">Element with margin top.</div>
+  <div class="mb-2">Element with margin bottom.</div>
+  <div class="mt-1">Element with margin top.</div>
+  <div class="ml-3">Element with margin left.</div>
+  <div class="mr-0">Element with margin right.</div>
   <pre><code>
-  &lt;div class=&quot;margin-top&quot;&gt;Element with margin top.&lt;/div&gt;
-  &lt;div class=&quot;margin-bottom&quot;&gt;Element with margin bottom.&lt;/div&gt;
-  &lt;div class=&quot;margin-top&quot;&gt;Element with margin top.&lt;/div&gt;
+
+  &lt;div class=&quot;mb-2&quot;&gt;Element with margin bottom.&lt;/div&gt;
+  &lt;div class=&quot;mt-1&quot;&gt;Element with margin top.&lt;/div&gt;
+  &lt;div class=&quot;ml-3&quot;&gt;Element with margin left.&lt;/div&gt;
+  &lt;div class=&quot;mr-0&quot;&gt;Element with margin right.&lt;/div&gt;
+
   </code></pre>
 
 </div>
@@ -833,7 +991,7 @@
 
 
 <div class="grid no-col" id="text-align">
-  <h2>20. Text Align</h2>
+  <h2>21. Text Align</h2>
   <p>You can use <strong>.text-left</strong>, <strong>.text-center</strong> or <strong>.text-right</strong> class to align text easily.</p>
 
   <p class="text-left">Element with text left.</p>
