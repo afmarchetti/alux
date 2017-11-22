@@ -1,4 +1,4 @@
-# ALUX framework
+# ALUX 2.0 framework
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
