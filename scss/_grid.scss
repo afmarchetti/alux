@@ -131,7 +131,7 @@
 .no-pad [class*='col-']{padding:0;}
 
 
-@media (max-width: 991px) {
+@media (max-width: $media-tablet) {
 
   .tab-100 { width: 100%; }
   .tab-90 { width: 90%; }
@@ -167,7 +167,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: $media-smartphone) {
 
   [class*='col'] { width: 100%;left: 0; right: 0;padding: 0 ( $gutter-mobile / 2 )}
 
