@@ -7,7 +7,7 @@ The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.n
 - New Slider with Touch Support
 - Utilities for spacing Margin & Padding
 
-## ALUX is a Lightweight Framework (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.
+### ALUX is a Lightweight Framework (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.
 Presentation, Examples & Docs: [http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 The Framework is built with HTML/CSS and pure Javascript</strong>. Dependencies Free, no jQuery but with a wide range of features:
