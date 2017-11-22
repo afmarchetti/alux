@@ -71,7 +71,7 @@ ul.primary li:hover a { background: $dropdown-bg-color; color: #666; }
 ul.primary li:hover > a { color: #000; }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: $media-desktop) {
 
 	.arrow {
 		top: 28px;
@@ -82,7 +82,7 @@ ul.primary li:hover > a { color: #000; }
 }
 
 /* Smartphone */
-@media (max-width: 767px) {
+@media (max-width: $media-smartphone) {
 
   .logo{padding-left: $gutter-mobile;}
 

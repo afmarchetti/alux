@@ -13,7 +13,6 @@
   top: 0;
   color: #fff;
   text-indent: -9999px;
-  width: 70px;
   height: 100%;
   cursor: pointer;
   width: 60px;
@@ -47,26 +46,24 @@
 .siema__slide {
   height: 600px;
   background: #333;
-  text-align: center;
   color: #fff;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .siema__caption {
   z-index: 100;
-  position: absolute;
-  bottom: 20px;
-  width: 70%;
-  margin: 0 15%;
+  padding: 0 $gutter;
+  max-width: 1250px;
+  width:100%;
+  margin: 0 auto;
   color: #fff;
-  text-align: center;
   text-shadow: 0 0 5px #000;
 }
-
-.siema__caption h3 {
-  color: #fff;
-  font-size: 32px;
-}
+.siema__caption h1,
+.siema__caption h2,
+.siema__caption h3{color:#fff}
 
 .siema__filter {
   z-index: 10;
@@ -78,4 +75,12 @@
   opacity: 0.5;
   display: block;
   background: #000;
+}
+
+@media (max-width: 1300px) {
+  .container-siema__next .arrow,
+  .container-siema__prev .arrow {
+    bottom: $gutter ;
+    top:auto;
+  }
 }
