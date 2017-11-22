@@ -1,9 +1,9 @@
-##ALUX framework
+# ALUX framework
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
 
-##ALUX is a Lightweight Framework (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.
+## ALUX is a Lightweight Framework (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.
 Presentation, Examples & Docs: [http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 The Framework is built with HTML/CSS and pure Javascript</strong>. Dependencies Free, no jQuery but with a wide range of features:
@@ -38,11 +38,11 @@ Once you have downloaded ALUX, the first thing you need to do is include the CSS
 ```html
 <script src="path/to/alux.min.js"></script>
 ```
-###Svg
+### Svg
 add [arrow.svg](http://afmarchetti.github.io/alux/arrow.svg) in the project folder. (used in menu & slider)
 
 
-##Docs
+## Docs
 For all the Details & the Docs please visit:[http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 ## Credits
