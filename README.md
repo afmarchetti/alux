@@ -2,6 +2,10 @@
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
+## New! in v2.0:
+- Flexbox Auto Grid system
+- New Slider with Touch supported
+- Utilities for spacing bootstrap style
 
 ## ALUX is a Lightweight Framework (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.
 Presentation, Examples & Docs: [http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
