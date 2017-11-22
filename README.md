@@ -50,7 +50,7 @@ add [arrow.svg](http://afmarchetti.github.io/alux/arrow.svg) in the project fold
 For all the Details & the Docs please visit:[http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 ## Credits
-- For the Slider ALUX use Wallop Siema by Pawel Grzybek: (https://pawelgrzybek.com/siema/)
+- For the Slider ALUX use Siema by Pawel Grzybek: (https://pawelgrzybek.com/siema/)
 - The Grid System is an evolution of a Chris Coyer Article: (http://css-tricks.com/dont-overthink-it-grids/)
 
 ## Licensing
