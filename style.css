@@ -1,12 +1,21 @@
-.grid {background: #eee;}
+.bg-primary{background: #eee;border-radius: 3px;}
 .trasparent{background: none;}
-.module { background: #ccc;padding:10px }
+.module { background: #ccc;padding:10px 15px; border-radius: 3px; }
+
+
+#multiple-grids span{display: inline-block;width:50%;font-weight: bold;}
+.light{font-size: 16px;opacity:0.4;font-weight: normal;}
+#multiple-grids span small{opacity: 0.5}
+.line-tab{margin-bottom: 7px;}
+
+.col .module{background: #27e56b;}
+.green{color: #27e56b}
 
 .normal{font-weight: normal; font-size: 16px;}
 .giga{display: block;margin-bottom: 10px;font-size: 48px;}
 
-.classes-hide{opacity:0;}
-.classes-visible{opacity:0.5;}
+.classes-hide{width:0px; overflow: hidden;display: inline-block;height: 10px;}
+.classes-visible{opacity:0.5;width:auto;height: auto;display: inline;}
 #show-classes{background: red; padding: 10px; font-size: 14px; color:#fff; position: fixed; top:100px; right:0;cursor:pointer; z-index: 99}
 pre {
 	overflow: auto;
@@ -35,6 +44,7 @@ pre {
 		#features span,
 		.classes-hide,
 		#mobile span{display: none; }
+
 	}
 
 	/* Dots Nav */
