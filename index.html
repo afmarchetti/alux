@@ -38,12 +38,14 @@
     <nav>
       <ul id="menu" class="primary">
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Grid <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Grids <div class="arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="#multiple-grids">Multiple Grids</a></li>
+            <li><a href="#flexbox-grids">Auto Width Grids</a></li>
             <li><a href="#html5-structure">HTML5 Structure</a></li>
             <li><a href="#full">Full Width</a></li>
-            <li><a href="#push">Push</a></li>
+            <li><a href="#no-pad">No Paddign Grids</a></li>
+            <li><a href="#push">Columns Alignment</a></li>
             <li><a href="#pull">Push & Pull</a></li>
             <li><a href="#mobile-grid">Mobile Options</a></li>
           </ul>
@@ -73,8 +75,8 @@
             <li><a href="#buttons">Buttons</a></li>
             <li><a href="#animations">Animation</a></li>
             <li><a href="#responsive-images">Images Responsive</a></li>
-            <li><a href="#lines">Lines & spacer</a></li>
-            <li><a href="#margin">Margin</a></li>
+            <li><a href="#lines">Lines </a></li>
+            <li><a href="#margin">Spacing</a></li>
             <li><a href="#text-align">Text Align</a></li>
           </ul>
         </li>
@@ -100,7 +102,7 @@
 
 <div class="grid">
   <div class="col-50">
-    <h1 class="large"> ALUX &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
+    <h1 class="large"> ALUX <small>v2.0</small> &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
     <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
     <p><strong>The Framework</strong> is built with <strong>HTML/CSS</strong> and pure <strong>Javascript</strong>.  <br/>Dependencies Free, no jQuery but with a wide range of features:
     <br/> Grids, Sliders, Menus, Animations, Typography, Forms, Buttons & more.</p>
@@ -248,7 +250,7 @@
 
 <hr class="spacer">
 
-<div class="grid" id="html5-structure">
+<div class="grid" id="flexbox-grids">
   <div class="col">
     <h2>02. Auto Width Columns (thanks flexbox!)</h2>
     <p>You can combine every colums width <strong>.col-%</strong> with a fluid flexbox <strong>"auto"</strong> witdth colum <strong>.col</strong></p>
@@ -365,7 +367,7 @@
 <hr class="spacer">
 
 
-<div class="grid" id="full-no-pad">
+<div class="grid" id="no-pad">
   <div class="col">
     <h2>05. No paddding Full Width Grid</h2>
     <p>For a full width grid with no padding, use:</p>
@@ -987,7 +989,7 @@
 <div class="grid no-col" id="margin">
     <h2>20. Spacing</h2>
     <p><strong>Margin</strong></p>
-    <p>To easily add margin to an element you can use the <strong>.mb-1 => margin-bottom: 5px </strong> or <strong>.mt-2 => margin-top: 10px</strong> classes.</p>
+    <p>To easily add margin to an element you can use the class <strong>.mb-1 => margin-bottom: 5px </strong> or <strong>.mt-2 => margin-top: 10px</strong>. <br/> The system use letters mb-, mt-, ml-, mr- to determinate the side and 1, 2 or 3 to determinate the space.</p>
 
   <div class="mb-2">Element with margin bottom.</div>
   <div class="mt-1">Element with margin top.</div>
@@ -1002,7 +1004,7 @@
 
   </code></pre>
   <p><strong>Padding</strong></p>
-  <p>With the same margin login you can set padding.</p>
+  <p>With the same margin login you can set padding, you have to use p instead m, for example <strong>.pb-2 => padding-bottom: 10px;</strong></p>
   <div class="pb-2">Element with padding bottom.</div>
   <div class="pl-3">Element with padding left.</div>
 

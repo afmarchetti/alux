@@ -5,7 +5,7 @@
 .text-left { text-align: left; }
 .img-res { width: 100%; height: auto; margin-bottom: $gutter / 2;vertical-align: middle;}
 
-.m-0{margin: 0}
+.m-0{margin: 0!important}
 .m-1{margin: $gutter / 3}
 .m-2{margin: $gutter / 2}
 .m-3{margin: $gutter }
@@ -30,7 +30,7 @@
 .mr-2{margin-right: $gutter / 2}
 .mr-3{margin-right: $gutter }
 
-.p-0{padding: 0}
+.p-0{padding: 0!important}
 .p-1{padding: $gutter / 3}
 .p-2{padding: $gutter / 2}
 .p-3{padding: $gutter }
