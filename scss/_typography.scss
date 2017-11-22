@@ -29,44 +29,8 @@ a:focus, a:hover {
   color: darken($call-color , 10%);
 }
 
-/* Button */
-.button {
-  font-size: 14px;
-  color: #fff;
-  background: #666;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  padding: 12px 25px;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  text-shadow: none;
-}
-.button:hover {
-  background: darken($call-color , 10%);
-  color: #fff;
-}
-
 /* Paragraph */
-p { margin-bottom: 20px; }
-
-/* Useful Clsses*/
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-left { text-align: left; }
-.img-res { width: 100%; height: auto; margin-bottom: 20px;vertical-align: middle;}
-.margin-top{margin-top:40px}
-.margin-bottom{margin-bottom:40px}
-.no-margin{margin:0;padding:0;}
-
-  /* Animation */
-  .animate {
-    -webkit-transition: all 0.4s;
-       -moz-transition: all 0.4;
-            transition: all 0.4s;
-  }
+p { margin-bottom: 20px; font-size: 16px; }
 
 /* Blockquote */
 blockquote {
@@ -109,5 +73,6 @@ hr.spacer { border-top: 1px solid transparent; }
 @media (max-width: 767px) {
 
   .gigantic   { font-size: 74px;}
+  p { font-size: 14px; }
 
 }

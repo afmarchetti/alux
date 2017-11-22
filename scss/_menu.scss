@@ -1,7 +1,7 @@
 // main: alux.scss
 /* Header */
 .nav-header{float:left;margin:0;}
-.logo{float:left;padding:15px 0 0 $gutter;font-weight: bold; font-size: 25px}
+.logo{float:left;padding:15px 15px 0 $gutter;font-weight: bold; font-size: 25px}
 
 /* Menu */
 .no-pad-menu { padding: 0; margin-bottom: 0; background: transparent!important}
@@ -169,7 +169,6 @@ ul.primary li:hover > a { color: #000; }
 
   .nav-wrap ul.primary li:hover ul {
     display: block;
-    background: darken($menu-color, 10%);
     color: $menu-mobile-text-color-select;
   }
 
@@ -182,9 +181,9 @@ ul.primary li:hover > a { color: #000; }
   }
 
   .nav-wrap ul.primary ul.dropdown-menu li a {
-    background: #111;
+    background: darken($menu-color, 10%);
     border: none;
-    color: #8b8b8b;
+    color: $menu-mobile-text-color-hover;
   }
 
   .nav-wrap ul.primary ul.dropdown-menu li a:hover {

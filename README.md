@@ -1,9 +1,13 @@
-#ALUX framework
+# ALUX 2.0 framework
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
+## What's new in v2.0?
+- Flexbox Auto Grid System
+- New Slider with Touch Support
+- Utilities for spacing Margin & Padding
 
-###ALUX is a Lightweight Framework (20K) for Creating Super-Fast and Beautifully Responsive Web Apps.
+### ALUX is a Lightweight Framework (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.
 Presentation, Examples & Docs: [http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 The Framework is built with HTML/CSS and pure Javascript</strong>. Dependencies Free, no jQuery but with a wide range of features:
@@ -14,14 +18,14 @@ Easy, Light, Fast, Flexible.
 
 ## Examples
 - [One Page Landing](http://afmarchetti.github.io/alux/home-onepage.html) – This is Alux most basic implementation
-- [Home with Slider](http://afmarchetti.github.io/alux/home-slider.html) – Using the Slider Based on [Wallop](https://github.com/peduarte/wallop) library
+- [Home with Slider](http://afmarchetti.github.io/alux/home-slider.html) – Using the Slider Based on [Siema](https://github.com/pawelgrzybek/siema) library
 
 ## Benefits
-- Mobile first
+- Simple
 - Transitions/Animations are all in CSS
 - Minimal JavaScript
 - Flexible & Scalable
-- 20KB minified
+- 25KB minified
 - Dependency free
 
 ## Usage
@@ -38,11 +42,11 @@ Once you have downloaded ALUX, the first thing you need to do is include the CSS
 ```html
 <script src="path/to/alux.min.js"></script>
 ```
-###Svg
+### Svg
 add [arrow.svg](http://afmarchetti.github.io/alux/arrow.svg) in the project folder. (used in menu & slider)
 
 
-##Docs
+## Docs
 For all the Details & the Docs please visit:[http://afmarchetti.github.io/alux/](http://afmarchetti.github.io/alux/)
 
 ## Credits

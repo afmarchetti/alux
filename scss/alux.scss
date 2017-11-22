@@ -1,10 +1,12 @@
 // compileCompressed: ../$1.min.css
+/* Alux v2.0 */
 /* Vendor Dependencies */
 @import 'variables';
 @import 'reset';
 @import 'slider';
-@import 'slider-slide';
 @import 'typography';
+@import 'buttons';
 @import 'form';
 @import 'grid';
 @import 'menu';
+@import 'utilities';
