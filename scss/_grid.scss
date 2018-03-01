@@ -1,20 +1,21 @@
 // main: alux.scss
 /* Grid (Mobile First) */
 
+body,
+html{height:100%;}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.cover{background: #eee;padding: 70px 0; margin-bottom: 20px;}
-
 /* Grid
 ------------------------- */
 
 .grid {
   margin: 0 auto;
-  max-width: 1250px;
+  max-width: $max-width;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -24,8 +25,6 @@
 .grid--center{justify-content: center;}
 .grid--right{justify-content: flex-end;}
 .grid--full { max-width: 100%; }
-.grid.no-col{display: block; padding: $gutter;}
-
 
 /* Columns
 ------------------------- */
@@ -201,3 +200,7 @@
   .col.sma-20 { flex: 0 0 20%; }
 
 }
+
+
+// col ovveride
+.no-col{display: block; padding: $gutter;}
