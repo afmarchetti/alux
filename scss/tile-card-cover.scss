@@ -1,0 +1,70 @@
+// main: alux.scss
+
+/* Tile
+------------------------------ */
+.tile{
+  width: 100%;
+  height: 300px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile__text{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Filter */
+
+.filter:after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  display: block;
+  background: #000;
+}
+
+.filter h1,
+.filter h2,
+.filter h3,
+.filter h4,
+.filter p{color:#fff;}
+
+/* Card
+------------------------------ */
+
+.card{
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.card__copy {
+  padding: $gutter;
+}
+
+/* Cover
+------------------------------ */
+
+.cover{
+  min-height: 70%;
+  background: #eee;
+  padding: 70px 0;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover__text{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}

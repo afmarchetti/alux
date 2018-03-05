@@ -1,8 +1,14 @@
-# ALUX 2.0 framework
+# ALUX 2.1 framework
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
-## What's new in v2.0?
+## What's new in v2.1?
+- Cover Component
+- Card / Tile Component
+- New Demo Template
+- Same Size 25K!
+
+## Features Added in v2.0
 - Flexbox Auto Grid System
 - New Slider with Touch Support
 - Utilities for spacing Margin & Padding

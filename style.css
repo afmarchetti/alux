@@ -4,7 +4,7 @@
 
 
 #multiple-grids span{display: inline-block;width:50%;font-weight: bold;}
-.light{font-size: 16px;opacity:0.4;font-weight: normal;}
+/* .light{font-size: 16px;opacity:0.4;font-weight: normal;} */
 #multiple-grids span small{opacity: 0.5}
 .line-tab{margin-bottom: 7px;}
 
