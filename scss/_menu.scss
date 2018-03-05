@@ -156,6 +156,10 @@ ul.primary li:hover > a { color: #000; }
     -webkit-overflow-scrolling: touch;
   }
 
+  .nav-wrap .dropdown-menu.open{
+    max-height: 999px;
+  }
+
   ul.primary li a {padding: 20px;}
 
   .nav-wrap ul.primary li:hover a {

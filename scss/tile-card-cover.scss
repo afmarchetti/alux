@@ -68,3 +68,15 @@
   z-index: 2;
   text-align: center;
 }
+
+/* Smartphone */
+@media (max-width: $media-smartphone) {
+  .cover{padding: 20px 0;}
+  .tile{height: 230px}
+  .card__copy {
+    padding: ($gutter / 2 );
+  }
+  .card__copy p{
+    font-size: 12px;
+  }
+}
