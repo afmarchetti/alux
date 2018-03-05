@@ -8,7 +8,7 @@ The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.n
 - New Demo Template
 - Same Size 25K!
 
-## Features Added in v2.0?
+## Features Added in v2.0
 - Flexbox Auto Grid System
 - New Slider with Touch Support
 - Utilities for spacing Margin & Padding
