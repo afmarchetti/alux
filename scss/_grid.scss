@@ -127,7 +127,7 @@ html{height:100%;}
 
 /* no padding */
 .no-pad,
-.no-pad [class*='col-']{padding:0;}
+.no-pad [class*='col-']{padding:0!important;}
 
 /* Nested Grid */
 .grid .grid{padding:0px 0 0 0;}
@@ -204,6 +204,8 @@ html{height:100%;}
   .col.sma-30 { flex: 0 0 30%; }
   .col.sma-25 { flex: 0 0 25%; }
   .col.sma-20 { flex: 0 0 20%; }
+
+  .grid .grid [class*='col-']{padding-right: 0;}
 
 }
 

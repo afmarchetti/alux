@@ -565,6 +565,77 @@
 <hr class="spacer">
 
 
+<div class="grid" id="html5-structure">
+  <div class="col">
+    <h2>09.1 Nested Grid </h2>
+    <p>You can nested Grid how many times you need.</p>
+  </div>
+</div>
+
+
+<section class="grid bg-primary" id="nested-grid">
+  <div class="col-20">
+    <h3>Sidebar</h3>
+    <div class="module">
+    20% <span class="classes-hide"> .col-20</span>
+    </div>
+    <ul class="mt-2">
+      <li>Link</li>
+      <li>Lorem link</li>
+      <li>Ipsum link</li>
+
+    </ul>
+  </div>
+  <div class="col-80">
+
+    <h3>Content</h3>
+    <div class="module">
+    80% <span class="classes-hide"> .col-80</span>
+    </div>
+
+    <div class="grid">
+
+      <div class="col-30">
+          <h4 class="mt-2">Nested Grid Col</h3>
+          <div class="module">
+          30% of 80%<span class="classes-hide"> .col-30</span>
+          </div>
+      </div>
+      <div class="col-70">
+        <h4 class="mt-2">Nested Grid Col</h3>
+          <div class="module">
+          70% of 80%<span class="classes-hide"> .col-70</span>
+          </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<pre><code>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;col-20&quot;&gt;
+    &lt;h4&gt;Grid Column&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor voluptatibus.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-80&quot;&gt;
+    &lt;h4&gt;Nested Grid Column&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit  adipisci bus.&lt;/p&gt;
+    &lt;div class=&quot;grid&quot;&gt;
+      &lt;div class=&quot;col-30&quot;&gt;
+        &lt;h5&gt;Nested Grid of Nested Grid Column&lt;/h5&gt;
+        &lt;p&gt;Lorem itaque distinctio iure voluptatibus.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-70&quot;&gt;
+        &lt;h5&gt;Nested Grid of Nested Grid Column&lt;/h5&gt;
+        &lt;p&gt;Lorem itaque distinctio iure voluptatibus.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre></code>
+
 
 <hr class="spacer">
 
