@@ -129,6 +129,13 @@ html{height:100%;}
 .no-pad,
 .no-pad [class*='col-']{padding:0;}
 
+/* Nested Grid */
+.grid .grid{padding:0px 0 0 0;}
+.grid .grid [class*='col-']{
+  padding-left:0;
+  margin-bottom: 0;
+  padding-right: $gutter;
+}
 
 @media (max-width: $media-tablet) {
 
@@ -162,7 +169,6 @@ html{height:100%;}
   .col.tab-25 { flex: 0 0 25%; }
 
   [class*='col'] { margin-bottom: $gutter ; }
-
 
 }
 
