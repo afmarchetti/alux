@@ -137,6 +137,10 @@ html{height:100%;}
   padding-right: $gutter;
 }
 
+.grid .grid [class*='col-']:last-child{
+  padding-right: 0;
+}
+
 @media (max-width: $media-tablet) {
 
   .tab-100 { width: 100%; }
