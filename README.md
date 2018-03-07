@@ -5,6 +5,7 @@ The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.n
 ## What's new in v2.1?
 - Cover Component
 - Card / Tile Component
+- Nested Grid Support
 - New Demo Template
 - Same Size 25K!
 
