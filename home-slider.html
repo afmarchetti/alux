@@ -268,23 +268,8 @@ var next = document.querySelector(".container-siema__next");
 var prev = document.querySelector(".container-siema__prev");
 var slideCount = document.querySelector(".siema").children.length - 1;
 
-function printSlideIndex() {
-  if (this.currentSlide.toString() === "0") {
-    prev.classList.add('arrow--disable')
-  } else {
-    prev.classList.remove('arrow--disable');
-  }
-  if (this.currentSlide.toString() === slideCount.toString()) {
-    next.classList.add('arrow--disable')
-  } else {
-    next.classList.remove('arrow--disable');
-  }
-}
-
 var mySiema = new Siema({
-  onInit: printSlideIndex,
-  onChange: printSlideIndex
-  // loop: true,
+  loop: true,
 });
 
 prev.addEventListener("click", function () {

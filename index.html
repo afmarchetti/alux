@@ -992,7 +992,7 @@
   &lt;/div&gt;</code></pre>
 <strong>Javascript</strong>
   <pre><code>&lt;script&gt;
-    new Siema();
+    var mySiema = new Siema({ loop: true });
 &lt;/script&gt;</code></pre>
 
 </div>
@@ -1292,29 +1292,14 @@
 
 <script src="js/alux.min.js"></script>
 
-<script>
 
+<script>
 var next = document.querySelector(".container-siema__next");
 var prev = document.querySelector(".container-siema__prev");
 var slideCount = document.querySelector(".siema").children.length - 1;
 
-function printSlideIndex() {
-  if (this.currentSlide.toString() === "0") {
-    prev.classList.add('arrow--disable')
-  } else {
-    prev.classList.remove('arrow--disable');
-  }
-  if (this.currentSlide.toString() === slideCount.toString()) {
-    next.classList.add('arrow--disable')
-  } else {
-    next.classList.remove('arrow--disable');
-  }
-}
-
 var mySiema = new Siema({
-  onInit: printSlideIndex,
-  onChange: printSlideIndex
-  // loop: true,
+  loop: true,
 });
 
 prev.addEventListener("click", function () {
@@ -1324,7 +1309,6 @@ prev.addEventListener("click", function () {
 next.addEventListener("click", function () {
   return mySiema.next();
 });
-
 </script>
 
 <script>
