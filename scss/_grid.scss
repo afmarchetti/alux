@@ -22,6 +22,13 @@ html{height:100%;}
   padding: $gutter ($gutter / 2 );
 }
 
+.grid-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .grid--center{justify-content: center;}
 .grid--right{justify-content: flex-end;}
 .grid--full { max-width: 100%; }
@@ -31,8 +38,9 @@ html{height:100%;}
 
 .col{ flex: 1;}
 
-[class*='col'] {
-  padding: 0 ($gutter / 2 ) ;
+[class*='col-'] {
+  padding: 0 ($gutter / 2);
+  float: left;
   position: relative;
 }
 
@@ -136,6 +144,8 @@ html{height:100%;}
     padding-right: $gutter;
     margin-bottom: 0;
   }
+  .grid-fluid .grid-fluid,
+  .grid-fluid .grid-fluid [class*='col-'] {padding: 0}
 //
 // .grid .grid [class*='col-']:last-child{
 //   padding-right: 0;
