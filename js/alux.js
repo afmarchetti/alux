@@ -10,9 +10,7 @@ function initAlux(){
       classString += ' ' + className;
     }
     else {
-
       classString = classString.substr(0, nameIndex-1) + classString.substr(nameIndex+className.length);
-      console.log(nameIndex);
     }
     element.className = classString;
   }
