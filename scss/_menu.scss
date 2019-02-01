@@ -3,6 +3,8 @@
 .nav-header{float:left;margin:0;}
 .logo{float:left;padding:15px 15px 0 $gutter / 2 ;font-weight: bold; font-size: 25px}
 
+.spotlight{padding:12px 15px 0 $gutter / 2 ;font-weight: bold; font-size: 25px; position: relative;z-index: 9999}
+
 /* Menu */
 .no-pad-menu { padding: 0; margin-bottom: 0; background: transparent!important}
 
@@ -19,15 +21,16 @@
 .nav-wrap nav { position: relative; text-align: center; float: right; }
 
 /* Animate Dropdown Mobile  */
-ul.primary, ul.dropdown-menu {
+.nav-container, ul.dropdown-menu {
   -webkit-transition: max-height 0.3s;
      -moz-transition: max-height 0.3s;
           transition: max-height 0.3s;
 }
-ul.primary li a { display: block; padding: 22px 30px;}
+ul.primary li a { display: block; padding: 22px 14px;}
 ul.primary li a:hover { color: $menu-text-color-hover; }
 
 /* subs */
+ul.primary li.dropdown a{padding-right: 25px;}
 ul.dropdown-menu {
   position: absolute; z-index: 200; min-width: 200px; display: none;
   box-shadow: 0 7px 12px rgba(0,0,0,.175);
@@ -70,6 +73,12 @@ ul.primary li:hover ul { display: block; }
 ul.primary li:hover a { background: $dropdown-bg-color; color: #666; }
 ul.primary li:hover > a { color: #000; }
 
+
+/* Nav Double */
+.nav-double .nav-container{flex: 1;}
+.nav-double ul.primary--left{float:left;}
+.nav-double ul.primary--right{float:right;}
+
 /* Desktop */
 @media (min-width: $media-desktop) {
 
@@ -99,7 +108,7 @@ ul.primary li:hover > a { color: #000; }
   .nav-wrap li {
     float: none;
   }
-  .nav-wrap .primary {
+  .nav-wrap .nav-container{
     /* Initially we don't want any height, and we want the contents to be hidden */
     max-height: 0;
     overflow: hidden;
@@ -149,7 +158,7 @@ ul.primary li:hover > a { color: #000; }
   }
 
   /* menu mobile height */
-  .nav-wrap .primary.open,
+  .nav-wrap .nav-container.open,
   .nav-wrap .dropdown-menu.open {
     max-height: 500px;
     overflow: scroll;
@@ -194,11 +203,25 @@ ul.primary li:hover > a { color: #000; }
     color: #ccc;
   }
 
-  .alux-arrow {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  .dropdown .select .alux-arrow {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
 
   .no-pad-menu { padding: 0;}
+
+  /* Nav double */
+  .nav-double .nav-container{flex: auto;}
+  .nav-double ul.primary--left,
+  .nav-double ul.primary--right{float:left;width: 100%;}
+
+
+  /* Footer menu mobile */
+  .mobile-footer-menu {height: 70px;}
+  .mobile-footer-menu .nav-container{ height: 100vh;max-height: 100vh; position: fixed;bottom:0;background: $menu-color;padding-top: 70px;right:-100%}
+  .mobile-footer-menu .nav-container.open{right: 0;height: 100vh;max-height: 100vh;}
+  .mobile-footer-menu {position: fixed; bottom:0; left: 0;z-index: 999;padding-bottom: 70px;}
+  .mobile-footer-menu .nav-header{position: fixed; top:0; left: 0;z-index: 9999}
+  .mobile-footer-menu .tog{bottom:0;position: fixed;right:0;}
 
 }
