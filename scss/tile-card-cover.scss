@@ -73,7 +73,7 @@
 
 /* Smartphone */
 @media (max-width: $media-smartphone) {
-  .cover{padding: 20px 0;}
+  // .cover{padding: 100px 0;}
   .tile{height: 230px}
   .card__copy {
     padding: ($gutter / 2 );

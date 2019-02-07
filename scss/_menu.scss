@@ -5,14 +5,19 @@
 
 .spotlight{padding:12px 15px 0 $gutter / 2 ;font-weight: bold; font-size: 25px; position: relative;z-index: 9999}
 
+
 /* Menu */
-.no-pad-menu { padding: 0; margin-bottom: 0; background: transparent!important}
+.no-pad-menu { padding: 0; margin-bottom: 0; background: transparent!important;}
+.nav-fixed{position: fixed;z-index: 9999}
 
 .nav-wrap { display: inline-block; width: 100%;  background: $menu-color; float:left; }
 .nav-wrap a { text-decoration: none; color: $menu-text-color; display: block; }
 .nav-wrap ul { list-style: none; position: relative; text-align: left; margin: 0; }
 .nav-wrap li { float: left; margin: 0; position: relative; }
 
+/* Light Menu */
+.nav-light{background: $menu-color-light;}
+.nav-light a{color: $menu-text-color-light;}
 
 /* clear'n floats */
 .nav-wrap ul:after { clear: both; }
@@ -28,6 +33,9 @@
 }
 ul.primary li a { display: block; padding: 22px 14px;}
 ul.primary li a:hover { color: $menu-text-color-hover; }
+
+/* Light Menu */
+.nav-light ul.primary li a:hover { color: $menu-text-color-light-hover; }
 
 /* subs */
 ul.primary li.dropdown a{padding-right: 25px;}
@@ -46,11 +54,15 @@ ul.dropdown-menu li { float: none; margin: 0; }
   top: 27px;
   right: 18px;
   position: absolute;
-  background: url(arrow.svg) center center;
+  background: url(arrow-white.svg) center center;
   background-size: 22px 22px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+
+/* Light Menu */
+.nav-light .alux-arrow{background: url(arrow.svg) center center; background-size: 22px 22px;}
+
 .select .alux-arrow {
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
           transform: rotate(90deg);
@@ -137,6 +149,10 @@ ul.primary li:hover > a { color: #000; }
     right: 16px;
     background: #fff;
   }
+  /* Light Menu */
+  .nav-light .tog span {
+    background: #000;
+  }
   .tog span:first-child {
     -webkit-transform: translateY(-11px);
             transform: translateY(-11px);
@@ -184,6 +200,14 @@ ul.primary li:hover > a { color: #000; }
     display: block;
     color: $menu-mobile-text-color-select;
   }
+  /* Light Menu */
+  .nav-light.nav-wrap ul.primary li a.select {
+    background: darken($menu-color-light, 5%);
+    color:#000;
+  }
+  .nav-light.nav-wrap ul.primary li:hover a {
+    color: $menu-text-color-light-hover;
+  }
 
   .nav-wrap ul.dropdown-menu {
     display: block;
@@ -200,7 +224,13 @@ ul.primary li:hover > a { color: #000; }
   }
 
   .nav-wrap ul.primary ul.dropdown-menu li a:hover {
-    color: #ccc;
+    color: lighten($menu-mobile-text-color-hover,15%);
+  }
+
+  /* Light Menu */
+  .nav-light.nav-wrap ul.primary ul.dropdown-menu li a {
+    background: darken($menu-color-light, 10%);
+    color: $menu-text-color-light-hover;
   }
 
   .dropdown .select .alux-arrow {
@@ -217,11 +247,22 @@ ul.primary li:hover > a { color: #000; }
 
 
   /* Footer menu mobile */
-  .mobile-footer-menu {height: 70px;}
-  .mobile-footer-menu .nav-container{ height: 100vh;max-height: 100vh; position: fixed;bottom:0;background: $menu-color;padding-top: 70px;right:-100%}
+  .mobile-footer-menu,
+  .mobile-footer-menu .grid{height: 0px;position: relative;}
+  .mobile-footer-menu .nav-container{height: 100vh;max-height: 100vh; position: fixed;top:0;background: $menu-color;padding-top: 70px;right:-100%}
+
+  /* Light Menu */
+  .nav-light.mobile-footer-menu .nav-container{background: $menu-color-light;}
   .mobile-footer-menu .nav-container.open{right: 0;height: 100vh;max-height: 100vh;}
-  .mobile-footer-menu {position: fixed; bottom:0; left: 0;z-index: 999;padding-bottom: 70px;}
+
   .mobile-footer-menu .nav-header{position: fixed; top:0; left: 0;z-index: 9999}
-  .mobile-footer-menu .tog{bottom:0;position: fixed;right:0;}
+  .mobile-footer-menu .tog{bottom:0;position: fixed;right:0;z-index: 9999}
+  .mobile-footer-menu .spotlight{bottom:15px;position: fixed;left:0;}
+
+  .mobile-footer-menu .grid:after{content: ''; background: darken($menu-color, 10%);position: fixed;height: 70px;width: 100%; bottom:0; left:0;display: block;}
+  .mobile-footer-menu .nav-container:after{content: '';width: 100%; height: 70px;display: block;float:left;}
+
+  /* Light Menu */
+  .nav-light.mobile-footer-menu .grid:after{background: darken($menu-color-light, 10%);}
 
 }
