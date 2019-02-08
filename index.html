@@ -807,6 +807,116 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+
+
+
+<hr class="spacer">
+
+
+<div class="grid pt-3 no-col" id="full-menu">
+  <h2>12.1 - Double Footer Menu Mobile + Light Background</h2>
+  <p> You can have <strong>2 Menus</strong> with light Background and <strong>Footer Menu</strong> on Mobile. Add this class to .nav-wrap: <strong> nav-double, mobile-footer-menu, nav-light</strong>. <br/><br/> <strong>Example layout</strong> with fixed navbar and footer menu  (NEW!): <a href="home-double-footer-menu.html">home-double-footer-menu.html</a> </p>
+</div>
+<div class="nav-wrap nav-double mobile-footer-menu nav-light" style="border: 1px solid #ddd;">
+  <div class="grid no-pad-menu">
+    <div class="nav-header">
+      <a href="#" class="logo">ALUX</a>
+    </div>
+    <div class="tog" data-target="menu-double">
+      <span class="animate"></span>
+      <span class="span-middle animate"></span>
+      <span class="animate"></span>
+    </div>
+    <nav class="nav-container animate" id="menu-double">
+      <ul class="primary primary--left">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Shoes</a></li>
+            <li><a href="">Jacket</a></li>
+            <li><a href="">Hat</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Services <div class="alux-arrow animate"></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Customize</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="primary primary--right">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Shoes</a></li>
+            <li><a href="">Jacket</a></li>
+
+            <li><a href="">Coat</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="spotlight">
+      <input type="text" placeholder="Search...">
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<pre><code>&lt;div class=&quot;nav-wrap nav-double mobile-footer-menu nav-fixed nav-light&quot;&gt;
+    &lt;div class=&quot;grid no-pad-menu&quot;&gt;
+      &lt;div class=&quot;nav-header&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;ALUX&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tog&quot; data-target=&quot;menu-double&quot;&gt;
+        &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;span-middle animate&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;nav class=&quot;nav-container animate&quot; id=&quot;menu-double&quot;&gt;
+        &lt;ul class=&quot;primary primary--left&quot;&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Shoes&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Jacket&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Hat&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Services &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Delivery&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Customize&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;primary primary--right&quot;&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Shoes&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Jacket&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Coat&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;div class=&quot;spotlight&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Search...&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</code></pre>
+
+
 <hr class="spacer">
 
 <div class="grid pt-3 no-col">
