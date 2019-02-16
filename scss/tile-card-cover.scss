@@ -57,7 +57,7 @@
 .cover{
   min-height: 70%;
   background: #eee;
-  padding: 70px 0;
+  padding: 100px 0;
   margin-bottom: 20px;
   position: relative;
   display: flex;
@@ -81,4 +81,5 @@
   .card__copy p{
     font-size: 14px;
   }
+  .cover{padding: 70px 10px 40px 10px;}
 }

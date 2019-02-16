@@ -8,7 +8,7 @@
 
 /* Menu */
 .no-pad-menu { padding: 0; margin-bottom: 0; background: transparent!important;}
-.nav-fixed{position: fixed;z-index: 9999}
+.nav-fixed{position: fixed;z-index: 9999; top:0;}
 
 .nav-wrap { display: inline-block; width: 100%;  background: $menu-color; float:left; }
 .nav-wrap a { text-decoration: none; color: $menu-text-color; display: block; }
@@ -99,6 +99,8 @@ ul.primary li:hover > a { color: #000; }
 		right: 6px;
     background-size: 18px 18px;
 	}
+
+  .fixed-nav-spacer{padding-top: 70px;}
 
 }
 
