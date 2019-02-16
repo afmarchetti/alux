@@ -8,12 +8,14 @@ body {
 }
 
 .gigantic   { font-size: 110px;  letter-spacing: -2px; }
-.huge, h1, .h1  {  font-size: 48px; line-height: 1.05; }
+.huge, h1, .h1  {  font-size: 56px; line-height: 1.05; }
 .large, h2, .h2 { font-size: 32px; line-height: 1.14; }
-.bigger, h3, .h3 { font-size: 26px; line-height: 1.38; }
-.big, h4, .h4   { font-size: 22px; line-height: 1.38; }
-.normal, h5, .h5 { font-size: 18px; line-height: 1.38; }
-.small, h6, .h6, small { font-size: 14px; line-height: 1.2; }
+.bigger, h3, .h3 { font-size: 28px; line-height: 1.38; }
+.big, h4, .h4   { font-size: 24px; line-height: 1.38; }
+.normal, h5, .h5 { font-size: 19px; line-height: 1.38; }
+.small, h6, .h6, small { font-size: 15px; line-height: 1.2; }
+
+
 
 .bold{font-weight: 700;}
 .light{font-weight: 300;}
@@ -22,7 +24,7 @@ body {
 /* Title color */
 .gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6 {
   color: #222;
-  margin-bottom: $gutter / 2;
+  margin-bottom: $gutter / 1.5;
 }
 
 /* Link color */
@@ -34,7 +36,7 @@ a:focus, a:hover {
 }
 
 /* Paragraph */
-p { margin-bottom: 20px; font-size: 16px; }
+p { margin-bottom: $gutter / 1.5; font-size: 16px; }
 
 /* Blockquote */
 blockquote {

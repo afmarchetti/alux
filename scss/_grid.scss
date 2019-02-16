@@ -19,8 +19,8 @@ html{height:100%;}
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  margin-bottom: $gutter;
-  //padding: 0 ($gutter / 2 );
+  margin-bottom: $gutter / 2;
+  //padding: $gutter ($gutter / 2 );
 }
 
 .grid--center{justify-content: center;}

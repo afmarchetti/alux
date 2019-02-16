@@ -54,7 +54,7 @@
 
 .siema__caption {
   z-index: 100;
-  padding: 0 $gutter;
+  padding: 0 ($gutter*2.5);
   max-width: 1250px;
   width:100%;
   margin: 0 auto;
@@ -83,4 +83,5 @@
     bottom: $gutter ;
     top:auto;
   }
+  .siema__caption{padding: 0 $gutter;}
 }
