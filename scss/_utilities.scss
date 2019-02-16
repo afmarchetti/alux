@@ -9,71 +9,85 @@
 .m-1{margin: $gutter / 3}
 .m-2{margin: $gutter / 2}
 .m-3{margin: $gutter }
+.m-4{margin: $gutter * 2 }
 
 .mt-0{margin-top: 0 }
 .mt-1{margin-top: $gutter / 3}
 .mt-2{margin-top: $gutter / 2}
 .mt-3{margin-top: $gutter  }
+.mt-4{margin-top: $gutter * 2  }
 
 .mb-0{margin-bottom: 0}
 .mb-1{margin-bottom: $gutter / 3}
 .mb-2{margin-bottom: $gutter / 2}
 .mb-3{margin-bottom: $gutter }
+.mb-4{margin-bottom: $gutter * 2}
 
 .ml-0{margin-left: 0}
 .ml-1{margin-left: $gutter / 3}
 .ml-2{margin-left: $gutter / 2}
 .ml-3{margin-left: $gutter }
+.ml-4{margin-left: $gutter * 2}
 
 .mr-0{margin-right: 0 }
 .mr-1{margin-right: $gutter / 3}
 .mr-2{margin-right: $gutter / 2}
 .mr-3{margin-right: $gutter }
+.mr-4{margin-right: $gutter * 2 }
 
 .p-0{padding: 0!important}
 .p-1{padding: $gutter / 3}
 .p-2{padding: $gutter / 2}
 .p-3{padding: $gutter }
+.p-4{padding: $gutter * 2 }
 
 .pt-0{padding-top: 0 }
 .pt-1{padding-top: $gutter / 3}
 .pt-2{padding-top: $gutter / 2}
 .pt-3{padding-top: $gutter  }
+.pt-4{padding-top: $gutter * 2  }
 
 .pb-0{padding-bottom: 0}
 .pb-1{padding-bottom: $gutter / 3}
 .pb-2{padding-bottom: $gutter / 2}
 .pb-3{padding-bottom: $gutter }
+.pb-4{padding-bottom: $gutter * 2}
 
 .pl-0{padding-left: 0}
 .pl-1{padding-left: $gutter / 3}
 .pl-2{padding-left: $gutter / 2}
 .pl-3{padding-left: $gutter }
+.pl-4{padding-left: $gutter * 2}
 
 .pr-0{padding-right: 0 }
 .pr-1{padding-right: $gutter / 3}
 .pr-2{padding-right: $gutter / 2}
 .pr-3{padding-right: $gutter }
+.pr-4{padding-right: $gutter * 2}
 
 .mx-0{margin-left: 0; margin-right: 0;}
 .mx-1{margin-left: $gutter / 3; margin-right: $gutter / 3;}
 .mx-2{margin-left: $gutter / 2; margin-right: $gutter / 2;}
 .mx-3{margin-left: $gutter; margin-right: $gutter;}
+.mx-4{margin-left: $gutter * 2; margin-right: $gutter * 2;}
 
 .my-0{margin-top: 0; margin-bottom: 0;}
 .my-1{margin-top: $gutter / 3; margin-bottom: $gutter / 3;}
 .my-2{margin-top: $gutter / 2; margin-bottom: $gutter / 2;}
 .my-3{margin-top: $gutter; margin-bottom: $gutter;}
+.my-4{margin-top: $gutter * 2; margin-bottom: $gutter * 2;}
 
 .px-0{padding-left: 0; padding-right: 0;}
 .px-1{padding-left: $gutter / 3; padding-right: $gutter / 3;}
 .px-2{padding-left: $gutter / 2; padding-right: $gutter / 2;}
 .px-3{padding-left: $gutter; padding-right: $gutter;}
+.px-4{padding-left: $gutter * 2; padding-right: $gutter * 2;}
 
 .py-0{padding-top: 0; padding-bottom: 0;}
 .py-1{padding-top: $gutter / 3; padding-bottom: $gutter / 3;}
 .py-2{padding-top: $gutter / 2; padding-bottom: $gutter / 2;}
 .py-3{padding-top: $gutter; padding-bottom: $gutter;}
+.py-4{padding-top: $gutter * 2; padding-bottom: $gutter * 2;}
 
   /* Animation */
   .animate {

@@ -45,6 +45,7 @@
 
 .card{
   box-shadow: 0 0 20px rgba(0,0,0,.1);
+  margin-bottom: $gutter;
 }
 .card__copy {
   padding: $gutter;
@@ -56,12 +57,13 @@
 .cover{
   min-height: 70%;
   background: #eee;
-  padding: 70px 0;
+  padding: 100px 0;
   margin-bottom: 20px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: $gutter;
 }
 .cover__text{
   position: relative;
@@ -71,7 +73,7 @@
 
 /* Smartphone */
 @media (max-width: $media-smartphone) {
-  .cover{padding: 20px 0;}
+  // .cover{padding: 100px 0;}
   .tile{height: 230px}
   .card__copy {
     padding: ($gutter / 2 );
@@ -79,4 +81,5 @@
   .card__copy p{
     font-size: 14px;
   }
+  .cover{padding: 70px 10px 40px 10px;}
 }

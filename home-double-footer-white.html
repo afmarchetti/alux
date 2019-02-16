@@ -6,27 +6,26 @@
   <title>ALUX - Framework</title>
   <link rel="stylesheet" href="alux.min.css">
 </head>
-<body>
+<body class="fixed-nav-spacer">
 
-  <div class="nav-wrap">
+  <div class="nav-wrap nav-double mobile-footer-menu nav-fixed nav-light">
     <div class="grid no-pad-menu">
       <div class="nav-header">
         <a href="#" class="logo">ALUX</a>
-        <div class="tog" data-target="menu-sub-2">
-          <span class="animate"></span>
-          <span class="span-middle animate"></span>
-          <span class="animate"></span>
-        </div>
       </div>
-      <nav class="nav-container" id="menu-sub-2">
-        <ul class="primary">
+      <div class="tog" data-target="menu-double">
+        <span class="animate"></span>
+        <span class="span-middle animate"></span>
+        <span class="animate"></span>
+      </div>
+      <nav class="nav-container animate" id="menu-double">
+        <ul class="primary primary--left">
           <li class="dropdown">
             <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
             <ul class="dropdown-menu">
               <li><a href="">Shoes</a></li>
               <li><a href="">Jacket</a></li>
               <li><a href="">Hat</a></li>
-              <li><a href="">Coat</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -37,10 +36,24 @@
               <li><a href="">Customize</a></li>
             </ul>
           </li>
-          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="primary primary--right">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
+            <ul class="dropdown-menu">
+              <li><a href="">Shoes</a></li>
+              <li><a href="">Jacket</a></li>
+
+              <li><a href="">Coat</a></li>
+            </ul>
+          </li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <div class="spotlight">
+        <input type="text" placeholder="Search...">
+      </div>
     </div>
   </div>
   <div class="clearfix"></div>
@@ -283,38 +296,6 @@
 
       <script src="js/alux.min.js"></script>
 
-      <script>
-      var next = document.querySelector(".container-siema__next");
-      var prev = document.querySelector(".container-siema__prev");
-      var slideCount = document.querySelector(".siema").children.length - 1;
 
-      function printSlideIndex() {
-        if (this.currentSlide.toString() === "0") {
-          prev.classList.add('alux-arrow--disable')
-        } else {
-          prev.classList.remove('alux-arrow--disable');
-        }
-        if (this.currentSlide.toString() === slideCount.toString()) {
-          next.classList.add('alux-arrow--disable')
-        } else {
-          next.classList.remove('alux-arrow--disable');
-        }
-      }
-
-      var mySiema = new Siema({
-        onInit: printSlideIndex,
-        onChange: printSlideIndex
-        // loop: true,
-      });
-
-      prev.addEventListener("click", function () {
-        return mySiema.prev();
-      });
-
-      next.addEventListener("click", function () {
-        return mySiema.next();
-      });
-    </script>
-
-  </body>
-  </html>
+    </body>
+    </html>

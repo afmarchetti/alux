@@ -35,10 +35,10 @@
         <span class="animate"></span>
       </div>
     </div>
-    <nav>
-      <ul id="menu" class="primary">
+    <nav class="nav-container" id="menu">
+      <ul class="primary">
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Grids <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Grids <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="#multiple-grids">Multiple Grids</a></li>
             <li><a href="#flexbox-grids">Auto Width Grids</a></li>
@@ -52,14 +52,14 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Menu <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Menu <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="#menu-grid">Menu in Grid</a></li>
             <li><a href="#full-menu">Full Width Menu in Grid</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Typo<div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Typo<div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="#headings">Headings</a></li>
             <li><a href="#blockquote">Blockquote</a></li>
@@ -69,7 +69,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Components <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Components <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="#slider">Slider</a></li>
             <li><a href="#form">Form</a></li>
@@ -86,7 +86,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="" data-toggle="dropdown">Examples <div class="arrow animate"></div></a>
+          <a href="" data-toggle="dropdown">Examples <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="home-onepage.html" target="_blank">One Page Landing</a></li>
             <li><a href="home-slider.html" target="_blank">Home with Slider</a></li>
@@ -100,20 +100,17 @@
 <div class="clearfix"></div>
 
 
-<hr class="spacer">
-
-
 <div id="show-classes"> Show Grid <br/> Classes </div>
 
 
-<div class="grid">
+<div class="grid my-4">
   <div class="col-50">
-    <h1 class="large"> ALUX <span class="green">v2.1</span> &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
+    <h1 class="large"> ALUX <span class="evi">v2.5</span> &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
     <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
     <p><strong>The Framework</strong> is built with <strong>HTML/CSS</strong> and pure <strong>Javascript</strong>.  <br/>Dependencies Free, no jQuery but with a wide range of features:
     <br/> Grids, Sliders, Menus, Animations, Typography, Forms, Buttons & more.</p>
 
-    <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a href="home-cover.html" target="_blank">Home Cover</a> <small>(NEW!)</small> - <a href="home-onepage.html" target="_blank">One Page Landing</a> - <a href="home-slider.html" target="_blank">Home with Slider</a></p>
+    <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a class="bold" href="home-double-footer-white.html"> White Double Footer Mobile Menu </a><small>(NEW!)</small> <br/>  <a href="home-cover.html" target="_blank">Home Cover</a> - <a href="home-onepage.html" target="_blank">One Page Landing</a> - <a href="home-slider.html" target="_blank">Home with Slider</a></p>
     <a href="https://github.com/afmarchetti/alux/archive/master.zip" class="button animate"  onclick="_gaq.push(['_trackEvent', 'alux-download', 'alux-zip', 'downloadalux']);">DOWNLOAD</a> <a href="https://github.com/afmarchetti/alux/" class="button animate" target="_blank">Git Hub</a>
 
   </div>
@@ -134,12 +131,12 @@
     <strong>Javascript</strong>
     <pre><code>&lt;script src=&quot;path/to/alux.min.js&quot;&gt;&lt;/script&gt;</code></pre>
     <strong>Icon Svg</strong>
-    <p>After this add  <a href="arrow.svg">arrow.svg</a> in the project folder. (used in menu & slider)</p>
+    <p>After this add  <a href="alux-arrow.svg">alux-arrow.svg</a> in the project folder. (used in menu & slider)</p>
   </div>
 </div>
 
 
-<div class="grid " id="multiple-grids">
+<div class="grid pt-3" id="multiple-grids">
   <div class="col">
     <h2>01. Multiple Grids</h2>
     <p>The grid system use <strong>classes</strong>  and <strong>%</strong> to define column widths. <strong> Example: for a columns 50%</strong> of the <strong> screen</strong>  width use <strong>.col-50</strong>. </p>
@@ -258,7 +255,7 @@
 
 <hr class="spacer">
 
-<div class="grid" id="flexbox-grids">
+<div class="grid pt-3" id="flexbox-grids">
   <div class="col">
     <h2>02. Auto Width Columns (thanks flexbox!)</h2>
     <p>You can combine every colums width <strong>.col-%</strong> with a fluid flexbox <strong>"auto"</strong> witdth colum <strong>.col</strong></p>
@@ -325,7 +322,7 @@
 <hr class="spacer">
 
 
-<div class="grid" id="html5-structure">
+<div class="grid pt-3" id="html5-structure">
   <div class="col">
     <h2>03. HTML5 Structure</h2>
     <p>Add classes to HTML5 Tag for light and (almost) semantic markup.</p>
@@ -348,7 +345,7 @@
 <hr class="spacer">
 
 
-<div class="grid" id="full">
+<div class="grid pt-3" id="full">
   <div class="col">
     <h2>04. Full Width Grid</h2>
     <p>For a grid using the full width of the screen, use <strong>.grid--full</strong></p>
@@ -375,7 +372,7 @@
 <hr class="spacer">
 
 
-<div class="grid" id="no-pad">
+<div class="grid pt-3" id="no-pad">
   <div class="col">
     <h2>05. No paddding Full Width Grid</h2>
     <p>For a full width grid with no padding, use:</p>
@@ -403,7 +400,7 @@
 <hr class="spacer">
 
 
-<div class="grid" id="push">
+<div class="grid pt-3" id="push">
   <div class="col">
     <h2>06. Columns Alignment</h2>
     <p>ALUX allows you to <strong>align</strong> columns in every base grid with the classes <strong>.grid--center, .grid--right</strong>. <br/>The push system works on both Tablet and Desktop.</p>
@@ -436,7 +433,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="mobile-grid">
+<div class="grid pt-3" id="mobile-grid">
   <div class="col">
     <h2>07. Mobile Options (try resize the Screen)</h2>
     <p>The columns on Smartphone are 100% of the width. The columns on Tablet are the same of the desktop.  </br> You can <strong>overwrite the default width of a columns</strong> on the Smartphone & Tablet view by using the following classes: <strong>.sma-%</strong> and <strong>.tab-%</strong>  (% => 10, 20, 30 [..], 25, 33, 50, 66, 100). <br/><small>For example: tab-33 sma-50</small></p>
@@ -476,7 +473,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="pull">
+<div class="grid pt-3 no-col" id="pull">
   <div class="col">
     <h2>08. Push & Pull Columns</h2>
     <p>You can <strong>push & pull</strong> columns with <strong>.push-%</strong> (% => 10, 20, 30[..], 25, 33, 50, 66, 100). The pull system works on both Tablet and Desktop. </p>
@@ -506,7 +503,7 @@
 
   <hr class="spacer">
 
-  <div class="grid" id="html5-structure">
+  <div class="grid pt-3" id="html5-structure">
     <div class="col">
       <h2>09. Auto Width Mobile (thanks flexbox!)</h2>
       <p>You can combine the "auto" width of flex-box with the mobile columns.</p>
@@ -566,7 +563,7 @@
 <hr class="spacer">
 
 
-<div class="grid" id="nested-grid">
+<div class="grid pt-3" id="nested-grid">
   <div class="col">
     <h2>09.1 Nested Grid </h2>
     <p>You can nested Grid how many times you need.</p>
@@ -659,7 +656,7 @@
 
 <hr class="spacer">
 
-<div class="grid no-col">
+<div class="grid pt-3 no-col">
     <h2>10. Grid No Col</h2>
     <p>You can set a grid with no columns to contain any content you like:</p>
 </div>
@@ -676,7 +673,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="menu-grid">
+<div class="grid no-col pt-3" id="menu-grid">
   <h2>11. Menu in Grid</h2>
   <p>The menus inherit their width from the grid</p>
 </div>
@@ -690,10 +687,10 @@
         <span class="animate"></span>
       </div>
     </div>
-    <nav>
-      <ul id="menu-sub" class="primary">
+    <nav class="nav-container" id="menu-sub">
+      <ul class="primary">
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown">Products <div class="arrow animate"></div></a>
+          <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="">Shoes</a></li>
             <li><a href="">Jacket</a></li>
@@ -702,7 +699,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown">Services <div class="arrow animate"></div></a>
+          <a href="#" data-toggle="dropdown">Services <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="">Delivery</a></li>
             <li><a href="">Support</a></li>
@@ -725,10 +722,10 @@
         &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;nav&gt;
-      &lt;ul id=&quot;menu-sub&quot; class=&quot;primary&quot;&gt;
+    &lt;nav id=&quot;menu-sub&quot; class=&quot;nav-container&quot;&gt;
+      &lt;ul class=&quot;primary&quot;&gt;
         &lt;li class=&quot;dropdown&quot;&gt;
-          &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+          &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
           &lt;ul class=&quot;dropdown-menu&quot;&gt;
             &lt;li&gt;&lt;a href=&quot;&quot;&gt;Shoes&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;&quot;&gt;Jacket&lt;/a&gt;&lt;/li&gt;
@@ -737,7 +734,7 @@
           &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li class=&quot;dropdown&quot;&gt;
-          &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Services &lt;div class=&quot;arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+          &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Services &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
           &lt;ul class=&quot;dropdown-menu&quot;&gt;
             &lt;li&gt;&lt;a href=&quot;&quot;&gt;Delivery&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
@@ -756,7 +753,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="full-menu">
+<div class="grid pt-3 no-col" id="full-menu">
   <h2>12. Full Width Menu in Grid</h2>
   <p> For a full width menu, ensure that the grid is full width (see point <strong>.03</strong>)</p>
 </div>
@@ -770,10 +767,10 @@
         <span class="animate"></span>
       </div>
     </div>
-    <nav>
-      <ul id="menu-sub-2" class="primary">
+    <nav class="nav-container" id="menu-sub-2">
+      <ul class="primary">
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown">Products <div class="arrow animate"></div></a>
+          <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="">Shoes</a></li>
             <li><a href="">Jacket</a></li>
@@ -782,7 +779,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown">Services <div class="arrow animate"></div></a>
+          <a href="#" data-toggle="dropdown">Services <div class="alux-arrow animate"></div></a>
           <ul class="dropdown-menu">
             <li><a href="">Delivery</a></li>
             <li><a href="">Support</a></li>
@@ -802,17 +799,127 @@
     &lt;div class=&quot;nav-header&quot;&gt;
      ...
     &lt;/div&gt;
-    &lt;nav&gt;
-      &lt;ul id=&quot;menu-sub-2&quot; class=&quot;primary&quot;&gt;
+    &lt;nav id=&quot;menu-sub-2&quot; class=&quot;nav-container&quot;&gt;
+      &lt;ul class=&quot;primary&quot;&gt;
        ....
       &lt;/ul&gt;
     &lt;/nav&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+
+
+
 <hr class="spacer">
 
-<div class="grid no-col">
+
+<div class="grid pt-3 no-col" id="full-menu">
+  <h2>12.1 - Double Footer Menu Mobile + Light Background</h2>
+  <p> You can have <strong>2 Menus</strong> with light Background and <strong>Footer Menu</strong> on Mobile. Add this class to .nav-wrap: <strong> nav-double, mobile-footer-menu, nav-light</strong>. <br/><br/> <strong>Example layout</strong> with fixed navbar and footer menu  (NEW!): <a href="home-double-footer-menu.html">home-double-footer-menu.html</a> </p>
+</div>
+<div class="nav-wrap nav-double nav-light" style="border: 1px solid #ddd;">
+  <div class="grid no-pad-menu">
+    <div class="nav-header">
+      <a href="#" class="logo">ALUX</a>
+    </div>
+    <div class="tog" data-target="menu-double">
+      <span class="animate"></span>
+      <span class="span-middle animate"></span>
+      <span class="animate"></span>
+    </div>
+    <nav class="nav-container animate" id="menu-double">
+      <ul class="primary primary--left">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Shoes</a></li>
+            <li><a href="">Jacket</a></li>
+            <li><a href="">Hat</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Services <div class="alux-arrow animate"></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Customize</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="primary primary--right">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Products <div class="alux-arrow animate"></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Shoes</a></li>
+            <li><a href="">Jacket</a></li>
+
+            <li><a href="">Coat</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="spotlight">
+      <input type="text" placeholder="Search...">
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<pre><code>&lt;div class=&quot;nav-wrap nav-double mobile-footer-menu nav-fixed nav-light&quot;&gt;
+    &lt;div class=&quot;grid no-pad-menu&quot;&gt;
+      &lt;div class=&quot;nav-header&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;ALUX&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tog&quot; data-target=&quot;menu-double&quot;&gt;
+        &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;span-middle animate&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;animate&quot;&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;nav class=&quot;nav-container animate&quot; id=&quot;menu-double&quot;&gt;
+        &lt;ul class=&quot;primary primary--left&quot;&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Shoes&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Jacket&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Hat&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Services &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Delivery&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Customize&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;primary primary--right&quot;&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Products &lt;div class=&quot;alux-arrow animate&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Shoes&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Jacket&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;&quot;&gt;Coat&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;div class=&quot;spotlight&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Search...&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</code></pre>
+
+
+<hr class="spacer">
+
+<div class="grid pt-3 no-col">
   <h2>13. Typography</h2>
   <p>The typography system is simple. You can use seven classes to change the format of your text.</p>
 
@@ -924,7 +1031,7 @@
 
 <hr class="spacer">
 
-<div class="grid no-col" id="slider">
+<div class="grid pt-3 no-col" id="slider">
 
   <h2>14. Slider</h2>
   <p>The Slider is based on the super lightweight  <a href="https://github.com/pawelgrzybek/siema" target="_blank">Siema</a>. Which allows you drag slides (mobile touch supported!). For more information, see the <a href="https://pawelgrzybek.com/siema/#options">Siema Options</a>. </br/>
@@ -956,8 +1063,8 @@
         </div>
       </div>
     </div>
-    <div class="container-siema__prev"><div class="arrow">prev</div></div>
-    <div class="container-siema__next"><div class="arrow">next</div></div>
+    <div class="container-siema__prev"><div class="alux-arrow">prev</div></div>
+    <div class="container-siema__next"><div class="alux-arrow">next</div></div>
   </div>
 
 
@@ -987,8 +1094,8 @@
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;container-siema__prev&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;prev&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;container-siema__next&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;next&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;container-siema__prev&quot;&gt;&lt;div class=&quot;alux-arrow&quot;&gt;prev&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;container-siema__next&quot;&gt;&lt;div class=&quot;alux-arrow&quot;&gt;next&lt;/div&gt;&lt;/div&gt;
   &lt;/div&gt;</code></pre>
 <strong>Javascript</strong>
   <pre><code>&lt;script&gt;
@@ -1000,7 +1107,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="form">
+<div class="grid pt-3 no-col" id="form">
   <h2>15. Form</h2>
   <p>All elements in the form are full width.</p>
 
@@ -1043,7 +1150,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="animations">
+<div class="grid pt-3 no-col" id="animations">
     <h2>17. Animations</h2>
     <p>With the class <strong>.animate</strong> you can animate all css properties. For example background-color in the buttons.</p>
     <a href="#" class="button animate"> Button</a>
@@ -1056,7 +1163,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="responsive-images">
+<div class="grid pt-3 no-col" id="responsive-images">
     <h2>18. Responsive Images</h2>
     <p>To make images fully responsive use the class: <strong>.img-res</strong></p>
     <img class="img-res" src="image.jpg" alt="New York City">
@@ -1070,7 +1177,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="lines">
+<div class="grid pt-3 no-col" id="lines">
   <h2>19. Lines & Spacer</h2>
   <p>To spacer the content you can use <stong>hr</strong> tag or hr tag with class <strong>.spacer</strong> for transparent hr.</p>
   <hr>
@@ -1084,7 +1191,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="margin">
+<div class="grid pt-3 no-col" id="margin">
     <h2>20. Spacing</h2>
     <p><strong>Margin</strong></p>
     <p>To easily add margin to an element you can use the class <strong>.mb-1 => margin-bottom: 5px </strong> or <strong>.mt-2 => margin-top: 10px</strong>. <br/> The system use letters mb-, mt-, ml-, mr- to determinate the side and 1, 2 or 3 to determinate the space.</p>
@@ -1133,7 +1240,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="text-align">
+<div class="grid pt-3 no-col" id="text-align">
   <h2>21. Text Align</h2>
   <p>You can use <strong>.text-left</strong>, <strong>.text-center</strong> or <strong>.text-right</strong> class to align text easily.</p>
 
@@ -1152,7 +1259,7 @@
 <hr class="spacer">
 
 
-<div class="grid no-col" id="cover">
+<div class="grid pt-3 no-col" id="cover">
   <h2>22. Text Cover</h2>
   <p>Create beautiful Cover in seconds using the <strong>.cover</strong> class with optional filter (<strong>.filter</strong> class) over the image. </p>
 
@@ -1187,7 +1294,7 @@
   <hr class="spacer">
 
 
-  <div class="grid no-col pb-0" id="tile">
+  <div class="grid pt-3 no-col pb-0" id="tile">
     <h2>23. Tile</h2>
     <p>Create image Tiles in seconds using the <strong>.tile</strong> class with optional filter (<strong>.filter</strong> class) over the image. </p>
 
@@ -1226,7 +1333,7 @@
     <hr class="spacer">
 
 
-    <div class="grid no-col pb-0" id="cards">
+    <div class="grid pt-3 no-col pb-0" id="cards">
       <h2>24. Cards</h2>
       <p>Create Cards in seconds using the <strong>.card</strong> class. </p>
 
