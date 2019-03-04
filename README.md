@@ -2,7 +2,7 @@
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
 
-## What's new in v2.1?
+## What's new in v2.5?
 - Double Menu
 - Footer Menu Mobile
 - White Menu
