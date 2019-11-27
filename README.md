@@ -44,14 +44,14 @@ Easy, Light, Fast, Flexible.
 
 ## Examples
 - [One Page Landing](http://afmarchetti.github.io/alux/home-onepage.html) – This is Alux most basic implementation
-- [Home with Slider](http://afmarchetti.github.io/alux/home-slider.html) – Using the Slider Based on [Siema](https://github.com/pawelgrzybek/siema) library
+- [Home with Slider](http://afmarchetti.github.io/alux/home-slider.html) – Using the Slider Based on [Glide](https://github.com/glidejs/glide) library
 
 ## Benefits
 - Simple
 - Transitions/Animations are all in CSS
 - Minimal JavaScript
 - Flexible & Scalable
-- 25KB minified
+- 40KB minified
 - Dependency free
 
 ## Usage
