@@ -4,7 +4,7 @@
 .button {
   font-size: 14px;
   color: #fff;
-  background: darken($call-color , 10%);
+  background: $call-color;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -16,6 +16,6 @@
   text-shadow: none;
 }
 .button:hover {
-  background: darken($call-color, 5%);
+  background: darken($call-color, 10%);
   color: #fff;
 }
