@@ -33,3 +33,4 @@ Temporary Items
 
 #node
 dev/node_modules
+dev/package-lock.json
