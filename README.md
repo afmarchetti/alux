@@ -1,6 +1,18 @@
-# ALUX 2.5 framework
+# ALUX 3.0 framework
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
+
+## What's new in v3.0?
+
+The Slider! (based on Glide.js) with:
+- Autoplay
+- Dotted Navigation
+- Loop
+- Carousel
+- Drag Speed
+- and more..
+
+
 
 ## What's new in v2.5?
 - Double Menu
