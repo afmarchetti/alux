@@ -1124,7 +1124,14 @@
 </code></pre>
 <strong>Javascript</strong>
   <pre><code>&lt;script&gt;
-    var mySiema = new Siema({ loop: true });
+  new Glide('.glide',{
+    type: 'carousel',
+    touchRatio : 1,
+    gap: 0,
+    animationDuration: 600,
+    autoplay: 4000,
+    hoverpause: false,
+  }).mount()
 &lt;/script&gt;</code></pre>
 
 </div>
