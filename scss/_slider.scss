@@ -1,29 +1,23 @@
-// main: alux.scss
+.glide{margin-bottom: $gutter; position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{background: #333;overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}
+.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none; -webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
 
-.container-siema {
-  position: relative;
-  background: #333;
-  margin-bottom: $gutter;
-  overflow: hidden;
-}
 
-.container-siema__next,
-.container-siema__prev {
+// arrow
+.glide__arrow {
   position: absolute;
   top: 0;
-  color: #fff;
   text-indent: -9999px;
   height: 100%;
   cursor: pointer;
   width: 60px;
+  z-index: 1;
+  touch-action: none;
 }
 
-.container-siema__next {
-  right: 0;
-}
+.glide__arrow--right { right: 0; }
 
-.container-siema__next .alux-arrow,
-.container-siema__prev .alux-arrow {
+.glide__arrow--right .alux-arrow,
+.glide__arrow--left .alux-arrow {
   width: 30px;
   height: 40px;
   top: 50%;
@@ -33,18 +27,28 @@
   transform: rotate(180deg);
 }
 
-.container-siema__next .alux-arrow {
+.glide__arrow--right .alux-arrow {
   left: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.alux-arrow--disable {
-  opacity: 0.3;
+//bullets
+.glide__bullets{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
 }
+.glide__bullet{width: 20px;height: 20px;background: #fff;display: inline-block;cursor:pointer; border-radius: 100%;opacity: 0.3; margin: 0 2px}
+.glide__bullet--active{opacity: 1}
 
-.siema__slide {
-  height: 600px;
+
+// glide slide
+.glide__slide{
+  margin-top: -69px;
+  height: 100vh;
   background: #333;
   color: #fff;
   position: relative;
@@ -52,21 +56,8 @@
   align-items: center;
 }
 
-.siema__caption {
-  z-index: 100;
-  padding: 0 ($gutter*2.5);
-  max-width: 1250px;
-  width:100%;
-  margin: 0 auto;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-}
-.siema__caption h1,
-.siema__caption h2,
-.siema__caption h3{color:#fff}
-
-.siema__filter {
-  z-index: 10;
+.glide__slide:after{
+  content:'';
   position: absolute;
   top: 0;
   left: 0;
@@ -77,11 +68,28 @@
   background: #000;
 }
 
+
+.glide__caption {
+  z-index: 100;
+  padding: 0 ($gutter*2.5);
+  max-width: 1250px;
+  width:100%;
+  margin: 0 auto;
+  color: #fff;
+  // text-shadow: 0 0 5px #000;
+}
+.glide__caption h1,
+.glide__caption h2,
+.glide__caption h3{color:#fff}
+
+
+
 @media (max-width: 1300px) {
-  .container-siema__next .alux-arrow,
-  .container-siema__prev .alux-arrow {
-    bottom: $gutter ;
+  .glide__arrow--right .alux-arrow,
+  .glide__arrow--left .alux-arrow {
+    bottom: 15px ;
     top:auto;
   }
-  .siema__caption{padding: 0 $gutter;}
+  .glide__caption{padding: 0 $gutter;}
+  .glide__bullets{bottom: 17px}
 }

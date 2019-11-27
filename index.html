@@ -105,12 +105,12 @@
 
 <div class="grid my-4">
   <div class="col-50">
-    <h1 class="large"> ALUX <span class="evi">v2.5</span> &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
-    <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (25K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
+    <h1 class="large"> ALUX <span class="evi">v3.0</span> &middot; The Fast HTML5 Framework for Awesome Light User Experience</h1>
+    <h2 class="normal">ALUX is a <strong>Lightweight Framework</strong> (~40K) for Creating Super-Fast and Beautifully Responsive Web Apps.</h2>
     <p><strong>The Framework</strong> is built with <strong>HTML/CSS</strong> and pure <strong>Javascript</strong>.  <br/>Dependencies Free, no jQuery but with a wide range of features:
     <br/> Grids, Sliders, Menus, Animations, Typography, Forms, Buttons & more.</p>
 
-    <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a class="bold" href="home-double-footer-menu.html"> Double Footer Mobile Menu </a> - <a class="bold" href="home-double-footer-white.html"> White Version </a><small>(NEW!)</small> <br/>  <a href="home-cover.html" target="_blank">Home Cover</a> - <a href="home-onepage.html" target="_blank">One Page Landing</a> - <a href="home-slider.html" target="_blank">Home with Slider</a></p>
+    <p><strong> Easy, Light, Fast, Flexible.</strong><br/> Examples: <a class="bold" href="home-double-footer-menu.html"> Double Footer Mobile Menu </a> - <a class="bold" href="home-double-footer-white.html"> White Version </a><small>(NEW!)</small> <br/>  <a href="home-cover.html" target="_blank">Home Cover</a> - <a href="home-onepage.html" target="_blank">One Page Landing</a> - <a href="home-slider.html" target="_blank">Home with Full Slider</a> (NEW!)</p>
     <a href="https://github.com/afmarchetti/alux/archive/master.zip" class="button animate"  onclick="_gaq.push(['_trackEvent', 'alux-download', 'alux-zip', 'downloadalux']);">DOWNLOAD</a> <a href="https://github.com/afmarchetti/alux/" class="button animate" target="_blank">Git Hub</a>
 
   </div>
@@ -1034,69 +1034,94 @@
 <div class="grid pt-3 no-col" id="slider">
 
   <h2>14. Slider</h2>
-  <p>The Slider is based on the super lightweight  <a href="https://github.com/pawelgrzybek/siema" target="_blank">Siema</a>. Which allows you drag slides (mobile touch supported!). For more information, see the <a href="https://pawelgrzybek.com/siema/#options">Siema Options</a>. </br/>
-  Check all Siema <strong>customization</strong> on <a href="https://codepen.io/collection/Adpkkd/" target="_blank">CodePen</a>.</p>
+  <p>The Slider is based on the <strong> lightweight  <a href="https://github.com/pawelgrzybek/siema" target="_blank">Glide.js</a></strong>. Which allows you drag slides with a lot of features (<strong> Autoplay, Dotted Navigation, Drag Speed, Loop, Pause on-hover</strong>  and more). For more information, see the <a href="https://glidejs.com/docs/options/">https://glidejs.com/docs/options/</a>. </br/>
 
   <hr class="spacer">
 
-  <div class="container-siema">
-    <div class="siema">
-      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
-        <div class="siema__filter"></div>
-        <div class="siema__caption">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+        <div class="glide__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+          <div class="glide__caption">
+            <h1>Home Page Cover Message 1</h1>
+            <h2>Subtitle of the cover full width</h2>
+            <p>Lorem ipsum text</p>
+            <a class="button animate" href="">Call to action</a>
+          </div>
         </div>
-      </div>
-      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
-        <div class="siema__filter"></div>
-        <div class="siema__caption">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="glide__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+          <div class="glide__caption">
+            <h1>Home Page Cover Message 2</h1>
+            <h2>Subtitle of the cover full width</h2>
+            <p>Lorem ipsum text</p>
+            <a class="button animate" href="">Call to action</a>
+          </div>
         </div>
-      </div>
-      <div class="siema__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
-        <div class="siema__filter"></div>
-        <div class="siema__caption">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="glide__slide" style="background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;">
+          <div class="glide__caption">
+            <h1>Home Page Cover Message 3</h1>
+            <h2>Subtitle of the cover full width</h2>
+            <p>Lorem ipsum text</p>
+            <a class="button animate" href="">Call to action</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container-siema__prev"><div class="alux-arrow">prev</div></div>
-    <div class="container-siema__next"><div class="alux-arrow">next</div></div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <div class="glide__arrow glide__arrow--left" data-glide-dir="<"><div class="alux-arrow">prev</div></div>
+      <div class="glide__arrow glide__arrow--right" data-glide-dir=">"><div class="alux-arrow">next</div></div>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <span class="glide__bullet" data-glide-dir="=0"></span>
+      <span class="glide__bullet" data-glide-dir="=1"></span>
+      <span class="glide__bullet" data-glide-dir="=2"></span>
+    </div>
   </div>
 
 
 
   <strong>Html</strong>
-  <pre><code> &lt;div class=&quot;container-siema&quot;&gt;
-    &lt;div class=&quot;siema&quot;&gt;
-      &lt;div class=&quot;siema__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
-        &lt;div class=&quot;siema__filter&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;siema__caption&quot;&gt;
-          &lt;h3&gt;Title&lt;/h3&gt;
-          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+  <pre><code> &lt;div class=&quot;glide&quot;&gt;
+    &lt;div class=&quot;glide__track&quot; data-glide-el=&quot;track&quot;&gt;
+      &lt;div class=&quot;glide__slides&quot;&gt;
+        &lt;div class=&quot;glide__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
+          &lt;div class=&quot;glide__caption&quot;&gt;
+            &lt;h1&gt;Home Page Cover Message 1&lt;/h1&gt;
+            &lt;h2&gt;Subtitle of the cover full width&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum text&lt;/p&gt;
+            &lt;a class=&quot;button animate&quot; href=&quot;&quot;&gt;Call to action&lt;/a&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;siema__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
-        &lt;div class=&quot;siema__filter&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;siema__caption&quot;&gt;
-          &lt;h3&gt;Title&lt;/h3&gt;
-          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+        &lt;div class=&quot;glide__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
+          &lt;div class=&quot;glide__caption&quot;&gt;
+            &lt;h1&gt;Home Page Cover Message 2&lt;/h1&gt;
+            &lt;h2&gt;Subtitle of the cover full width&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum text&lt;/p&gt;
+            &lt;a class=&quot;button animate&quot; href=&quot;&quot;&gt;Call to action&lt;/a&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;siema__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
-        &lt;div class=&quot;siema__filter&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;siema__caption&quot;&gt;
-          &lt;h3&gt;Title&lt;/h3&gt;
-          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+        &lt;div class=&quot;glide__slide&quot; style=&quot;background: url(http://afmarchetti.github.io/alux/image.jpg);background-size: cover;&quot;&gt;
+          &lt;div class=&quot;glide__caption&quot;&gt;
+            &lt;h1&gt;Home Page Cover Message 3&lt;/h1&gt;
+            &lt;h2&gt;Subtitle of the cover full width&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum text&lt;/p&gt;
+            &lt;a class=&quot;button animate&quot; href=&quot;&quot;&gt;Call to action&lt;/a&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;container-siema__prev&quot;&gt;&lt;div class=&quot;alux-arrow&quot;&gt;prev&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;container-siema__next&quot;&gt;&lt;div class=&quot;alux-arrow&quot;&gt;next&lt;/div&gt;&lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+    &lt;div class=&quot;glide__arrows&quot; data-glide-el=&quot;controls&quot;&gt;
+      &lt;div class=&quot;glide__arrow glide__arrow--left&quot; data-glide-dir=&quot;&lt;&quot;&gt;&lt;div class=&quot;alux-arrow&quot;&gt;prev&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;glide__arrow glide__arrow--right&quot; data-glide-dir=&quot;&gt;&quot;&gt;&lt;div class=&quot;alux-arrow&quot;&gt;next&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;glide__bullets&quot; data-glide-el=&quot;controls[nav]&quot;&gt;
+      &lt;span class=&quot;glide__bullet&quot; data-glide-dir=&quot;=0&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;glide__bullet&quot; data-glide-dir=&quot;=1&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;glide__bullet&quot; data-glide-dir=&quot;=2&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
 <strong>Javascript</strong>
   <pre><code>&lt;script&gt;
     var mySiema = new Siema({ loop: true });
@@ -1401,34 +1426,14 @@
 
 
 <script>
-var next = document.querySelector(".container-siema__next");
-var prev = document.querySelector(".container-siema__prev");
-var slideCount = document.querySelector(".siema").children.length - 1;
-
-var mySiema = new Siema({
-  loop: true,
-});
-
-prev.addEventListener("click", function () {
-  return mySiema.prev();
-});
-
-next.addEventListener("click", function () {
-  return mySiema.next();
-});
-</script>
-
-<script>
-  document.getElementById('show-classes').addEventListener('click', function() {
-    var  allspan = document.getElementsByClassName("classes-hide");
-    for(var i=0; i < allspan.length; i++){
-      if(allspan[i].className == "classes-hide"){
-        allspan[i].className = "classes-hide classes-visible";
-      } else {
-        allspan[i].className = "classes-hide";
-      }
-    }
-  });
+new Glide('.glide',{
+  type: 'carousel',
+  touchRatio : 1,
+  gap: 0,
+  animationDuration: 600,
+  autoplay: 4000,
+  hoverpause: false,
+}).mount()
 </script>
 
 <script>

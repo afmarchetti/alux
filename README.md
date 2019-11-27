@@ -1,6 +1,13 @@
-# ALUX 2.1 framework
+# ALUX 2.5 framework
 
 The Fast HTML5 Framework for Awesome Light User Experience by [MarchettiDesign.net](http://www.marchettidesign.net/)
+
+## What's new in v2.5?
+- Double Menu
+- Footer Menu Mobile
+- White Menu
+- New Type Sizes and Spaces
+- Same Size 25K!
 
 ## What's new in v2.1?
 - Cover Component
