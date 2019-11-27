@@ -30,3 +30,6 @@ Temporary Items
 
 #ftp
 .ftpconfig
+
+#node
+dev/node_modules
