@@ -13,7 +13,6 @@ The Slider! (based on Glide.js) with:
 - and more..
 
 
-
 ## What's new in v2.5?
 - Double Menu
 - Footer Menu Mobile
