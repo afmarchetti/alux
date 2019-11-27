@@ -7,14 +7,14 @@ var browserSync = require('browser-sync');
 
 // sass
 gulp.task('sass', function(){
-  return gulp.src('../scss/style.scss')
+  return gulp.src('../scss/alux.min.scss')
   .pipe(sassGlob())
   .pipe(sass({outputStyle: 'nested'}))
   .on('error', function(err) {
     console.error('\x07'); // so it doesn't just fail (literally) silently!
     sass.logError.bind(this)(err);
   })
-  //.pipe(cssnano())  // minify css
+  .pipe(cssnano())  // minify css
   .pipe(gulp.dest('../'));
 });
 
